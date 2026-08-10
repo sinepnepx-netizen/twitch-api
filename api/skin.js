@@ -16,19 +16,52 @@ export default async function handler(req, res) {
 
     for (const arma of dados.data || []) {
 
-      for (const skin of arma.skins || []) {
+      // Ignora armas que não possuem skins
+      if (!arma.skins) continue;
 
-        // Ignora a skin padrão da arma
+      for (const skin of arma.skins) {
+
+        if (!skin.displayName) continue;
+
+        // Ignora a skin padrão
         if (
-          !skin.displayName ||
-          skin.displayName === arma.displayName
+          skin.displayName.toLowerCase() ===
+          arma.displayName.toLowerCase()
         ) {
           continue;
         }
 
+        // Ignora variantes/chromas
+        if (
+          skin.displayName.toLowerCase().includes("variant")
+        ) {
+          continue;
+        }
+
+        let nomeSkin = skin.displayName.trim();
+        const nomeArma = arma.displayName.trim();
+
+        // Remove o nome da arma do começo da skin
+        // caso a API tenha retornado algo como:
+        // "Phantom Oni"
+        const regexArma = new RegExp(
+          `^${nomeArma}\\s*`,
+          "i"
+        );
+
+        nomeSkin = nomeSkin
+          .replace(regexArma, "")
+          .trim();
+
+        // Se depois da remoção não sobrou nome,
+        // usa o nome original para não ficar vazio.
+        if (!nomeSkin) {
+          nomeSkin = skin.displayName;
+        }
+
         skins.push({
-          arma: arma.displayName,
-          skin: skin.displayName
+          arma: nomeArma,
+          skin: nomeSkin
         });
       }
     }
