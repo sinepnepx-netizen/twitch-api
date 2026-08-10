@@ -2,16 +2,16 @@
   "min": 1,
   "max": 1000,
   "frases": [
-    "{user} kikou {numero} vezes em {target}.",
-    "{user} engasgou dando uma mamada em {target}.",
-    "{user} macetou {target} no fusquinha.",
-    "{target} disse que o tamanho do pipi de {user} era muito pequeno e foi embora.",
-    "{user} broxou na hora H com {target} e foi zoado pela galera.",
-    "{target} colocou o pau na mesa e mandou {user} medir.",
-    "{user} convidou {target} e tomou um fora por ser broxa.",
-    "{user} colocou {target} na chapa sem pena.",
-    "{user} botou {target} pra kikar {numero} vezes.",
-    "{user} levou {target} pra festa e quase engravidou."
+    "@{user} kikou {numero} vezes em @{target}.",
+    "@{user} engasgou dando uma mamada em @{target}.",
+    "@{user} macetou @{target} no fusquinha.",
+    "@{target} disse que o tamanho do pipi de @{user} era muito pequeno e foi embora.",
+    "@{user} broxou na hora H com @{target} e foi zoado pela galera.",
+    "@{target} colocou o pau na mesa e mandou @{user} medir.",
+    "@{user} convidou @{target} e tomou um fora por ser broxa.",
+    "@{user} colocou @{target} na chapa sem pena.",
+    "@{user} botou @{target} pra kikar {numero} vezes.",
+    "@{user} levou @{target} pra festa e quase engravidou."
     
   ]
 }
