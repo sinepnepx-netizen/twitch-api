@@ -20,8 +20,8 @@ export default function handler(req, res) {
 
   const frase =
     frases[Math.floor(Math.random() * frases.length)]
-      .replaceAll("{user}", `{user}`)
-      .replaceAll("{target}", `{target}`);
+      .replaceAll("{user}", user)
+      .replaceAll("{target}", target);
 
   res.setHeader(
     "Content-Type",
