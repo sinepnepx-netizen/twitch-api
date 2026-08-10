@@ -1,0 +1,28 @@
+{
+  "min": 50,
+  "max": 100,
+  "frases": [
+    "@{target} acha funk fezes com {numero}% de pureza. 💩",
+    "@{target} acha rock fezes com {numero}% de pureza. 💩",
+    "@{target} acha pop fezes com {numero}% de pureza. 💩",
+    "@{target} acha sertanejo fezes com {numero}% de pureza. 💩",
+    "@{target} acha axé fezes com {numero}% de pureza. 💩",
+    "@{target} acha indie fezes com {numero}% de pureza. 💩",
+    "@{target} acha pagode fezes com {numero}% de pureza. 💩",
+    "@{target} acha reggaeton fezes com {numero}% de pureza. 💩",
+    "@{target} acha eletrônica fezes com {numero}% de pureza. 💩",
+    "@{target} acha hip-hop fezes com {numero}% de pureza. 💩",
+    "@{target} acha rap fezes com {numero}% de pureza. 💩",
+    "@{target} acha MPB fezes com {numero}% de pureza. 💩",
+    "@{target} acha forró fezes com {numero}% de pureza. 💩",
+    "@{target} acha reggae fezes com {numero}% de pureza. 💩",
+    "@{target} acha country fezes com {numero}% de pureza. 💩",
+    "@{target} acha blues fezes com {numero}% de pureza. 💩",
+    "@{target} acha metal fezes com {numero}% de pureza. 💩",
+    "@{target} acha punk fezes com {numero}% de pureza. 💩",
+    "@{target} acha K-pop fezes com {numero}% de pureza. 💩",
+    "@{target} acha J-pop fezes com {numero}% de pureza. 💩",
+    "@{target} acha gospel fezes com {numero}% de pureza. 💩",
+    "@{target} acha música clássica fezes com {numero}% de pureza. 💩"
+  ]
+}
