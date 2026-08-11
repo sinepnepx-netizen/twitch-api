@@ -1,10 +1,22 @@
 import fs from "fs";
 import path from "path";
 
-const historico = {
+const ciclos = {
   violencia: [],
   sexo: []
 };
+
+function embaralhar(lista) {
+  const copia = [...lista];
+
+  for (let i = copia.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+
+    [copia[i], copia[j]] = [copia[j], copia[i]];
+  }
+
+  return copia;
+}
 
 export default function handler(req, res) {
 
@@ -36,10 +48,6 @@ export default function handler(req, res) {
     return res.status(500).send("Nenhuma frase encontrada.");
   }
 
-  // =========================
-  // NÚMERO ALEATÓRIO
-  // =========================
-
   let numero = "";
 
   if (
@@ -54,10 +62,6 @@ export default function handler(req, res) {
       ) + dados.min;
   }
 
-  // =========================
-  // ESCOLHA DA FRASE
-  // =========================
-
   let indice;
 
   if (
@@ -65,35 +69,13 @@ export default function handler(req, res) {
     frases.length > 1
   ) {
 
-    let ultimas = historico[comando];
-
-    let disponiveis = frases
-      .map((_, i) => i)
-      .filter(i => !ultimas.includes(i));
-
-    // Se todas estiverem bloqueadas,
-    // libera novamente as frases.
-    if (disponiveis.length === 0) {
-      ultimas = [];
-      historico[comando] = [];
-      disponiveis = frases.map((_, i) => i);
+    if (ciclos[comando].length === 0) {
+      ciclos[comando] = embaralhar(
+        frases.map((_, index) => index)
+      );
     }
 
-    indice =
-      disponiveis[
-        Math.floor(
-          Math.random() * disponiveis.length
-        )
-      ];
-
-    ultimas.push(indice);
-
-    // Não deixa repetir nenhuma das últimas 5
-    if (ultimas.length > 5) {
-      ultimas.shift();
-    }
-
-    historico[comando] = ultimas;
+    indice = ciclos[comando].shift();
 
   } else {
 
@@ -102,10 +84,6 @@ export default function handler(req, res) {
         Math.random() * frases.length
       );
   }
-
-  // =========================
-  // RESPOSTA
-  // =========================
 
   const frase =
     frases[indice]
