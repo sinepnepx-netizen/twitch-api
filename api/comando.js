@@ -1,12 +1,21 @@
 import fs from "fs";
 import path from "path";
 
+// Guarda as últimas frases usadas de cada comando
+const historicoComandos = new Map();
+
+const MAX_REPETICOES = 3;
+
 export default function handler(req, res) {
   const {
     comando,
     user = "Alguém",
     target = "Alguém"
   } = req.query;
+
+  if (!comando) {
+    return res.status(400).send("Comando não informado.");
+  }
 
   const arquivo = path.join(
     process.cwd(),
@@ -22,8 +31,7 @@ export default function handler(req, res) {
     fs.readFileSync(arquivo, "utf8")
   );
 
-  // Compatibilidade com os comandos antigos
-  // que usam apenas um array de frases.
+  // Compatibilidade com comandos antigos
   const frases = Array.isArray(dados)
     ? dados
     : dados.frases;
@@ -32,8 +40,43 @@ export default function handler(req, res) {
     return res.status(500).send("Nenhuma frase encontrada.");
   }
 
-  // Só gera número se o comando tiver
-  // "min" e "max" configurados no JSON.
+  // =========================
+  // ANTI-REPETIÇÃO
+  // =========================
+
+  let historico = historicoComandos.get(comando) || [];
+
+  // Remove as frases que apareceram nos últimos 3 usos
+  let frasesDisponiveis = frases.filter(
+    (_, index) => !historico.includes(index)
+  );
+
+  // Se não houver frases suficientes,
+  // limpa o histórico e permite sortear novamente.
+  if (frasesDisponiveis.length === 0) {
+    historico = [];
+    frasesDisponiveis = frases.map((_, index) => index);
+  }
+
+  // Sorteia uma frase entre as disponíveis
+  const indice =
+    frasesDisponiveis[
+      Math.floor(Math.random() * frasesDisponiveis.length)
+    ];
+
+  // Atualiza histórico
+  historico.push(indice);
+
+  if (historico.length > MAX_REPETICOES) {
+    historico.shift();
+  }
+
+  historicoComandos.set(comando, historico);
+
+  // =========================
+  // NÚMERO ALEATÓRIO
+  // =========================
+
   let numero = "";
 
   if (
@@ -47,11 +90,14 @@ export default function handler(req, res) {
       ) + dados.min;
   }
 
-  const frase =
-    frases[Math.floor(Math.random() * frases.length)]
-      .replaceAll("{user}", user)
-      .replaceAll("{target}", target)
-      .replaceAll("{numero}", String(numero));
+  // =========================
+  // RESPOSTA
+  // =========================
+
+  const frase = frases[indice]
+    .replaceAll("{user}", user)
+    .replaceAll("{target}", target)
+    .replaceAll("{numero}", String(numero));
 
   res.setHeader(
     "Content-Type",
