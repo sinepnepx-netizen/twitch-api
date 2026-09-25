@@ -6,6 +6,13 @@ const ciclos = {
   sexo: []
 };
 
+const botsIgnorados = [
+  "streamelements",
+  "nightbot",
+  "pokemoncommunitygame",
+  "livepix"
+];
+
 function embaralhar(lista) {
   const copia = [...lista];
 
@@ -62,6 +69,69 @@ export default function handler(req, res) {
       ) + dados.min;
   }
 
+  // ==========================================
+  // ESCOLHA DO ALVO
+  // ==========================================
+
+  const candidatos = [];
+
+  for (let i = 1; i <= 10; i++) {
+    const candidato = req.query[`target${i}`];
+
+    if (candidato) {
+      candidatos.push(String(candidato));
+    }
+  }
+
+  // Mantém compatibilidade com o antigo target
+  if (candidatos.length === 0 && target) {
+    candidatos.push(String(target));
+  }
+
+  const userLower = String(user).replace(/^@/, "").toLowerCase();
+
+  const candidatosValidos = candidatos.filter((candidato) => {
+
+    const nome = candidato
+      .replace(/^@/, "")
+      .trim()
+      .toLowerCase();
+
+    // Não pode ser o próprio usuário
+    if (nome === userLower) {
+      return false;
+    }
+
+    // Não pode ser bot
+    if (botsIgnorados.includes(nome)) {
+      return false;
+    }
+
+    return true;
+  });
+
+  let targetFinal;
+
+  if (candidatosValidos.length > 0) {
+
+    targetFinal =
+      candidatosValidos[
+        Math.floor(
+          Math.random() * candidatosValidos.length
+        )
+      ];
+
+  } else {
+
+    // Caso não exista nenhum candidato válido,
+    // usa o target original como último recurso.
+    targetFinal = target;
+  }
+
+  // ==========================================
+  // ESCOLHA DA FRASE
+  // ==========================================
+
   let indice;
 
   if (
@@ -88,7 +158,7 @@ export default function handler(req, res) {
   const frase =
     frases[indice]
       .replaceAll("{user}", user)
-      .replaceAll("{target}", target)
+      .replaceAll("{target}", targetFinal)
       .replaceAll("{numero}", String(numero));
 
   res.setHeader(
