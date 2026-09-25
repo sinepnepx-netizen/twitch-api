@@ -217,7 +217,7 @@ export default async function handler(req, res) {
     return res
       .status(200)
       .send(
-        `⚔️ @${user} desafiou @${target} para um duelo! @${target}, digite !aceitar em até 30 segundos!`
+        `⚔️ @${user} desafiou @${target} para um duelo! @${target}, digite !yd em até 30 segundos!`
       );
   }
 
