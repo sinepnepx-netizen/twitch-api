@@ -1,67 +1,161 @@
 [
-  {"texto":"🌋 Um vulcão entra em erupção! {user} encontra uma asa-delta e {target} encontra um cavalo. Na fuga cinematográfica, {vencedor} escapa enquanto {perdedor} fica cercado pela lava. 💀🔥","vencedor":"user"},
-  {"texto":"🏰 Um castelo é cercado por um exército inimigo! {user} defende o portão e {target} tenta uma passagem secreta. Quando o sino toca, {vencedor} é quem continua de pé. ⚔️","vencedor":"target"},
-  {"texto":"🐉 Um dragão desce sobre uma aldeia medieval! {user} pega uma espada e {target} pega um escudo. Depois de uma batalha lendária, {vencedor} derrota a criatura. 🐉","vencedor":"user"},
-  {"texto":"🧟 Uma cidade é tomada por mortos-vivos! {user} corre para a estação e {target} se esconde num hotel abandonado. Ao amanhecer, {vencedor} encontra a única saída. 🧟","vencedor":"target"},
-  {"texto":"🧙 Um feiticeiro oferece um único feitiço a cada um. {user} escolhe controlar o fogo e {target} escolhe controlar o gelo. A magia decide favorecer {vencedor}. 🔥❄️","vencedor":"user"},
-  {"texto":"👻 Uma mansão abandonada ganha vida durante a noite! {user} desce ao porão e {target} sobe ao sótão. O fantasma revela que {vencedor} era o escolhido. 👻","vencedor":"target"},
-  {"texto":"🏹 Uma floresta encantada esconde um tesouro antigo. {user} segue as pegadas e {target} decifra um mapa. Apenas {vencedor} chega primeiro à arca dourada. 🏹","vencedor":"user"},
-  {"texto":"🧛 Um castelo amaldiçoado fica cercado pela lua cheia. {user} enfrenta um vampiro e {target} procura a sala secreta. Quando o sol nasce, {vencedor} escapa. 🧛🌙","vencedor":"target"},
-  {"texto":"⚔️ Dois cavaleiros chegam ao mesmo torneio real. {user} usa uma espada longa e {target} usa uma lança. Após o último golpe, {vencedor} recebe a coroa. 👑","vencedor":"user"},
-  {"texto":"🧌 Um troll bloqueia a ponte do reino! {user} tenta negociar e {target} tenta atravessar escondido. O troll acaba deixando {vencedor} passar. 🧌","vencedor":"target"},
-  {"texto":"🏹 Um arqueiro misterioso desafia os dois diante do rei. {user} recebe três flechas e {target} recebe uma única flecha dourada. O alvo perfeito pertence a {vencedor}. 🎯","vencedor":"user"},
-  {"texto":"🗡️ Uma espada lendária surge de uma pedra. {user} tenta puxá-la com força e {target} tenta com calma. A espada escolhe {vencedor}. 🗡️","vencedor":"target"},
-  {"texto":"🐺 Uma matilha de lobos cerca os viajantes! {user} sobe numa árvore e {target} acende uma fogueira. Os lobos recuam diante de {vencedor}. 🐺🔥","vencedor":"target"},
-  {"texto":"🏰 Uma princesa é mantida numa torre por um feiticeiro. {user} sobe pela muralha e {target} enfrenta os guardas no portão. O resgate termina com {vencedor} como herói. 🏰","vencedor":"user"},
-  {"texto":"👑 O rei desaparece e deixa dois pretendentes ao trono. {user} apresenta a espada real e {target} apresenta a coroa perdida. O conselho escolhe {vencedor}. 👑","vencedor":"target"},
-  {"texto":"🧙‍♂️ Um alquimista entrega duas poções misteriosas. {user} bebe a poção azul e {target} bebe a vermelha. Uma delas concede força gigantesca: {vencedor} descobre qual. 🧪","vencedor":"user"},
-  {"texto":"🏹 Uma chuva de flechas cai sobre o campo de batalha! {user} encontra uma trincheira e {target} encontra um escudo gigante. Quando tudo termina, {vencedor} permanece ileso. 🛡️","vencedor":"target"},
-  {"texto":"🐎 Dois cavaleiros disputam uma corrida até o castelo. {user} monta um cavalo preto e {target} monta um cavalo branco. Na última curva, {vencedor} chega primeiro. 🐎","vencedor":"user"},
-  {"texto":"🧟‍♂️ Uma antiga cripta é aberta e libera uma legião de mortos! {user} encontra uma passagem secreta e {target} enfrenta os monstros. Apenas {vencedor} consegue sair. 💀","vencedor":"target"},
-  {"texto":"🔥 Um castelo pega fogo durante um banquete. {user} corre para a torre e {target} procura a saída subterrânea. A rota de {vencedor} leva à liberdade. 🔥🏰","vencedor":"user"},
-  {"texto":"🦅 Uma águia gigante sequestra os dois aventureiros! {user} tenta cortar as cordas e {target} tenta acalmá-la. A ave finalmente solta {vencedor}. 🦅","vencedor":"target"},
-  {"texto":"🌊 Uma tempestade destrói o navio! {user} encontra um bote e {target} encontra um pedaço de madeira. Depois de horas no mar, {vencedor} alcança a costa. 🌊","vencedor":"user"},
-  {"texto":"🏜️ Dois caçadores de tesouros chegam a um templo perdido. {user} escolhe a porta dourada e {target} escolhe a porta de pedra. O tesouro estava atrás de {vencedor}. 🏜️","vencedor":"target"},
-  {"texto":"🤠 Uma cidade do velho oeste fica em silêncio antes do duelo. {user} saca primeiro, mas {target} percebe uma armadilha. No fim, {vencedor} permanece no salão. 🤠","vencedor":"user"},
-  {"texto":"🕵️ Um detetive coloca os dois numa sala cheia de pistas. {user} encontra uma carta e {target} encontra uma fotografia. A pista decisiva estava com {vencedor}. 🕵️","vencedor":"target"},
-  {"texto":"🚂 Um trem desgovernado atravessa a noite! {user} corre para a locomotiva e {target} tenta acionar os freios de emergência. Apenas {vencedor} consegue parar o trem. 🚂","vencedor":"user"},
-  {"texto":"🎩 Dois espiões disputam uma mala secreta numa estação. {user} usa um disfarce e {target} usa um código falso. A agência escolhe {vencedor} para ficar com a mala. 🕵️","vencedor":"target"},
-  {"texto":"🧛‍♀️ Uma criatura imortal aparece num baile mascarado. {user} procura a saída e {target} procura a arma escondida. Quando as máscaras caem, {vencedor} vence. 🎭","vencedor":"user"},
-  {"texto":"🤖 Um laboratório secreto entra em lockdown! {user} tenta abrir a porta e {target} procura a chave de emergência. A porta se abre para {vencedor}. 🤖","vencedor":"target"},
-  {"texto":"🚀 Uma nave espacial perde o controle! {user} assume os comandos e {target} tenta reparar o motor. A tripulação é salva por {vencedor}. 🚀","vencedor":"user"},
-  {"texto":"⏳ Uma máquina do tempo manda os dois para uma época desconhecida. {user} encontra uma vila e {target} encontra um castelo. O portal de retorno aparece para {vencedor}. ⏳","vencedor":"target"},
-  {"texto":"🌌 Um portal cósmico começa a engolir uma cidade. {user} tenta fechá-lo e {target} tenta atravessá-lo. O universo escolhe {vencedor} para sobreviver. 🌌","vencedor":"user"},
-  {"texto":"🦸 Dois heróis chegam ao topo de um arranha-céu durante uma tempestade. {user} enfrenta o vilão e {target} salva os civis. No final, {vencedor} recebe os aplausos. ⚡","vencedor":"target"},
-  {"texto":"🧪 Um cientista maluco libera uma criatura gigantesca no laboratório. {user} encontra o antídoto e {target} encontra o botão de emergência. A cidade é salva por {vencedor}. 🧪","vencedor":"user"},
-  {"texto":"🎭 Durante um baile real, alguém rouba a joia da coroa. {user} segue o ladrão e {target} interroga os convidados. A joia aparece graças a {vencedor}. 💎","vencedor":"target"},
-  {"texto":"🌑 Um eclipse transforma a floresta em noite total. {user} acende uma tocha e {target} encontra um antigo amuleto. A maldição escolhe poupar {vencedor}. 🌑","vencedor":"user"},
-  {"texto":"🧙‍♀️ Uma bruxa oferece um acordo mágico: apenas um pode sair livre. {user} aceita o desafio e {target} tenta quebrar o feitiço. A bruxa liberta {vencedor}. 🪄","vencedor":"target"},
-  {"texto":"🏴‍☠️ Dois piratas encontram um mapa para um tesouro lendário. {user} navega até a ilha e {target} decifra as pistas. O baú acaba nas mãos de {vencedor}. 🏴‍☠️","vencedor":"user"},
-  {"texto":"🗺️ Uma ruína antiga esconde uma passagem para uma cidade perdida. {user} escolhe seguir as tochas e {target} segue as pegadas. A porta final se abre para {vencedor}. 🗿","vencedor":"target"},
-  {"texto":"🦂 Uma criatura venenosa invade o acampamento no deserto. {user} encontra um antídoto e {target} tenta capturá-la. Ao amanhecer, {vencedor} continua de pé. 🦂","vencedor":"user"},
-  {"texto":"🏔️ Uma avalanche começa no momento em que os dois chegam ao topo da montanha. {user} procura uma caverna e {target} desce pela encosta. O resgate encontra {vencedor}. 🏔️","vencedor":"target"},
-  {"texto":"🌲 Um caçador desaparece numa floresta sombria. {user} segue suas pegadas e {target} segue um rio. O caminho correto pertence a {vencedor}. 🌲","vencedor":"user"},
-  {"texto":"🧟‍♀️ Uma rainha morta-viva desperta dentro de uma catedral. {user} enfrenta seus soldados e {target} procura o artefato sagrado. O artefato acaba nas mãos de {vencedor}. ⛪","vencedor":"target"},
-  {"texto":"🛡️ Um reino é atacado durante a madrugada. {user} toca o sino de guerra e {target} fecha os portões. A defesa liderada por {vencedor} salva o castelo. 🛡️","vencedor":"user"},
-  {"texto":"🐉 Um ovo de dragão choca diante dos dois. {user} tenta treiná-lo e {target} tenta fugir. O dragão escolhe seguir {vencedor}. 🐉","vencedor":"target"},
-  {"texto":"🗡️ Um assassino mascarado invade uma taverna medieval. {user} pega uma espada e {target} pega uma cadeira. Por uma reviravolta absurda, {vencedor} derrota o invasor. 🍺⚔️","vencedor":"user"},
-  {"texto":"🍺 Uma taverna vira palco de uma briga lendária! {user} desafia todos para uma queda de braço e {target} sobe numa mesa. Quando a poeira baixa, {vencedor} está comemorando. 🍺","vencedor":"target"},
-  {"texto":"🦁 Dois gladiadores entram numa arena romana. {user} recebe uma espada e {target} recebe uma lança. Após o combate, apenas {vencedor} permanece de pé. 🏛️","vencedor":"user"},
-  {"texto":"🏛️ Uma cidade antiga é cercada por inimigos. {user} defende as muralhas e {target} lidera uma fuga pelos túneis. A história registra {vencedor} como sobrevivente. 🏛️","vencedor":"target"},
-  {"texto":"🧙‍♂️ Um conselho de magos escolhe dois campeões. {user} invoca um raio e {target} invoca uma tempestade. O último feitiço pertence a {vencedor}. ⚡","vencedor":"user"},
-  {"texto":"🕯️ Uma catedral abandonada esconde um artefato amaldiçoado. {user} entra sozinho e {target} leva uma tocha. Quando o artefato desperta, {vencedor} consegue escapar. 🕯️","vencedor":"target"},
-  {"texto":"🐺 Um lobo gigante guarda a passagem para o reino. {user} tenta enfrentá-lo e {target} tenta ganhar sua confiança. O portão se abre para {vencedor}. 🐺","vencedor":"user"},
-  {"texto":"👑 Dois nobres disputam uma antiga profecia. {user} encontra a espada sagrada e {target} encontra o livro da profecia. A coroa acaba pertencendo a {vencedor}. 👑","vencedor":"target"},
-  {"texto":"🌊 Uma cidade costeira é atacada por uma criatura marinha. {user} organiza os pescadores e {target} procura o antigo arpão do rei. O monstro é derrotado por {vencedor}. 🌊","vencedor":"user"},
-  {"texto":"🏹 Uma princesa desaparece antes da cerimônia de coroação. {user} segue pistas pela floresta e {target} procura informações no mercado. Quem a encontra primeiro é {vencedor}. 👑","vencedor":"target"},
-  {"texto":"🔥 Um antigo templo começa a desabar! {user} corre para recuperar o tesouro e {target} tenta salvar os sacerdotes. Quando o teto cai, {vencedor} consegue sair. 🔥","vencedor":"user"},
-  {"texto":"🧌 Um gigante exige um campeão para enfrentar sua ponte. {user} aceita o combate e {target} procura uma passagem alternativa. O gigante reconhece {vencedor} como vencedor. 🧌","vencedor":"target"},
-  {"texto":"⚔️ Dois guerreiros chegam às ruínas de uma fortaleza esquecida. {user} encontra uma armadura lendária e {target} encontra uma espada amaldiçoada. O destino escolhe {vencedor}. ⚔️","vencedor":"user"},
-  {"texto":"🌙 Uma lua vermelha surge sobre o reino. {user} procura o feiticeiro responsável e {target} procura o altar antigo. A maldição termina graças a {vencedor}. 🌙","vencedor":"target"},
-  {"texto":"🏰 Um castelo inteiro começa a desaparecer lentamente! {user} procura a sala do trono e {target} procura a biblioteca mágica. A solução estava com {vencedor}. 🏰✨","vencedor":"user"},
-  {"texto":"🕯️ Dois aventureiros entram numa masmorra sem mapa. {user} escolhe o corredor iluminado e {target} escolhe o corredor escuro. O caminho certo leva {vencedor} ao tesouro. 💰","vencedor":"target"},
-  {"texto":"🐲 Um dragão negro oferece um último desafio: apenas um pode atravessar a ponte. {user} enfrenta a criatura e {target} resolve seu enigma. O dragão deixa {vencedor} passar. 🐲","vencedor":"user"},
-  {"texto":"👻 Um castelo fantasma surge durante uma tempestade. {user} procura a sala do trono e {target} procura a saída. Ao amanhecer, apenas {vencedor} está do lado de fora. 👻","vencedor":"target"},
-  {"texto":"⚔️ A batalha final pelo reino começa! {user} lidera os cavaleiros e {target} lidera os arqueiros. Quando o estandarte cai, {vencedor} conquista a vitória. 🏰⚔️","vencedor":"user"},
-  {"texto":"👑 O último rei desaparece deixando apenas uma coroa e uma espada. {user} escolhe a espada e {target} escolhe a coroa. No fim, o reino pertence a {vencedor}. 👑","vencedor":"target"}
+  {
+    "texto": "⚔️ {user} e {target} se enfrentam diante do castelo. {vencedor} vence porque percebe uma abertura na defesa de {perdedor} e acerta o golpe decisivo. 🏰"
+  },
+  {
+    "texto": "🗡️ O duelo começa no salão do castelo. {vencedor} vence porque consegue desarmar {perdedor} com um movimento rápido e inesperado. ⚔️"
+  },
+  {
+    "texto": "🏹 {user} e {target} duelam em uma floresta sombria. {vencedor} vence porque usa as árvores para surpreender {perdedor} pelo lado. 🌲"
+  },
+  {
+    "texto": "🛡️ Os dois cavaleiros partem para o ataque. {vencedor} vence porque bloqueia o golpe de {perdedor} e contra-ataca imediatamente. ⚔️"
+  },
+  {
+    "texto": "🔥 O duelo acontece diante de uma grande fogueira. {vencedor} vence porque usa a luz e a sombra para confundir {perdedor}. 🔥"
+  },
+  {
+    "texto": "🏰 {user} e {target} duelam no topo das muralhas. {vencedor} vence porque força {perdedor} para uma posição sem saída. ⚔️"
+  },
+  {
+    "texto": "🧙‍♂️ Os dois magos iniciam um duelo de feitiços. {vencedor} vence porque consegue prever o próximo feitiço de {perdedor}. ✨"
+  },
+  {
+    "texto": "⚡ Um raio cai próximo aos dois durante o duelo. {vencedor} aproveita a distração e ataca {perdedor} antes que ele consiga reagir. ⚡"
+  },
+  {
+    "texto": "🗡️ O duelo acontece em um corredor estreito. {vencedor} vence porque não deixa {perdedor} espaço para movimentação. 🏰"
+  },
+  {
+    "texto": "🏹 Os dois se enfrentam em um antigo campo de batalha. {vencedor} vence porque desvia do primeiro ataque e encontra o ponto fraco de {perdedor}. 💀"
+  },
+  {
+    "texto": "🐉 Um dragão sobrevoa o campo enquanto os dois duelam. {vencedor} vence porque mantém a concentração enquanto {perdedor} se distrai. 🐉"
+  },
+  {
+    "texto": "🌧️ O duelo acontece durante uma tempestade. {vencedor} percebe que o chão está escorregadio e usa isso para derrubar {perdedor}. ⚔️"
+  },
+  {
+    "texto": "👑 {user} e {target} duelam pela coroa do reino. {vencedor} vence porque luta de maneira mais estratégica e faz {perdedor} cometer um erro. 👑"
+  },
+  {
+    "texto": "🗡️ O duelo parece equilibrado até {vencedor} perceber o padrão dos golpes de {perdedor}. Depois disso, nenhum ataque consegue acertá-lo. ⚔️"
+  },
+  {
+    "texto": "🏹 Os dois duelam sobre uma ponte de pedra. {vencedor} espera {perdedor} atacar primeiro e usa o próprio impulso dele contra ele. 🌉"
+  },
+  {
+    "texto": "🔥 {user} e {target} entram em um salão em chamas para decidir o duelo. {vencedor} vence porque mantém a calma enquanto {perdedor} entra em pânico. 🔥"
+  },
+  {
+    "texto": "⚔️ Os dois cavaleiros começam um duelo de espadas. {vencedor} vence porque sua defesa é perfeita e {perdedor} acaba ficando sem energia. 🛡️"
+  },
+  {
+    "texto": "🏰 O duelo acontece no pátio de uma fortaleza. {vencedor} usa uma finta para fazer {perdedor} atacar no momento errado. ⚔️"
+  },
+  {
+    "texto": "🧙 Uma feiticeira coloca os dois em um duelo mágico. {vencedor} vence porque guarda seu feitiço mais poderoso para o momento decisivo. ✨"
+  },
+  {
+    "texto": "🛡️ {user} e {target} duelam usando espadas e escudos. {vencedor} vence porque quebra o escudo de {perdedor} antes do golpe final. ⚔️"
+  },
+  {
+    "texto": "🌑 O duelo acontece à noite, com pouca luz. {vencedor} vence porque consegue ouvir os passos de {perdedor} e atacar antes de ser visto. 🌑"
+  },
+  {
+    "texto": "🏹 Os dois duelam em uma torre. {vencedor} vence porque encontra uma passagem lateral e surpreende {perdedor}. 🏰"
+  },
+  {
+    "texto": "👑 O rei observa o duelo entre {user} e {target}. {vencedor} vence porque consegue desarmar {perdedor} sem precisar acertar um golpe. 👑"
+  },
+  {
+    "texto": "🗡️ {user} e {target} duelam em uma arena medieval. {vencedor} vence porque é mais rápido e ataca antes que {perdedor} consiga reagir. 🏟️"
+  },
+  {
+    "texto": "🐺 Um lobo aparece ao redor da arena durante o duelo. {vencedor} usa a distração para assustar {perdedor} e consegue a abertura para vencer. 🐺"
+  },
+  {
+    "texto": "🏰 Os dois duelam em uma sala cheia de armaduras. {vencedor} usa uma delas como distração e pega {perdedor} desprevenido. ⚔️"
+  },
+  {
+    "texto": "🧙‍♂️ {user} e {target} travam um duelo de magia. {vencedor} vence porque consegue refletir o feitiço lançado por {perdedor}. ✨"
+  },
+  {
+    "texto": "⚔️ O duelo começa com os dois atacando ao mesmo tempo. {vencedor} consegue aparar o golpe de {perdedor} e contra-atacar primeiro. 🛡️"
+  },
+  {
+    "texto": "🏹 Os dois se enfrentam em um campo aberto. {vencedor} vence porque percebe que {perdedor} está cansando e espera o momento certo para atacar. ⚔️"
+  },
+  {
+    "texto": "🔥 Um incêndio começa durante o duelo. {vencedor} usa a fumaça para desaparecer da visão de {perdedor} e atacar de surpresa. 🔥"
+  },
+  {
+    "texto": "👑 {user} e {target} disputam o título de maior guerreiro do reino. {vencedor} vence porque consegue desarmar {perdedor} no último segundo. ⚔️"
+  },
+  {
+    "texto": "🗡️ O duelo acontece em uma masmorra escura. {vencedor} vence porque encontra uma brecha na armadura de {perdedor}. 💀"
+  },
+  {
+    "texto": "⚔️ Os dois cavaleiros duelam sob a chuva. {vencedor} vence porque mantém o equilíbrio enquanto {perdedor} escorrega durante um ataque. 🌧️"
+  },
+  {
+    "texto": "🏹 {user} e {target} se enfrentam em uma floresta encantada. {vencedor} vence porque usa o terreno para limitar os movimentos de {perdedor}. 🌲✨"
+  },
+  {
+    "texto": "🧙 Uma batalha mágica começa entre os dois. {vencedor} vence porque consegue quebrar a concentração de {perdedor} antes que ele termine o feitiço. ✨"
+  },
+  {
+    "texto": "🛡️ {user} e {target} duelam diante de centenas de soldados. {vencedor} vence porque resiste aos ataques de {perdedor} até encontrar uma abertura. ⚔️"
+  },
+  {
+    "texto": "🏰 O duelo acontece em uma ponte levadiça. {vencedor} vence porque usa a corrente da ponte para desequilibrar {perdedor}. ⚔️"
+  },
+  {
+    "texto": "🐉 Um dragão começa a destruir o castelo enquanto os dois duelam. {vencedor} continua focado enquanto {perdedor} olha para trás. 🐉"
+  },
+  {
+    "texto": "⚔️ O duelo parece completamente equilibrado. {vencedor} vence porque muda sua estratégia no último momento e pega {perdedor} desprevenido. 🗡️"
+  },
+  {
+    "texto": "🗡️ {user} e {target} duelam em um salão cheio de pilares. {vencedor} usa um pilar para bloquear o ataque de {perdedor} e contra-atacar. 🏰"
+  },
+  {
+    "texto": "🏹 Os dois se enfrentam em uma arena coberta de areia. {vencedor} vence porque levanta areia durante o ataque e deixa {perdedor} sem enxergar. 💨"
+  },
+  {
+    "texto": "⚔️ O duelo começa ao nascer do sol. {vencedor} usa o brilho refletido na espada de {perdedor} para criar uma distração e atacar. ☀️"
+  },
+  {
+    "texto": "🧙‍♂️ {user} e {target} duelam dentro de uma torre mágica. {vencedor} vence porque consegue cancelar o feitiço mais poderoso de {perdedor}. ✨"
+  },
+  {
+    "texto": "🔥 O chão da arena começa a pegar fogo. {vencedor} conduz {perdedor} para uma área sem saída antes que as chamas se aproximem. 🔥"
+  },
+  {
+    "texto": "🏰 Dois guerreiros se encontram no corredor de um castelo abandonado. {vencedor} escuta {perdedor} se aproximando e prepara uma emboscada. 👻"
+  },
+  {
+    "texto": "🛡️ {user} e {target} começam um duelo usando armas pesadas. {vencedor} vence porque espera {perdedor} cansar depois de vários ataques. ⚔️"
+  },
+  {
+    "texto": "🗡️ O duelo acontece em uma ponte sobre um rio. {vencedor} consegue quebrar a guarda de {perdedor} e derrubá-lo na água. 🌊"
+  },
+  {
+    "texto": "🏹 Os dois duelam em um castelo durante uma invasão. {vencedor} usa o caos da batalha para surpreender {perdedor}. 🏰"
+  },
+  {
+    "texto": "⚔️ {user} e {target} se enfrentam diante de um antigo rei. {vencedor} vence porque consegue antecipar cada movimento de {perdedor}. 👑"
+  },
+  {
+    "texto": "🧙 Uma maldição impede os dois de recuar. {vencedor} vence porque descobre primeiro como a magia funciona e usa isso contra {perdedor}. 🪄"
+  },
+  {
+    "texto": "🌙 O duelo acontece sob uma lua vermelha. {vencedor} vence porque consegue lutar no escuro melhor do que {perdedor}. 🌙⚔️"
+  },
+  {
+    "texto": "🏰 Os dois duelam em uma escadaria enorme. {vencedor} vence porque usa a altura a seu favor e coloca {perdedor} em desvantagem. ⚔️"
+  },
+  {
+    "texto": "👑 O duelo final pelo trono começa. {vencedor} vence porque permanece calmo enquanto {perdedor} luta tomado pela raiva e comete um erro. 👑⚔️"
+  }
 ]
