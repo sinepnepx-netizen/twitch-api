@@ -1,5 +1,8 @@
-import fs from "fs";
-import path from "path";
+function limparNome(nome) {
+  return String(nome || "")
+    .replace(/^@+/, "")
+    .trim();
+}
 
 const botsIgnorados = [
   "streamelements",
@@ -10,12 +13,6 @@ const botsIgnorados = [
   "sery_bot"
 ];
 
-function limparNome(nome) {
-  return String(nome || "")
-    .replace(/^@/, "")
-    .trim();
-}
-
 function escolher(lista) {
   return lista[
     Math.floor(Math.random() * lista.length)
@@ -24,154 +21,235 @@ function escolher(lista) {
 
 const julgamentos = [
   {
-    crime: "roubo de uma joalheria",
-    culpado: "@{target} foi considerado culpado por planejar o roubo da joalheria junto com @{terceiro}. 💎",
-    inocente: "@{target} foi considerado inocente no roubo da joalheria. A verdadeira vítima foi @{terceiro}, que estava no local na hora do crime. 💎"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma joalheria. As provas mostram que @TARGET planejou o crime e @TERCEIRO ajudou na fuga. 💎",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE no caso do roubo de uma joalheria. @TARGET acabou sendo vítima de uma armação, enquanto @TERCEIRO foi identificado como envolvido no crime. 💎"
   },
+
   {
-    crime: "assalto a um banco",
-    culpado: "@{target} foi considerado culpado pelo assalto ao banco e @{terceiro} acabou sendo identificado como cúmplice. 🏦",
-    inocente: "@{target} foi considerado inocente pelo assalto ao banco. @{terceiro} acabou sendo a verdadeira vítima do crime. 🏦"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo assalto a um banco. @TERCEIRO foi identificado como cúmplice durante a investigação. 🏦",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE no assalto ao banco. As provas mostraram que @TARGET foi incriminado injustamente, enquanto @TERCEIRO apareceu ligado ao crime. 🏦"
   },
+
   {
-    crime: "furto de uma coleção de videogames",
-    culpado: "@{target} foi considerado culpado por roubar uma coleção inteira de videogames com ajuda de @{terceiro}. 🎮",
-    inocente: "@{target} foi considerado inocente pelo furto da coleção de videogames. @{terceiro} foi quem acabou levando a culpa injustamente. 🎮"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo desaparecimento de uma coleção de videogames. @TERCEIRO ajudou a esconder os objetos roubados. 🎮",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo desaparecimento da coleção de videogames. @TARGET foi vítima de uma armação, e @TERCEIRO acabou sendo relacionado ao desaparecimento. 🎮"
   },
+
   {
-    crime: "invasão de uma mansão",
-    culpado: "@{target} foi considerado culpado pela invasão da mansão. @{terceiro} estava envolvido como cúmplice. 🏠",
-    inocente: "@{target} foi considerado inocente pela invasão da mansão. @{terceiro} era a pessoa que estava dentro da casa durante o crime. 🏠"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pela invasão de uma mansão. @TERCEIRO foi identificado como cúmplice do crime. 🏠",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pela invasão da mansão. A investigação mostrou que @TARGET foi acusado injustamente, enquanto @TERCEIRO estava envolvido no caso. 🏠"
   },
+
   {
-    crime: "desaparecimento de um diamante",
-    culpado: "@{target} foi considerado culpado pelo desaparecimento do diamante, enquanto @{terceiro} ajudou a esconder a joia. 💎",
-    inocente: "@{target} foi considerado inocente pelo desaparecimento do diamante. @{terceiro} foi a pessoa que encontrou a joia primeiro. 💎"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo desaparecimento de um diamante. @TERCEIRO ajudou a esconder a joia. 💎",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo desaparecimento do diamante. @TARGET foi vítima de uma armação e @TERCEIRO acabou sendo apontado como envolvido no crime. 💎"
   },
+
   {
-    crime: "roubo de uma obra de arte",
-    culpado: "@{target} foi considerado culpado pelo roubo da obra de arte e @{terceiro} foi seu cúmplice. 🖼️",
-    inocente: "@{target} foi considerado inocente pelo roubo da obra de arte. @{terceiro} acabou sendo a vítima que estava no museu. 🖼️"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma obra de arte. @TERCEIRO foi identificado como cúmplice. 🖼️",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da obra de arte. As provas mostraram que @TARGET foi incriminado, enquanto @TERCEIRO estava envolvido no caso. 🖼️"
   },
+
   {
-    crime: "fraude milionária",
-    culpado: "@{target} foi considerado culpado por aplicar uma fraude milionária com a ajuda de @{terceiro}. 💰",
-    inocente: "@{target} foi considerado inocente pela fraude milionária. @{terceiro} foi quem caiu no golpe. 💰"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO por uma fraude milionária. @TERCEIRO participou do esquema. 💰",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pela fraude milionária. @TARGET foi vítima de uma armação e @TERCEIRO acabou ligado ao golpe. 💰"
   },
+
   {
-    crime: "contrabando de objetos raros",
-    culpado: "@{target} foi considerado culpado por contrabandear objetos raros junto com @{terceiro}. 📦",
-    inocente: "@{target} foi considerado inocente pelo contrabando. @{terceiro} era quem transportava os objetos. 📦"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO por contrabando de objetos raros. @TERCEIRO ajudou no transporte. 📦",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo contrabando de objetos raros. A investigação mostrou que @TARGET foi incriminado, enquanto @TERCEIRO estava envolvido. 📦"
   },
+
   {
-    crime: "roubo de um carro esportivo",
-    culpado: "@{target} foi considerado culpado pelo roubo do carro esportivo. @{terceiro} ajudou na fuga. 🚗",
-    inocente: "@{target} foi considerado inocente pelo roubo do carro esportivo. @{terceiro} foi quem encontrou o carro abandonado. 🚗"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de um carro esportivo. @TERCEIRO ajudou na fuga. 🚗",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo do carro esportivo. @TARGET foi vítima de uma armação e @TERCEIRO acabou relacionado ao crime. 🚗"
   },
+
   {
-    crime: "sequestro de uma celebridade",
-    culpado: "@{target} foi considerado culpado pelo sequestro e @{terceiro} foi identificado como cúmplice. 🚨",
-    inocente: "@{target} foi considerado inocente pelo sequestro. @{terceiro} era a pessoa que estava sendo mantida como vítima. 🚨"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo sequestro de uma celebridade. @TERCEIRO foi identificado como cúmplice. 🚨",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo sequestro. A investigação mostrou que @TARGET foi incriminado injustamente, enquanto @TERCEIRO estava envolvido no caso. 🚨"
   },
+
   {
-    crime: "roubo de documentos secretos",
-    culpado: "@{target} foi considerado culpado pelo roubo de documentos secretos. @{terceiro} forneceu acesso ao local. 📁",
-    inocente: "@{target} foi considerado inocente pelo roubo dos documentos. @{terceiro} foi encontrado com os documentos. 📁"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de documentos secretos. @TERCEIRO forneceu acesso ao local. 📁",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo dos documentos. @TARGET foi vítima de uma armação e @TERCEIRO acabou relacionado ao desaparecimento. 📁"
   },
+
   {
-    crime: "sabotagem de uma empresa",
-    culpado: "@{target} foi considerado culpado pela sabotagem da empresa junto com @{terceiro}. 💻",
-    inocente: "@{target} foi considerado inocente pela sabotagem. @{terceiro} foi quem descobriu o problema primeiro. 💻"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pela sabotagem de uma empresa. @TERCEIRO participou do plano. 💻",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pela sabotagem. As provas mostraram que @TARGET foi incriminado e @TERCEIRO estava envolvido no caso. 💻"
   },
+
   {
-    crime: "roubo de dinheiro de um cassino",
-    culpado: "@{target} foi considerado culpado pelo roubo do cassino e @{terceiro} participou do plano. 🎰",
-    inocente: "@{target} foi considerado inocente pelo roubo do cassino. @{terceiro} foi a pessoa que perdeu dinheiro no golpe. 🎰"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de dinheiro de um cassino. @TERCEIRO participou do esquema. 🎰",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo do cassino. @TARGET foi vítima de uma armação e @TERCEIRO acabou ligado ao crime. 🎰"
   },
+
   {
-    crime: "invasão de um laboratório",
-    culpado: "@{target} foi considerado culpado pela invasão do laboratório com a ajuda de @{terceiro}. 🧪",
-    inocente: "@{target} foi considerado inocente pela invasão do laboratório. @{terceiro} foi encontrado dentro do laboratório. 🧪"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pela invasão de um laboratório. @TERCEIRO ajudou durante a invasão. 🧪",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pela invasão do laboratório. @TARGET foi incriminado injustamente e @TERCEIRO apareceu ligado ao caso. 🧪"
   },
+
   {
-    crime: "roubo de uma coroa real",
-    culpado: "@{target} foi considerado culpado por roubar a coroa real. @{terceiro} ajudou no plano. 👑",
-    inocente: "@{target} foi considerado inocente pelo roubo da coroa. @{terceiro} era quem estava protegendo o objeto. 👑"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma coroa real. @TERCEIRO ajudou no plano. 👑",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da coroa. @TARGET foi vítima de uma armação e @TERCEIRO acabou envolvido na investigação. 👑"
   },
+
   {
-    crime: "falsificação de documentos",
-    culpado: "@{target} foi considerado culpado por falsificar documentos com ajuda de @{terceiro}. 📜",
-    inocente: "@{target} foi considerado inocente pela falsificação. @{terceiro} foi quem apresentou os documentos falsos. 📜"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO por falsificação de documentos. @TERCEIRO participou do esquema. 📜",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pela falsificação. As provas mostraram que @TARGET foi incriminado e @TERCEIRO estava ligado ao caso. 📜"
   },
+
   {
-    crime: "roubo de uma carga de ouro",
-    culpado: "@{target} foi considerado culpado pelo roubo da carga de ouro. @{terceiro} ajudou a esconder o ouro. 🪙",
-    inocente: "@{target} foi considerado inocente pelo roubo da carga. @{terceiro} foi encontrado perto do esconderijo. 🪙"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma carga de ouro. @TERCEIRO ajudou a esconder o ouro. 🪙",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da carga de ouro. @TARGET foi vítima de uma armação e @TERCEIRO acabou relacionado ao crime. 🪙"
   },
+
   {
-    crime: "destruição de uma obra histórica",
-    culpado: "@{target} foi considerado culpado por destruir a obra histórica junto com @{terceiro}. 🏛️",
-    inocente: "@{target} foi considerado inocente pela destruição. @{terceiro} foi a pessoa que testemunhou tudo. 🏛️"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pela destruição de uma obra histórica. @TERCEIRO foi cúmplice. 🏛️",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pela destruição da obra histórica. @TARGET foi incriminado injustamente e @TERCEIRO apareceu envolvido no caso. 🏛️"
   },
+
   {
-    crime: "roubo de uma relíquia antiga",
-    culpado: "@{target} foi considerado culpado pelo roubo da relíquia e @{terceiro} ajudou a esconder o artefato. 🗿",
-    inocente: "@{target} foi considerado inocente pelo roubo da relíquia. @{terceiro} foi quem encontrou o artefato. 🗿"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma relíquia antiga. @TERCEIRO ajudou a esconder o artefato. 🗿",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da relíquia. @TARGET foi vítima de uma armação e @TERCEIRO acabou ligado ao desaparecimento. 🗿"
   },
+
   {
-    crime: "espionagem",
-    culpado: "@{target} foi considerado culpado por espionagem e @{terceiro} forneceu informações secretas. 🕵️",
-    inocente: "@{target} foi considerado inocente por espionagem. @{terceiro} era quem estava sendo investigado. 🕵️"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO por espionagem. @TERCEIRO forneceu informações secretas. 🕵️",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE por espionagem. A investigação mostrou que @TARGET foi incriminado, enquanto @TERCEIRO estava envolvido no caso. 🕵️"
   },
+
   {
-    crime: "roubo de uma fórmula secreta",
-    culpado: "@{target} foi considerado culpado pelo roubo da fórmula secreta com ajuda de @{terceiro}. 🧪",
-    inocente: "@{target} foi considerado inocente pelo roubo da fórmula. @{terceiro} foi quem encontrou a fórmula desaparecida. 🧪"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma fórmula secreta. @TERCEIRO ajudou no crime. 🧪",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da fórmula. @TARGET foi vítima de uma armação e @TERCEIRO acabou relacionado ao caso. 🧪"
   },
+
   {
-    crime: "extorsão",
-    culpado: "@{target} foi considerado culpado por extorsão e @{terceiro} ajudou a executar o plano. 💰",
-    inocente: "@{target} foi considerado inocente pela extorsão. @{terceiro} foi quem recebeu as ameaças. 💰"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO por extorsão. @TERCEIRO participou da execução do plano. 💰",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE por extorsão. @TARGET foi vítima de uma armação e @TERCEIRO apareceu ligado ao caso. 💰"
   },
+
   {
-    crime: "roubo de uma relíquia de museu",
-    culpado: "@{target} foi considerado culpado pelo roubo da relíquia do museu. @{terceiro} foi cúmplice. 🏺",
-    inocente: "@{target} foi considerado inocente pelo roubo da relíquia. @{terceiro} era o segurança que estava no local. 🏺"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pela invasão de um cofre. @TERCEIRO ajudou durante o crime. 🔐",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pela invasão do cofre. As provas mostraram que @TARGET foi incriminado e @TERCEIRO estava envolvido. 🔐"
   },
+
   {
-    crime: "invasão de um cofre",
-    culpado: "@{target} foi considerado culpado por invadir o cofre junto com @{terceiro}. 🔐",
-    inocente: "@{target} foi considerado inocente pela invasão do cofre. @{terceiro} foi encontrado perto do cofre. 🔐"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma fortuna. @TERCEIRO ajudou na fuga. 💰",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da fortuna. @TARGET foi vítima de uma armação e @TERCEIRO acabou relacionado ao crime. 💰"
   },
+
   {
-    crime: "roubo de uma fortuna",
-    culpado: "@{target} foi considerado culpado por roubar uma fortuna e @{terceiro} ajudou na fuga. 💰",
-    inocente: "@{target} foi considerado inocente pelo roubo da fortuna. @{terceiro} foi quem perdeu todo o dinheiro. 💰"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pela sabotagem de um trem. @TERCEIRO participou do plano. 🚂",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pela sabotagem do trem. @TARGET foi incriminado injustamente e @TERCEIRO apareceu ligado ao caso. 🚂"
   },
+
   {
-    crime: "sabotagem de um trem",
-    culpado: "@{target} foi considerado culpado pela sabotagem do trem. @{terceiro} participou do plano. 🚂",
-    inocente: "@{target} foi considerado inocente pela sabotagem do trem. @{terceiro} era um passageiro envolvido no caso. 🚂"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma espada lendária. @TERCEIRO ajudou a escondê-la. ⚔️",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da espada lendária. @TARGET foi vítima de uma armação e @TERCEIRO acabou envolvido no caso. ⚔️"
   },
+
   {
-    crime: "roubo de uma espada lendária",
-    culpado: "@{target} foi considerado culpado pelo roubo da espada lendária. @{terceiro} ajudou a escondê-la. ⚔️",
-    inocente: "@{target} foi considerado inocente pelo roubo da espada. @{terceiro} foi quem encontrou a arma. ⚔️"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pela invasão de uma fortaleza. @TERCEIRO participou do ataque. 🏰",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pela invasão da fortaleza. As provas mostraram que @TARGET foi incriminado e @TERCEIRO estava envolvido. 🏰"
   },
+
   {
-    crime: "invasão de uma fortaleza",
-    culpado: "@{target} foi considerado culpado pela invasão da fortaleza junto com @{terceiro}. 🏰",
-    inocente: "@{target} foi considerado inocente pela invasão da fortaleza. @{terceiro} estava dentro dela durante o ataque. 🏰"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma pintura milionária. @TERCEIRO foi cúmplice. 🎨",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da pintura. @TARGET foi vítima de uma armação e @TERCEIRO acabou relacionado ao crime. 🎨"
   },
+
   {
-    crime: "roubo de uma pintura milionária",
-    culpado: "@{target} foi considerado culpado pelo roubo da pintura milionária. @{terceiro} foi cúmplice. 🎨",
-    inocente: "@{target} foi considerado inocente pelo roubo da pintura. @{terceiro} era o proprietário da obra. 🎨"
-  },
-  {
-    crime: "fraude em um campeonato",
-    culpado: "@{target} foi considerado culpado por manipular o campeonato junto com @{terceiro}. 🏆",
-    inocente: "@{target} foi considerado inocente pela fraude no campeonato. @{terceiro} foi quem acabou prejudicado. 🏆"
+    culpado:
+      "⚖️ @TARGET foi considerado CULPADO por manipular um campeonato. @TERCEIRO participou do esquema. 🏆",
+
+    inocente:
+      "⚖️ @TARGET foi considerado INOCENTE pela manipulação do campeonato. @TARGET foi incriminado injustamente e @TERCEIRO acabou envolvido no caso. 🏆"
   }
 ];
 
@@ -195,22 +273,22 @@ export default function handler(req, res) {
 
   for (let i = 1; i <= 10; i++) {
 
-    const candidato =
-      req.query[`target${i}`];
+    if (!req.query[`target${i}`]) {
+      continue;
+    }
 
-    if (candidato) {
-      const nome = limparNome(candidato);
+    const nome =
+      limparNome(req.query[`target${i}`]);
 
-      const nomeLower =
-        nome.toLowerCase();
+    const nomeLower =
+      nome.toLowerCase();
 
-      if (
-        nomeLower !== userLower &&
-        nomeLower !== targetLower &&
-        !botsIgnorados.includes(nomeLower)
-      ) {
-        candidatos.push(nome);
-      }
+    if (
+      nomeLower !== userLower &&
+      nomeLower !== targetLower &&
+      !botsIgnorados.includes(nomeLower)
+    ) {
+      candidatos.push(nome);
     }
   }
 
@@ -222,28 +300,20 @@ export default function handler(req, res) {
       );
   }
 
-  const terceiro =
-    escolher(candidatos);
+  const terceiro = escolher(candidatos);
+  const julgamento = escolher(julgamentos);
 
-  const julgamento =
-    escolher(julgamentos);
+  const culpado = Math.random() < 0.5;
 
-  const culpado =
-    Math.random() < 0.5;
+  const texto = culpado
+    ? julgamento.culpado
+    : julgamento.inocente;
 
-  const texto =
-    culpado
-      ? julgamento.culpado
-      : julgamento.inocente;
-
-  const resultado =
-    texto
-      .replaceAll("{target}", `@${target}`)
-      .replaceAll("{terceiro}", `@${terceiro}`);
+  const resultado = texto
+    .replaceAll("@TARGET", `@${target}`)
+    .replaceAll("@TERCEIRO", `@${terceiro}`);
 
   return res
     .status(200)
-    .send(
-      `⚖️ JULGAMENTO: ${resultado}`
-    );
+    .send(resultado);
 }
