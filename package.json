@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "scripts": {
+    "start": "node bot-twitch.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "tmi.js": "^1.8.5"
   }
