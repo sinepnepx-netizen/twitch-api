@@ -203,14 +203,14 @@ export default async function handler(req, res) {
     });
 
     /*
-    O desafio dura exatamente 30 segundos.
+    O desafio dura exatamente 60 segundos.
     */
 
     await redis.set(
       desafioKey,
       dados,
       {
-        EX: 30
+        EX: 60
       }
     );
 
@@ -228,13 +228,13 @@ export default async function handler(req, res) {
 
     await redis.expire(
       listaKey,
-      30
+      60
     );
 
     return res
       .status(200)
       .send(
-        `⚔️ @${user} desafiou @${target} para um duelo! @${target}, digite !yd em até 30 segundos!`
+        `⚔️ @${user} desafiou @${target} para um duelo! @${target}, digite !yd em até 60 segundos!`
       );
   }
 
