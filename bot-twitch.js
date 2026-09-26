@@ -1,7 +1,7 @@
 import tmi from 'tmi.js';
 import http from 'http';
 
-// Servidor HTTP para manter o Render ativo
+// Servidor HTTP simples para manter o Render ativo
 const port = process.env.PORT || 3000;
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
@@ -41,11 +41,11 @@ function adicionarAoHistorico(usuario, pergunta, resposta) {
   }
 }
 
-// Modelos válidos da Groq
+// Modelos ATUAIS e ATIVOS na Groq (sem nenhum antigo/descontinuado)
 const modelosGroq = [
+  'llama-3.3-70b-versatile',
   'llama-3.1-8b-instant',
-  'llama3-8b-8192',
-  'llama3-70b-8192'
+  'mixtral-8x7b-32768'
 ];
 
 client.on('message', async (channel, tags, message, self) => {
@@ -80,7 +80,7 @@ Instruções:
 
     let respostaGerada = null;
 
-    // Tenta os modelos em sequência até um responder
+    // Tenta os modelos válidos em sequência
     for (const modelo of modelosGroq) {
       try {
         const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -101,12 +101,12 @@ Instruções:
         if (data.choices && data.choices[0]?.message?.content) {
           respostaGerada = data.choices[0].message.content.trim();
           console.log(`Sucesso com o modelo Groq: ${modelo}`);
-          break; // Sai do loop assim que consegue a resposta
+          break;
         } else {
           console.warn(`Modelo ${modelo} falhou:`, JSON.stringify(data));
         }
       } catch (err) {
-        console.error(`Erro ao tentar modelo ${modelo}:`, err);
+        console.error(`Erro no modelo ${modelo}:`, err);
       }
     }
 
