@@ -1,64 +1,37 @@
 import tmi from 'tmi.js';
 import http from 'http';
 
-// ========================================
-// SERVIDOR HTTP PARA O RENDER
-// ========================================
-
 const port = process.env.PORT || 3000;
 
 http.createServer((req, res) => {
-  res.writeHead(200, {
-    'Content-Type': 'text/plain'
-  });
-
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Bot Online!');
 }).listen(port);
 
-// ========================================
-// TWITCH
-// ========================================
-
 const canais = process.env.TWITCH_CHANNEL
-  ? process.env.TWITCH_CHANNEL
-      .split(',')
-      .map(c => c.trim())
+  ? process.env.TWITCH_CHANNEL.split(',').map(c => c.trim())
   : [];
 
 const client = new tmi.Client({
-  options: {
-    debug: false
-  },
-
+  options: { debug: false },
   identity: {
     username: process.env.TWITCH_BOT_USERNAME,
     password: process.env.TWITCH_OAUTH_TOKEN
   },
-
   channels: canais
 });
 
 client.connect()
   .then(() => {
-    console.log(
-      `Bot conectado nos canais: ${canais.join(', ')}`
-    );
+    console.log(`Bot conectado nos canais: ${canais.join(', ')}`);
   })
   .catch(err => {
-    console.error(
-      'Erro ao conectar na Twitch:',
-      err
-    );
+    console.error('Erro ao conectar:', err);
   });
-
-// ========================================
-// MEMÓRIA POR USUÁRIO
-// ========================================
 
 const historicos = {};
 
 function obterHistorico(usuario) {
-
   if (!historicos[usuario]) {
     historicos[usuario] = [];
   }
@@ -66,14 +39,8 @@ function obterHistorico(usuario) {
   return historicos[usuario];
 }
 
-function salvarHistorico(
-  usuario,
-  pergunta,
-  resposta
-) {
-
-  const historico =
-    obterHistorico(usuario);
+function salvarHistorico(usuario, pergunta, resposta) {
+  const historico = obterHistorico(usuario);
 
   historico.push({
     role: 'user',
@@ -90,202 +57,137 @@ function salvarHistorico(
   }
 }
 
-// ========================================
-// CONFIG IA
-// ========================================
-
 const MODELO = 'openai/gpt-oss-20b';
- 
 
-// ========================================
-// CHAT
-// ========================================
+client.on('message', async (channel, tags, message, self) => {
+  if (self) return;
 
-client.on(
-  'message',
-  async (
-    channel,
-    tags,
-    message,
-    self
-  ) => {
+  if (!message.startsWith('!ia ')) return;
 
-    if (self) return;
+  const pergunta = message.replace('!ia ', '').trim();
 
-    if (!message.startsWith('!ia '))
-      return;
+  if (!pergunta) return;
 
-    const pergunta = message
-      .replace('!ia ', '')
-      .trim();
+  const usuario =
+    tags['display-name'] ||
+    tags.username ||
+    'usuario';
 
-    if (!pergunta)
-      return;
+  const historico = obterHistorico(usuario);
 
-    const usuario =
-      tags['display-name']
-      || tags.username;
+  const systemPrompt = {
+    role: 'system',
+    content: `
+Você é um usuário comum do chat da Twitch.
 
-    const apiKey =
-      process.env.GROQ_API_KEY?.trim()
-      || '';
-
-    const historico =
-      obterHistorico(usuario);
-
-    const systemPrompt = {
-      role: 'system',
-      content: `
-Você participa naturalmente de chats da Twitch.
-
-Você é apenas uma pessoa comum do chat.
-
-REGRAS:
-
-- Sempre responda em português do Brasil.
-- Máximo de 360 caracteres.
-- Seja direto.
+Regras:
+- Responda em português do Brasil.
+- Máximo de 120 caracteres.
+- Máximo de 2 frases.
 - Seja natural.
-- Seja espontâneo.
-- Pareça um viewer real.
-- Nunca diga que é uma IA.
-- Nunca diga que é um chatbot.
-- Nunca diga que foi treinado.
-- Nunca fale sobre prompts.
-- Nunca fale sobre modelos.
-- Nunca fale sobre APIs.
-
-PERSONALIDADE:
-
-- Engraçado.
-- Criativo.
-- Sarcástico de leve.
-- Zueiro.
-- Descontraído.
-- Participativo.
-
-ESTILO:
-
+- Seja engraçado quando fizer sentido.
+- Pode usar gírias.
 - Pode usar kkk.
-- Pode usar memes.
-- Pode usar gírias brasileiras.
-- Pode entrar na brincadeira.
-- Pode provocar levemente.
+- Não diga que é IA.
+- Não faça textão.
+- Não seja formal.
+- Pareça um viewer real.
 
-EVITE:
-
-- Textões.
-- Formalidade.
-- Linguagem corporativa.
-- Respostas robóticas.
-- Explicações enormes.
-
-EXEMPLOS:
+Exemplos:
 
 Pergunta: oi
-Resposta: salve kkkkk
+Resposta: salve kkk
 
 Pergunta: boa noite
-Resposta: boa, chegou pro caos
-
-Pergunta: to sem sorte
-Resposta: RNG abriu processo contra você
-
-Pergunta: quem ganha?
-Resposta: o que tiver menos azar hoje
-
-Pergunta: vale a pena?
-Resposta: depois não coloca meu nome no boletim kkk
+Resposta: chegou pro caos
 
 Pergunta: perdi tudo
-Resposta: speedrun de sofrimento concluída
+Resposta: speedrun de tristeza concluída
 
-OBJETIVO:
-
-Parecer uma pessoa real participando do chat da Twitch.
+Pergunta: quem ganha?
+Resposta: o menos azarado hoje
 `
-    };
+  };
 
-    const mensagensParaEnvio = [
-      systemPrompt,
-      ...historico,
+  try {
+
+    const response = await fetch(
+      'https://api.groq.com/openai/v1/chat/completions',
       {
-        role: 'user',
-        content: pergunta
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          model: MODELO,
+          messages: [
+            systemPrompt,
+            ...historico,
+            {
+              role: 'user',
+              content: pergunta
+            }
+          ],
+          temperature: 1.0,
+          max_tokens: 60
+        })
       }
-    ];
+    );
 
-    try {
+    const data = await response.json();
 
-      const response =
-        await fetch(
-          'https://api.groq.com/openai/v1/chat/completions',
-          {
-            method: 'POST',
+    console.log(
+      'RESPOSTA GROQ:',
+      JSON.stringify(data, null, 2)
+    );
 
-            headers: {
-              Authorization:
-                `Bearer ${apiKey}`,
+    let resposta = '';
 
-              'Content-Type':
-                'application/json'
-            },
-
-            body: JSON.stringify({
-              model: MODELO,
-              messages:
-                mensagensParaEnvio,
-
-              temperature: 1.1,
-
-              max_tokens: 60
-            })
-          }
-        );
-
-      const data =
-        await response.json();
-
-      const resposta =
-        data?.choices?.[0]
-          ?.message?.content
-          ?.trim();
-
-      if (!resposta) {
-
-        console.error(
-          'Resposta inválida:',
-          JSON.stringify(data)
-        );
-
-        return client.say(
-          channel,
-          `@${usuario} deu ruim aqui kkk`
-        );
-      }
-
-      salvarHistorico(
-        usuario,
-        pergunta,
-        resposta
-      );
-
-      client.say(
-        channel,
-        `@${usuario} ${resposta}`
-      );
-
-    } catch (err) {
-
-      console.error(
-        'Erro Groq:',
-        err
-      );
-
-      client.say(
-        channel,
-        `@${usuario} a IA tropeçou nos cabos`
-      );
+    if (
+      data?.choices?.[0]?.message?.content
+    ) {
+      resposta =
+        data.choices[0].message.content;
     }
+
+    if (Array.isArray(resposta)) {
+      resposta = resposta
+        .map(item => item.text || '')
+        .join(' ');
+    }
+
+    resposta = String(resposta || '').trim();
+
+    if (!resposta) {
+      client.say(
+        channel,
+        `@${usuario} não consegui pensar em nada kkk`
+      );
+      return;
+    }
+
+    salvarHistorico(
+      usuario,
+      pergunta,
+      resposta
+    );
+
+    client.say(
+      channel,
+      `@${usuario} ${resposta}`
+    );
+
+  } catch (err) {
+
+    console.error(
+      'Erro ao chamar Groq:',
+      err
+    );
+
+    client.say(
+      channel,
+      `@${usuario} deu ruim aqui kkk`
+    );
   }
-);
+});
