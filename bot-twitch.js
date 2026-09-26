@@ -1,11 +1,21 @@
 import tmi from 'tmi.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import http from 'http';
 
-// Instância do Gemini
+// Servidor HTTP simples para o Render ficar satisfeito
+const port = process.env.PORT || 3000;
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Bot da Twitch rodando perfeitamente!');
+}).listen(port, () => {
+  console.log(`Servidor de status ouvindo na porta ${port}`);
+});
+
+// Configuração da IA Gemini (usando o modelo atualizado gemini-2.5-flash)
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
-const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
-// Converte a string "iambekinha,soubolinho" em lista de canais
+// Lista de canais da Twitch
 const canais = process.env.TWITCH_CHANNEL
   ? process.env.TWITCH_CHANNEL.split(',').map(c => c.trim())
   : [];
@@ -19,7 +29,7 @@ const client = new tmi.Client({
   channels: canais
 });
 
-client.connect().then(() => console.log(`Bot conectado aos canais: ${canais.join(', ')}`));
+client.connect().then(() => console.log(`Bot conectado com sucesso aos canais: ${canais.join(', ')}`));
 
 client.on('message', async (channel, tags, message, self) => {
   if (self) return;
@@ -39,6 +49,7 @@ client.on('message', async (channel, tags, message, self) => {
       client.say(channel, `@${usuario} ${respostaIA}`);
     } catch (error) {
       console.error('Erro na IA:', error);
+      client.say(channel, `@${usuario} Erro ao processar a resposta.`);
     }
   }
 });
