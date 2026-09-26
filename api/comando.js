@@ -12,7 +12,8 @@ const botsIgnorados = [
   "pokemoncommunitygame",
   "livepix",
   "twishgamebot",
-  "sery_bot"
+  "sery_bot",
+  "wbarretin"
 ];
 
 function embaralhar(lista) {
