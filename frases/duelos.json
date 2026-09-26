@@ -1,152 +1,52 @@
 [
-  {
-    "texto": "⚔️ O céu se parte ao meio quando {user} e {target} cruzam suas armas. Após um choque capaz de abalar montanhas, {vencedor} derrota {perdedor}. 🌩️"
-  },
-  {
-    "texto": "🐉 Um dragão ancestral desperta durante o combate. Enquanto {perdedor} recua diante da criatura, {vencedor} avança e garante a vitória. 🔥"
-  },
-  {
-    "texto": "👑 Diante dos reis dos sete reinos, o duelo começa. Após uma batalha digna das lendas, {vencedor} triunfa sobre {perdedor}. ⚔️"
-  },
-  {
-    "texto": "🌋 A arena está cercada por lava. Entre explosões e rochas derretidas, {vencedor} derruba {perdedor}. 🔥"
-  },
-  {
-    "texto": "⚡ Relâmpagos atingem o campo de batalha sem parar. No clarão de um deles, {vencedor} executa o golpe final em {perdedor}. ⚔️"
-  },
-  {
-    "texto": "🗡️ As lâminas colidem centenas de vezes. Quando a poeira baixa, apenas {vencedor} permanece de pé diante de {perdedor}. 🏆"
-  },
-  {
-    "texto": "🌌 Um portal dimensional se abre atrás dos combatentes. Mesmo diante do caos cósmico, {vencedor} supera {perdedor}. ✨"
-  },
-  {
-    "texto": "🏰 As muralhas tremem enquanto o duelo acontece. O confronto termina quando {vencedor} lança {perdedor} ao chão. ⚔️"
-  },
-  {
-    "texto": "💀 Espíritos antigos observam o combate em silêncio. Eles testemunham {vencedor} derrotar {perdedor} em uma batalha memorável. 👻"
-  },
-  {
-    "texto": "🔥 O ar fica tão quente que as espadas começam a brilhar. Ainda assim, {vencedor} consegue superar {perdedor}. ⚔️"
-  },
-  {
-    "texto": "🐺 Uma alcateia cerca a arena enquanto os dois duelam. Sem se intimidar, {vencedor} derrota {perdedor}. 🌕"
-  },
-  {
-    "texto": "⚔️ Os golpes são tão rápidos que ninguém consegue acompanhá-los. No fim do espetáculo, {vencedor} vence {perdedor}. 💥"
-  },
-  {
-    "texto": "🧙‍♂️ Runas mágicas surgem ao redor da arena. A energia explode quando {vencedor} supera {perdedor}. ✨"
-  },
-  {
-    "texto": "🌊 Ondas gigantes atingem a costa durante o combate. Mesmo lutando contra a fúria do mar, {vencedor} derrota {perdedor}. 🌊"
-  },
-  {
-    "texto": "🏔️ O duelo acontece no topo da montanha mais alta do reino. O eco da vitória de {vencedor} ressoa pelos vales após derrotar {perdedor}. ❄️"
-  },
-  {
-    "texto": "👹 Um demônio colossal surge para assistir ao combate. Impressionado, ele vê {vencedor} derrotar {perdedor}. 🔥"
-  },
-  {
-    "texto": "⚡ O choque das armas cria uma onda de energia que atravessa a arena. Quando tudo termina, {vencedor} derrotou {perdedor}. 💥"
-  },
-  {
-    "texto": "🛡️ O confronto dura horas. Exaustos, os dois lançam seus últimos ataques, mas apenas {vencedor} consegue atingir {perdedor}. ⚔️"
-  },
-  {
-    "texto": "🌑 A lua desaparece atrás das nuvens e a escuridão domina o campo. Das sombras surge a vitória de {vencedor} sobre {perdedor}. 🌙"
-  },
-  {
-    "texto": "🔥 Um vulcão entra em erupção ao fundo enquanto os guerreiros lutam. Entre cinzas e fogo, {vencedor} derrota {perdedor}. 🌋"
-  },
-  {
-    "texto": "🐉 Dois dragões batalham nos céus acima da arena. O espetáculo termina com {vencedor} vencendo {perdedor}. ⚔️"
-  },
-  {
-    "texto": "👑 A coroa lendária do império está em jogo. Após um duelo histórico, {vencedor} conquista a glória e derrota {perdedor}. 🏆"
-  },
-  {
-    "texto": "🌪️ Um tornado atravessa o campo de batalha. Aproveitando o caos, {vencedor} consegue derrotar {perdedor}. ⚔️"
-  },
-  {
-    "texto": "💎 Um artefato lendário desperta durante o confronto. Seu brilho ilumina a vitória de {vencedor} sobre {perdedor}. ✨"
-  },
-  {
-    "texto": "⚔️ Cada golpe faz a terra tremer. Após um combate brutal, {vencedor} derrota {perdedor} diante de todos. 🌍"
-  },
-  {
-    "texto": "🦅 Uma águia gigante sobrevoa os combatentes enquanto eles lutam. Seu grito ecoa no instante em que {vencedor} derrota {perdedor}. ⚔️"
-  },
-  {
-    "texto": "🌌 As estrelas parecem desaparecer quando os dois liberam todo seu poder. No fim, {vencedor} supera {perdedor}. ✨"
-  },
-  {
-    "texto": "🏛️ Os deuses observam do alto enquanto o duelo acontece. Após uma batalha lendária, {vencedor} derrota {perdedor}. ⚡"
-  },
-  {
-    "texto": "🔥 A arena inteira está em chamas. Mesmo cercado pelo fogo, {vencedor} encontra forças para derrotar {perdedor}. ⚔️"
-  },
-  {
-    "texto": "🐲 O rugido de uma criatura ancestral ecoa pelo reino. Nem isso impede {vencedor} de derrotar {perdedor}. ⚔️"
-  },
-  {
-    "texto": "⚔️ O combate é tão intenso que o chão se quebra sob os guerreiros. Ainda assim, {vencedor} derrota {perdedor}. 💥"
-  },
-  {
-    "texto": "🌠 Um meteoro cruza o céu durante o confronto. Sob sua luz, {vencedor} conquista a vitória contra {perdedor}. ☄️"
-  },
-  {
-    "texto": "👻 Fantasmas de antigos campeões cercam a arena. Eles testemunham {vencedor} derrotar {perdedor}. 💀"
-  },
-  {
-    "texto": "🧙‍♂️ Feitiços proibidos são liberados durante a batalha. Quando a energia se dissipa, {vencedor} triunfa sobre {perdedor}. ✨"
-  },
-  {
-    "texto": "🏹 Flechas mágicas cruzam os céus como estrelas cadentes. Em meio ao caos, {vencedor} derrota {perdedor}. ⚔️"
-  },
-  {
-    "texto": "⚡ Um trovão ensurdecedor acompanha o golpe final. O impacto confirma a vitória de {vencedor} sobre {perdedor}. 🌩️"
-  },
-  {
-    "texto": "🛡️ Os escudos se despedaçam, as espadas se dobram e a batalha continua. No final, {vencedor} derrota {perdedor}. ⚔️"
-  },
-  {
-    "texto": "🌑 Uma eclipse cobre o céu durante o duelo. Sob a escuridão total, {vencedor} derrota {perdedor}. 🌙"
-  },
-  {
-    "texto": "🔥 O próprio chão explode sob os combatentes. Entre fogo e fumaça, {vencedor} derrota {perdedor}. 💥"
-  },
-  {
-    "texto": "🐉 O espírito de um dragão ancestral envolve a arena. Sua energia acompanha {vencedor} rumo à vitória contra {perdedor}. ⚔️"
-  },
-  {
-    "texto": "⚔️ Os dois liberam seu poder máximo ao mesmo tempo. A colisão é devastadora, mas apenas {vencedor} derrota {perdedor}. 💫"
-  },
-  {
-    "texto": "👑 O destino do reino é decidido neste combate. Quando tudo termina, {vencedor} derrota {perdedor} e entra para a história. 📜"
-  },
-  {
-    "texto": "🌪️ Raios, vento e fogo se misturam em uma tempestade mágica. No centro dela, {vencedor} derrota {perdedor}. ⚡"
-  },
-  {
-    "texto": "💀 As portas do submundo se abrem atrás da arena. Nem os mortos conseguem desviar o olhar da vitória de {vencedor} sobre {perdedor}. 👻"
-  },
-  {
-    "texto": "🏰 O castelo inteiro estremece com o impacto dos golpes. Após uma batalha colossal, {vencedor} derrota {perdedor}. ⚔️"
-  },
-  {
-    "texto": "🦁 O rugido de uma besta lendária ecoa pelo campo. Inspirado pela fúria da batalha, {vencedor} derrota {perdedor}. 🔥"
-  },
-  {
-    "texto": "🌌 O tecido da realidade se rompe durante o confronto. Mesmo diante do impossível, {vencedor} derrota {perdedor}. ✨"
-  },
-  {
-    "texto": "⚡ Uma explosão de energia pode ser vista a quilômetros de distância. Quando ela desaparece, {vencedor} derrotou {perdedor}. 💥"
-  },
-  {
-    "texto": "🐲 O sangue de dragões corre pelas veias dos combatentes. Após um confronto lendário, {vencedor} derrota {perdedor}. 🔥"
-  },
-  {
-    "texto": "🏆 Bardos cantarão sobre esta batalha por gerações. O motivo é simples: {vencedor} derrotou {perdedor} em um duelo inesquecível. 🎶"
-  }
+  {"texto":"⚔️ {user} e {target} iniciam o duelo em uma arena de pedra. Após uma troca intensa de golpes, {perdedor} parece ter a vantagem, mas {vencedor} encontra uma abertura inesperada e vira a luta."},
+  {"texto":"🗡️ As lâminas se cruzam sem parar. Quando {perdedor} avança para finalizar o combate, {vencedor} desvia no último instante e responde com um golpe preciso."},
+  {"texto":"🏰 No pátio do castelo, os dois guerreiros travam uma batalha equilibrada. Um erro de cálculo de {perdedor} acaba dando a vitória para {vencedor}."},
+  {"texto":"🌧️ Sob uma chuva forte, os combatentes mal conseguem enxergar. Mesmo assim, {vencedor} percebe um movimento errado de {perdedor} e aproveita a chance."},
+  {"texto":"⚔️ O duelo começa agressivo. {perdedor} pressiona sem parar, mas acaba ficando exposto a um contra-ataque perfeito de {vencedor}."},
+  {"texto":"🛡️ Escudo contra espada. Após vários ataques bloqueados, {vencedor} muda o ritmo da luta e pega {perdedor} desprevenido."},
+  {"texto":"🌉 Sobre uma ponte estreita, cada passo importa. Quando {perdedor} tenta um ataque arriscado, {vencedor} aproveita o desequilíbrio para vencer."},
+  {"texto":"🏹 O combate se estende por vários minutos. Quando ambos parecem exaustos, {vencedor} encontra forças para um último ataque certeiro."},
+  {"texto":"⚡ As armas se chocam tão forte que faíscas voam pela arena. No instante seguinte, {vencedor} quebra a defesa de {perdedor}."},
+  {"texto":"🗡️ O duelo parece decidido quando {perdedor} encurrala {vencedor}. Mas uma esquiva perfeita muda completamente o rumo da batalha."},
+  {"texto":"🌲 Entre árvores antigas, os dois duelam em alta velocidade. {vencedor} desaparece da visão de {perdedor} por um segundo e surge com o golpe decisivo."},
+  {"texto":"⚔️ Nenhum dos dois consegue vantagem por muito tempo. No momento em que {perdedor} baixa a guarda, {vencedor} aproveita."},
+  {"texto":"🏟️ A multidão vibra a cada golpe. Quando tudo parece perdido, {vencedor} surpreende {perdedor} com uma finta perfeita."},
+  {"texto":"🛡️ O combate vira uma disputa de resistência. No fim, {perdedor} começa a perder o ritmo e {vencedor} assume o controle."},
+  {"texto":"⚔️ Os dois avançam ao mesmo tempo para o ataque final. Apenas {vencedor} consegue acertar primeiro."},
+  {"texto":"🌙 Sob a luz da lua, as sombras dificultam cada movimento. {vencedor} usa isso a seu favor e derrota {perdedor}."},
+  {"texto":"🏰 Em um corredor estreito, não há espaço para erros. {perdedor} tenta forçar passagem, mas acaba abrindo espaço para {vencedor} contra-atacar."},
+  {"texto":"🗡️ O duelo é rápido e brutal. Depois de uma sequência de golpes impressionante, {vencedor} encontra a brecha que precisava."},
+  {"texto":"⚔️ {perdedor} consegue desarmar {vencedor}, e a batalha parece encerrada. Porém, {vencedor} reage mais rápido e vira o combate."},
+  {"texto":"🌧️ O chão escorregadio dificulta a movimentação. Quando {perdedor} perde o equilíbrio por um instante, {vencedor} não desperdiça a oportunidade."},
+  {"texto":"🏹 Os combatentes se estudam antes de agir. Quem toma a iniciativa é {perdedor}, mas quem acerta o golpe decisivo é {vencedor}."},
+  {"texto":"⚔️ A luta se torna cada vez mais intensa. Depois de bloquear uma sequência inteira de ataques, {vencedor} responde à altura."},
+  {"texto":"🛡️ O impacto das armas ecoa por toda a arena. Em meio à troca de golpes, {vencedor} encontra a posição perfeita para finalizar."},
+  {"texto":"🌲 Em uma clareira silenciosa, os dois duelam sem recuar. A batalha termina quando {vencedor} prevê o próximo movimento de {perdedor}."},
+  {"texto":"⚡ Um ataque poderoso de {perdedor} quase decide o confronto. Quase. {vencedor} resiste e vira a luta logo em seguida."},
+  {"texto":"🗡️ As espadas giram em velocidade impressionante. Quando a troca de golpes termina, {vencedor} leva a melhor."},
+  {"texto":"🏰 O duelo atravessa todo o salão principal. Encurralado por um momento, {vencedor} encontra uma saída improvável e derrota {perdedor}."},
+  {"texto":"⚔️ Nenhum espectador consegue prever quem vencerá. No fim, um único movimento de {vencedor} decide tudo."},
+  {"texto":"🌉 A ponte treme sob os passos dos combatentes. Quando {perdedor} tenta avançar demais, {vencedor} aproveita a abertura."},
+  {"texto":"🛡️ A defesa de {vencedor} parece intransponível. Após frustrar vários ataques, ele finalmente encontra a chance de derrotar {perdedor}."},
+  {"texto":"🏹 O duelo chega ao limite quando ambos partem para tudo ou nada. O ataque de {vencedor} é mais rápido."},
+  {"texto":"⚔️ Durante boa parte da luta, {perdedor} parece dominar. Mas {vencedor} estava apenas esperando a oportunidade certa."},
+  {"texto":"🗡️ Um golpe, dois golpes, três golpes seguidos. {perdedor} consegue bloquear todos, mas não o último ataque de {vencedor}."},
+  {"texto":"🌙 O silêncio toma conta da arena antes do desfecho. Em um único movimento, {vencedor} encerra o duelo."},
+  {"texto":"⚔️ Os dois guerreiros trocam ataques sem descanso. Quando o cansaço começa a aparecer, {vencedor} encontra vantagem."},
+  {"texto":"🏰 No topo das muralhas, o vento dificulta a batalha. Mesmo assim, {vencedor} mantém a calma e supera {perdedor}."},
+  {"texto":"🛡️ A luta entra em um impasse. Então {vencedor} muda completamente sua estratégia e surpreende {perdedor}."},
+  {"texto":"⚡ O choque das armas faz faíscas iluminarem a cena. Logo depois, {vencedor} assume o controle do combate."},
+  {"texto":"🌧️ A chuva esconde os movimentos dos combatentes. Quando {perdedor} percebe o que aconteceu, {vencedor} já virou a luta."},
+  {"texto":"⚔️ O duelo parece interminável. Após uma longa sequência de golpes, {vencedor} finalmente quebra a guarda de {perdedor}."},
+  {"texto":"🗡️ {perdedor} arrisca um ataque decisivo para encerrar a batalha. {vencedor} lê o movimento e responde imediatamente."},
+  {"texto":"🏹 A distância entre os dois desaparece em um instante. Depois de uma troca feroz de golpes, {vencedor} sai vencedor."},
+  {"texto":"🛡️ Cada ataque é defendido por pouco. Quando a tensão chega ao máximo, {vencedor} encontra uma abertura mínima e aproveita."},
+  {"texto":"⚔️ O combate muda de rumo várias vezes. No último momento, {vencedor} consegue surpreender {perdedor}."},
+  {"texto":"🌲 As árvores ao redor testemunham uma batalha intensa. Depois de uma longa disputa, {vencedor} leva a melhor."},
+  {"texto":"🏟️ A arena inteira prende a respiração. Quando a poeira baixa, {vencedor} permanece de pé diante de {perdedor}."},
+  {"texto":"⚡ Um ataque arriscado de {perdedor} quase funciona. Quase. {vencedor} encontra a brecha e encerra o combate."},
+  {"texto":"🗡️ O duelo parece equilibrado até os últimos segundos. Então {vencedor} executa uma finta perfeita e supera {perdedor}."},
+  {"texto":"⚔️ Ambos atacam ao mesmo tempo. O impacto ecoa pela arena, mas é {vencedor} quem sai triunfante."},
+  {"texto":"🏆 Depois de uma batalha cheia de reviravoltas, ataques bloqueados e contra-ataques precisos, {vencedor} derrota {perdedor} e conquista a vitória."}
 ]
