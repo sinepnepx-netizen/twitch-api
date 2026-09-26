@@ -1,52 +1,152 @@
 [
-  {"texto":"⚔️ {user} e {target} iniciam o duelo em uma arena de pedra. Após uma troca intensa de golpes, {perdedor} parece ter a vantagem, mas {vencedor} encontra uma abertura inesperada e vira a luta."},
-  {"texto":"🗡️ As lâminas se cruzam sem parar. Quando {perdedor} avança para finalizar o combate, {vencedor} desvia no último instante e responde com um golpe preciso."},
-  {"texto":"🏰 No pátio do castelo, os dois guerreiros travam uma batalha equilibrada. Um erro de cálculo de {perdedor} acaba dando a vitória para {vencedor}."},
-  {"texto":"🌧️ Sob uma chuva forte, os combatentes mal conseguem enxergar. Mesmo assim, {vencedor} percebe um movimento errado de {perdedor} e aproveita a chance."},
-  {"texto":"⚔️ O duelo começa agressivo. {perdedor} pressiona sem parar, mas acaba ficando exposto a um contra-ataque perfeito de {vencedor}."},
-  {"texto":"🛡️ Escudo contra espada. Após vários ataques bloqueados, {vencedor} muda o ritmo da luta e pega {perdedor} desprevenido."},
-  {"texto":"🌉 Sobre uma ponte estreita, cada passo importa. Quando {perdedor} tenta um ataque arriscado, {vencedor} aproveita o desequilíbrio para vencer."},
-  {"texto":"🏹 O combate se estende por vários minutos. Quando ambos parecem exaustos, {vencedor} encontra forças para um último ataque certeiro."},
-  {"texto":"⚡ As armas se chocam tão forte que faíscas voam pela arena. No instante seguinte, {vencedor} quebra a defesa de {perdedor}."},
-  {"texto":"🗡️ O duelo parece decidido quando {perdedor} encurrala {vencedor}. Mas uma esquiva perfeita muda completamente o rumo da batalha."},
-  {"texto":"🌲 Entre árvores antigas, os dois duelam em alta velocidade. {vencedor} desaparece da visão de {perdedor} por um segundo e surge com o golpe decisivo."},
-  {"texto":"⚔️ Nenhum dos dois consegue vantagem por muito tempo. No momento em que {perdedor} baixa a guarda, {vencedor} aproveita."},
-  {"texto":"🏟️ A multidão vibra a cada golpe. Quando tudo parece perdido, {vencedor} surpreende {perdedor} com uma finta perfeita."},
-  {"texto":"🛡️ O combate vira uma disputa de resistência. No fim, {perdedor} começa a perder o ritmo e {vencedor} assume o controle."},
-  {"texto":"⚔️ Os dois avançam ao mesmo tempo para o ataque final. Apenas {vencedor} consegue acertar primeiro."},
-  {"texto":"🌙 Sob a luz da lua, as sombras dificultam cada movimento. {vencedor} usa isso a seu favor e derrota {perdedor}."},
-  {"texto":"🏰 Em um corredor estreito, não há espaço para erros. {perdedor} tenta forçar passagem, mas acaba abrindo espaço para {vencedor} contra-atacar."},
-  {"texto":"🗡️ O duelo é rápido e brutal. Depois de uma sequência de golpes impressionante, {vencedor} encontra a brecha que precisava."},
-  {"texto":"⚔️ {perdedor} consegue desarmar {vencedor}, e a batalha parece encerrada. Porém, {vencedor} reage mais rápido e vira o combate."},
-  {"texto":"🌧️ O chão escorregadio dificulta a movimentação. Quando {perdedor} perde o equilíbrio por um instante, {vencedor} não desperdiça a oportunidade."},
-  {"texto":"🏹 Os combatentes se estudam antes de agir. Quem toma a iniciativa é {perdedor}, mas quem acerta o golpe decisivo é {vencedor}."},
-  {"texto":"⚔️ A luta se torna cada vez mais intensa. Depois de bloquear uma sequência inteira de ataques, {vencedor} responde à altura."},
-  {"texto":"🛡️ O impacto das armas ecoa por toda a arena. Em meio à troca de golpes, {vencedor} encontra a posição perfeita para finalizar."},
-  {"texto":"🌲 Em uma clareira silenciosa, os dois duelam sem recuar. A batalha termina quando {vencedor} prevê o próximo movimento de {perdedor}."},
-  {"texto":"⚡ Um ataque poderoso de {perdedor} quase decide o confronto. Quase. {vencedor} resiste e vira a luta logo em seguida."},
-  {"texto":"🗡️ As espadas giram em velocidade impressionante. Quando a troca de golpes termina, {vencedor} leva a melhor."},
-  {"texto":"🏰 O duelo atravessa todo o salão principal. Encurralado por um momento, {vencedor} encontra uma saída improvável e derrota {perdedor}."},
-  {"texto":"⚔️ Nenhum espectador consegue prever quem vencerá. No fim, um único movimento de {vencedor} decide tudo."},
-  {"texto":"🌉 A ponte treme sob os passos dos combatentes. Quando {perdedor} tenta avançar demais, {vencedor} aproveita a abertura."},
-  {"texto":"🛡️ A defesa de {vencedor} parece intransponível. Após frustrar vários ataques, ele finalmente encontra a chance de derrotar {perdedor}."},
-  {"texto":"🏹 O duelo chega ao limite quando ambos partem para tudo ou nada. O ataque de {vencedor} é mais rápido."},
-  {"texto":"⚔️ Durante boa parte da luta, {perdedor} parece dominar. Mas {vencedor} estava apenas esperando a oportunidade certa."},
-  {"texto":"🗡️ Um golpe, dois golpes, três golpes seguidos. {perdedor} consegue bloquear todos, mas não o último ataque de {vencedor}."},
-  {"texto":"🌙 O silêncio toma conta da arena antes do desfecho. Em um único movimento, {vencedor} encerra o duelo."},
-  {"texto":"⚔️ Os dois guerreiros trocam ataques sem descanso. Quando o cansaço começa a aparecer, {vencedor} encontra vantagem."},
-  {"texto":"🏰 No topo das muralhas, o vento dificulta a batalha. Mesmo assim, {vencedor} mantém a calma e supera {perdedor}."},
-  {"texto":"🛡️ A luta entra em um impasse. Então {vencedor} muda completamente sua estratégia e surpreende {perdedor}."},
-  {"texto":"⚡ O choque das armas faz faíscas iluminarem a cena. Logo depois, {vencedor} assume o controle do combate."},
-  {"texto":"🌧️ A chuva esconde os movimentos dos combatentes. Quando {perdedor} percebe o que aconteceu, {vencedor} já virou a luta."},
-  {"texto":"⚔️ O duelo parece interminável. Após uma longa sequência de golpes, {vencedor} finalmente quebra a guarda de {perdedor}."},
-  {"texto":"🗡️ {perdedor} arrisca um ataque decisivo para encerrar a batalha. {vencedor} lê o movimento e responde imediatamente."},
-  {"texto":"🏹 A distância entre os dois desaparece em um instante. Depois de uma troca feroz de golpes, {vencedor} sai vencedor."},
-  {"texto":"🛡️ Cada ataque é defendido por pouco. Quando a tensão chega ao máximo, {vencedor} encontra uma abertura mínima e aproveita."},
-  {"texto":"⚔️ O combate muda de rumo várias vezes. No último momento, {vencedor} consegue surpreender {perdedor}."},
-  {"texto":"🌲 As árvores ao redor testemunham uma batalha intensa. Depois de uma longa disputa, {vencedor} leva a melhor."},
-  {"texto":"🏟️ A arena inteira prende a respiração. Quando a poeira baixa, {vencedor} permanece de pé diante de {perdedor}."},
-  {"texto":"⚡ Um ataque arriscado de {perdedor} quase funciona. Quase. {vencedor} encontra a brecha e encerra o combate."},
-  {"texto":"🗡️ O duelo parece equilibrado até os últimos segundos. Então {vencedor} executa uma finta perfeita e supera {perdedor}."},
-  {"texto":"⚔️ Ambos atacam ao mesmo tempo. O impacto ecoa pela arena, mas é {vencedor} quem sai triunfante."},
-  {"texto":"🏆 Depois de uma batalha cheia de reviravoltas, ataques bloqueados e contra-ataques precisos, {vencedor} derrota {perdedor} e conquista a vitória."}
+  {
+    "texto": "⚔️ {user} e {target} avançam ao mesmo tempo na arena. {perdedor} domina os primeiros ataques e força {vencedor} a recuar, mas uma esquiva perfeita muda tudo. {vencedor} encontra uma abertura, aplica o golpe decisivo e derrota {perdedor}. 🏆"
+  },
+  {
+    "texto": "🗡️ No pátio do castelo, as lâminas se chocam sem parar. Quando {perdedor} tenta encerrar o combate com um ataque arriscado, {vencedor} prevê o movimento e contra-ataca. {perdedor} cai derrotado e {vencedor} conquista a vitória. ⚔️"
+  },
+  {
+    "texto": "🌧️ Sob uma chuva intensa, os dois duelam em terreno escorregadio. {perdedor} parece estar no controle da luta, mas perde o equilíbrio por um instante. {vencedor} aproveita a oportunidade e derrota {perdedor}. ⚔️"
+  },
+  {
+    "texto": "🏰 O duelo ecoa pelas muralhas do castelo. Após uma longa troca de golpes, {perdedor} baixa a guarda por um segundo. {vencedor} não desperdiça a chance e derrota {perdedor}. 🏆"
+  },
+  {
+    "texto": "🛡️ Escudo contra espada. Nenhum dos dois consegue vantagem até que {vencedor} muda completamente sua estratégia. A mudança surpreende {perdedor}, que acaba derrotado. ⚔️"
+  },
+  {
+    "texto": "🌉 Sobre uma ponte estreita, cada passo é arriscado. {perdedor} avança agressivamente, mas deixa sua defesa aberta. {vencedor} reage rápido, derrota {perdedor} e vence o duelo. ⚔️"
+  },
+  {
+    "texto": "⚔️ O combate parece decidido quando {perdedor} consegue desarmar {vencedor}. Porém, em uma reviravolta inesperada, {vencedor} recupera a arma e derrota {perdedor}. 🏆"
+  },
+  {
+    "texto": "🌲 Entre as árvores da floresta, os dois desaparecem e reaparecem entre golpes rápidos. Quando {perdedor} acredita ter encontrado o adversário, {vencedor} surge por outro ângulo e o derrota. ⚔️"
+  },
+  {
+    "texto": "🗡️ Faíscas voam a cada choque de espadas. Depois de vários ataques defendidos, {vencedor} quebra a guarda de {perdedor}, derrota o rival e conquista a vitória. 🏆"
+  },
+  {
+    "texto": "⚡ A luta se torna cada vez mais rápida. {perdedor} tenta pressionar até o fim, mas {vencedor} encontra o momento perfeito para virar o combate e derrotá-lo. ⚔️"
+  },
+  {
+    "texto": "🏟️ A multidão vibra a cada golpe. Quando todos acreditam que {perdedor} venceu, {vencedor} encontra forças para um último contra-ataque e derrota {perdedor}. 🏆"
+  },
+  {
+    "texto": "🌙 Sob a luz da lua, as sombras escondem os movimentos dos combatentes. {perdedor} ataca primeiro, mas {vencedor} prevê a investida, contra-ataca e vence o duelo. ⚔️"
+  },
+  {
+    "texto": "⚔️ Os dois avançam sem hesitar. Após uma sequência brutal de golpes, {vencedor} consegue atravessar a defesa de {perdedor} e garantir a vitória. 🏆"
+  },
+  {
+    "texto": "🛡️ O combate entra em um impasse. Quando {perdedor} tenta quebrar o equilíbrio da luta, acaba deixando uma brecha. {vencedor} aproveita e derrota {perdedor}. ⚔️"
+  },
+  {
+    "texto": "🏰 O duelo atravessa corredores e escadarias do castelo. Encurralado por um momento, {vencedor} encontra uma saída improvável, vira a luta e derrota {perdedor}. ⚔️"
+  },
+  {
+    "texto": "🌧️ O chão molhado dificulta os movimentos. {perdedor} tenta finalizar o combate rapidamente, mas escorrega no momento decisivo. {vencedor} derrota {perdedor} logo em seguida. 🏆"
+  },
+  {
+    "texto": "⚔️ Depois de dezenas de ataques bloqueados, ambos partem para tudo ou nada. O golpe de {vencedor} chega primeiro e derrota {perdedor}. ⚔️"
+  },
+  {
+    "texto": "🌉 O vento forte balança a ponte durante o combate. {perdedor} perde a concentração por um instante, e {vencedor} aproveita para derrotá-lo. 🏆"
+  },
+  {
+    "texto": "🗡️ A batalha parece favorecer {perdedor}, que controla boa parte do confronto. Porém, {vencedor} encontra uma abertura mínima e derrota o adversário. ⚔️"
+  },
+  {
+    "texto": "🌲 Em uma clareira cercada por árvores, os dois duelam sem recuar. Quando {perdedor} acelera demais seus ataques, {vencedor} lê seus movimentos e o derrota. 🏆"
+  },
+  {
+    "texto": "⚔️ O duelo vira uma sequência intensa de esquivas e contra-ataques. No momento decisivo, {vencedor} consegue atingir primeiro e derrota {perdedor}. ⚔️"
+  },
+  {
+    "texto": "🏟️ A arena inteira prende a respiração para o ataque final. Quando a poeira baixa, {perdedor} está derrotado e {vencedor} permanece de pé. 🏆"
+  },
+  {
+    "texto": "🛡️ {perdedor} ataca sem parar e parece dominar completamente a luta. Mas o excesso de confiança cobra seu preço. {vencedor} vira o combate e derrota {perdedor}. ⚔️"
+  },
+  {
+    "texto": "🌙 O silêncio toma conta da arena antes do desfecho. Em um único movimento preciso, {vencedor} supera a guarda de {perdedor} e conquista a vitória. 🏆"
+  },
+  {
+    "texto": "⚔️ As armas se chocam repetidamente durante vários minutos. Quando ambos demonstram cansaço, {vencedor} encontra uma abertura e derrota {perdedor}. ⚔️"
+  },
+  {
+    "texto": "🏰 No topo das muralhas, o vento dificulta cada ataque. Mesmo assim, {vencedor} mantém a calma, derrota {perdedor} e vence o duelo. 🏆"
+  },
+  {
+    "texto": "🌧️ A chuva reduz a visibilidade dos combatentes. {perdedor} acredita estar atacando no momento certo, mas {vencedor} já havia previsto tudo e o derrota. ⚔️"
+  },
+  {
+    "texto": "🗡️ O combate começa devagar, mas logo se transforma em uma batalha feroz. No instante decisivo, {vencedor} encontra a brecha perfeita e derrota {perdedor}. 🏆"
+  },
+  {
+    "texto": "⚔️ Depois de bloquear vários ataques seguidos, {vencedor} percebe um padrão nos movimentos de {perdedor}. A próxima investida termina com {perdedor} derrotado. ⚔️"
+  },
+  {
+    "texto": "🌉 Nenhum dos dois quer ceder espaço na ponte. Quando {perdedor} força demais um ataque, {vencedor} responde com precisão e o derrota. 🏆"
+  },
+  {
+    "texto": "🛡️ O combate parece interminável. Após uma troca equilibrada de golpes, {vencedor} muda o ritmo da luta, surpreende {perdedor} e vence. ⚔️"
+  },
+  {
+    "texto": "🏟️ A plateia explode em reação a cada choque de espadas. Quando tudo parece perdido, {vencedor} executa uma reviravolta espetacular e derrota {perdedor}. 🏆"
+  },
+  {
+    "texto": "⚔️ Os dois avançam ao mesmo tempo e suas armas colidem violentamente. Depois de uma disputa equilibrada, {vencedor} encontra a oportunidade perfeita para derrotar {perdedor}. ⚔️"
+  },
+  {
+    "texto": "🌲 Em uma clareira silenciosa, os combatentes se observam antes do ataque final. {perdedor} hesita por um segundo, e {vencedor} aproveita para derrotá-lo. 🏆"
+  },
+  {
+    "texto": "🏰 O duelo atravessa todo o salão principal do castelo. Encurralado por um instante, {vencedor} vira a situação e derrota {perdedor}. ⚔️"
+  },
+  {
+    "texto": "🗡️ A batalha parece favorecer {perdedor} durante boa parte do confronto. Porém, {vencedor} encontra uma brecha mínima, derrota o rival e conquista a vitória. 🏆"
+  },
+  {
+    "texto": "⚔️ O combate já dura muito mais do que o esperado. Quando ambos estão exaustos, a determinação de {vencedor} fala mais alto. {perdedor} é derrotado. ⚔️"
+  },
+  {
+    "texto": "🌧️ O barro dificulta cada movimento. {perdedor} tenta avançar rápido demais e acaba abrindo espaço para o ataque decisivo de {vencedor}, que o derrota. 🏆"
+  },
+  {
+    "texto": "🛡️ Depois de uma sequência impressionante de bloqueios, {vencedor} encontra o momento perfeito para contra-atacar. {perdedor} não consegue reagir e é derrotado. ⚔️"
+  },
+  {
+    "texto": "🏟️ O duelo chega ao clímax quando ambos partem para o tudo ou nada. O golpe de {vencedor} encontra o alvo antes do de {perdedor}, garantindo a vitória. 🏆"
+  },
+  {
+    "texto": "⚔️ A batalha muda de direção várias vezes. Quando parece que {perdedor} venceu, {vencedor} surpreende a todos, vira a luta e o derrota. ⚔️"
+  },
+  {
+    "texto": "🌙 As sombras escondem os movimentos de ambos os guerreiros. Quando surge uma abertura, {vencedor} age primeiro e derrota {perdedor}. 🏆"
+  },
+  {
+    "texto": "🏰 O som das espadas ecoa pelo castelo vazio. Após uma longa disputa, {vencedor} encontra uma brecha na defesa de {perdedor} e o derrota. ⚔️"
+  },
+  {
+    "texto": "🗡️ O combate é tão equilibrado que ninguém consegue prever o resultado. Então {vencedor} executa uma finta impecável e derrota {perdedor}. 🏆"
+  },
+  {
+    "texto": "⚔️ {perdedor} consegue pressionar o adversário até o limite. Mas ao tentar finalizar a luta, deixa sua guarda aberta. {vencedor} aproveita e o derrota. ⚔️"
+  },
+  {
+    "texto": "🌲 Em meio ao silêncio da floresta, os dois trocam golpes rápidos e precisos. No momento decisivo, {vencedor} antecipa o próximo ataque de {perdedor} e vence. 🏆"
+  },
+  {
+    "texto": "🛡️ O confronto se transforma em uma batalha de paciência. Quem perde a concentração primeiro é {perdedor}. {vencedor} aproveita e o derrota. ⚔️"
+  },
+  {
+    "texto": "🏟️ A multidão já acredita na vitória de {perdedor}. Porém, um contra-ataque inesperado muda completamente o rumo da luta. {vencedor} derrota {perdedor}. 🏆"
+  },
+  {
+    "texto": "⚔️ Ambos avançam para o golpe final. O choque das armas ecoa pela arena, mas apenas {vencedor} permanece de pé. {perdedor} está derrotado. ⚔️"
+  },
+  {
+    "texto": "🏆 Depois de uma batalha cheia de reviravoltas, ataques bloqueados e contra-ataques precisos, {vencedor} derrota {perdedor} e sai triunfante da arena. ⚔️"
+  }
 ]
