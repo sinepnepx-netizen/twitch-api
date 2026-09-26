@@ -14,446 +14,301 @@ const botsIgnorados = [
 ];
 
 function escolher(lista) {
-  return lista[
-    Math.floor(Math.random() * lista.length)
-  ];
+  return lista[Math.floor(Math.random() * lista.length)];
 }
 
 const julgamentos = [
-
-  // 1
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma joalheria. As câmeras mostraram @TARGET entrando no estabelecimento durante a madrugada, enquanto @TERCEIRO ajudou na fuga. 💎",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo de uma joalheria. As câmeras provaram que @TARGET estava em outro lugar no momento do crime, enquanto @TERCEIRO foi identificado como responsável pelo roubo. 💎"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma joia rara. @TERCEIRO foi visto ajudando na fuga. 💎🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE do roubo de uma joia rara. O verdadeiro culpado era @TERCEIRO. 💎🚨"
   },
-
-  // 2
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo assalto a um banco. As provas mostraram que @TARGET participou do planejamento, enquanto @TERCEIRO forneceu informações sobre o sistema de segurança. 🏦",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo assalto ao banco. Os registros mostraram que @TARGET sequer estava na cidade no momento do crime, e @TERCEIRO foi identificado como um dos envolvidos. 🏦"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por assaltar um banco. @TERCEIRO participou do plano. 🏦💰",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE do assalto ao banco. @TERCEIRO era quem estava por trás do crime. 🏦💰"
   },
-
-  // 3
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de um carro esportivo. Uma testemunha reconheceu @TARGET no local, enquanto @TERCEIRO ajudou a esconder o veículo. 🚗",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo do carro esportivo. Uma gravação mostrou que @TARGET estava longe do local, e @TERCEIRO foi encontrado com o veículo roubado. 🚗"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar um carro esportivo. @TERCEIRO ajudou a esconder o veículo. 🚗💨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo do carro esportivo. @TERCEIRO acabou sendo identificado como o ladrão. 🚗💨"
   },
-
-  // 4
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo desaparecimento de uma coleção de videogames. @TARGET foi visto retirando os objetos do local, enquanto @TERCEIRO ajudou a transportá-los. 🎮",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo desaparecimento da coleção de videogames. As imagens mostraram que @TARGET não esteve no local, e @TERCEIRO foi flagrado transportando os objetos. 🎮"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por desaparecer com uma coleção de videogames. @TERCEIRO ajudou a transportar tudo. 🎮📦",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo desaparecimento da coleção de videogames. @TERCEIRO estava com os jogos escondidos. 🎮📦"
   },
-
-  // 5
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma obra de arte. As câmeras registraram @TARGET retirando a pintura, enquanto @TERCEIRO forneceu acesso ao prédio. 🖼️",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da obra de arte. Uma gravação comprovou que @TARGET estava em outro local, e @TERCEIRO foi identificado entrando na galeria durante o crime. 🖼️"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma obra de arte. @TERCEIRO ajudou a tirá-la do museu. 🖼️🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da obra de arte. @TERCEIRO foi quem a retirou do museu. 🖼️🚨"
   },
-
-  // 6
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por uma fraude financeira. Os documentos mostraram que @TARGET participou do esquema, enquanto @TERCEIRO ajudou a movimentar o dinheiro. 💰",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela fraude financeira. Os documentos provaram que @TARGET não participou das transações, e @TERCEIRO foi identificado como responsável pelo esquema. 💰"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por aplicar um golpe financeiro. @TERCEIRO ajudou a movimentar o dinheiro. 💰📉",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo golpe financeiro. @TERCEIRO era o responsável pela fraude. 💰📉"
   },
-
-  // 7
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de um diamante. @TARGET foi visto deixando o local com a joia, enquanto @TERCEIRO ajudou a escondê-la. 💎",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo do diamante. A investigação mostrou que @TARGET não teve contato com a joia, enquanto @TERCEIRO foi encontrado tentando escondê-la. 💎"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar um diamante gigantesco. @TERCEIRO serviu como cúmplice. 💎😈",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo do diamante. @TERCEIRO foi quem colocou o plano em prática. 💎😈"
   },
-
-  // 8
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por invadir uma mansão. As câmeras registraram @TARGET dentro da propriedade, enquanto @TERCEIRO serviu como cúmplice. 🏠",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela invasão da mansão. As imagens mostraram que @TARGET estava em outro lugar, enquanto @TERCEIRO foi registrado dentro da propriedade. 🏠"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por invadir uma mansão. @TERCEIRO ficou responsável pela fuga. 🏠🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela invasão da mansão. @TERCEIRO foi encontrado dentro da propriedade. 🏠🚨"
   },
-
-  // 9
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma carga de ouro. @TARGET participou da retirada da carga, enquanto @TERCEIRO ajudou a escondê-la. 🪙",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da carga de ouro. Os registros de localização afastaram @TARGET do crime, enquanto @TERCEIRO foi encontrado com parte da carga. 🪙"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma carga de ouro. @TERCEIRO ajudou no transporte. 🪙🚚",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da carga de ouro. @TERCEIRO foi quem desviou o carregamento. 🪙🚚"
   },
-
-  // 10
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por falsificação de documentos. Os documentos falsificados foram encontrados com @TARGET, enquanto @TERCEIRO ajudou a produzi-los. 📜",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela falsificação de documentos. A perícia mostrou que os documentos não foram produzidos por @TARGET, e @TERCEIRO foi identificado como responsável pela falsificação. 📜"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por falsificar documentos oficiais. @TERCEIRO forneceu os documentos originais. 📄🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela falsificação de documentos. @TERCEIRO foi identificado como o falsificador. 📄🚨"
   },
-
-  // 11
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma relíquia histórica. @TARGET foi visto retirando a peça do museu, enquanto @TERCEIRO ajudou na fuga. 🗿",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da relíquia histórica. As imagens mostraram que @TARGET não esteve no museu, enquanto @TERCEIRO foi visto retirando a peça. 🗿"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma relíquia histórica. @TERCEIRO ajudou a escondê-la. 🏺🕵️",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da relíquia histórica. @TERCEIRO estava com a peça desaparecida. 🏺🕵️"
   },
-
-  // 12
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por espionagem. As mensagens encontradas mostraram que @TARGET repassava informações, enquanto @TERCEIRO fornecia os dados secretos. 🕵️",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE por espionagem. As mensagens analisadas provaram que @TARGET não teve participação, enquanto @TERCEIRO era quem repassava as informações. 🕵️"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por espionagem. @TERCEIRO entregava as informações secretas. 🕵️📡",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE por espionagem. @TERCEIRO era quem estava passando informações secretas. 🕵️📡"
   },
-
-  // 13
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pela sabotagem de uma empresa. @TARGET foi registrado alterando equipamentos, enquanto @TERCEIRO ajudou no planejamento. 💻",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela sabotagem da empresa. Os registros mostraram que @TARGET não teve acesso aos equipamentos, enquanto @TERCEIRO foi identificado como responsável. 💻"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por sabotar uma empresa. @TERCEIRO forneceu acesso ao prédio. 🏢💥",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela sabotagem da empresa. @TERCEIRO foi quem invadiu o sistema. 🏢💥"
   },
-
-  // 14
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de documentos secretos. @TARGET foi visto retirando os arquivos, enquanto @TERCEIRO forneceu acesso ao local. 📁",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo dos documentos. Os registros de acesso provaram que @TARGET não entrou no prédio, enquanto @TERCEIRO utilizou seu acesso para pegar os arquivos. 📁"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar documentos secretos. @TERCEIRO ajudou na invasão. 📁🔐",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo dos documentos secretos. @TERCEIRO foi encontrado com os arquivos. 📁🔐"
   },
-
-  // 15
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por invadir um laboratório. As câmeras mostraram @TARGET dentro do laboratório, enquanto @TERCEIRO desligou o sistema de segurança. 🧪",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela invasão do laboratório. O sistema de segurança mostrou que @TARGET não esteve no local, enquanto @TERCEIRO foi registrado entrando no prédio. 🧪"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por invadir um laboratório. @TERCEIRO ajudou a desligar os alarmes. 🧪🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela invasão do laboratório. @TERCEIRO desligou os alarmes e entrou primeiro. 🧪🚨"
   },
-
-  // 16
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma coroa real. @TARGET foi encontrado tentando fugir com a coroa, enquanto @TERCEIRO abriu uma passagem secreta para a fuga. 👑",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da coroa. Uma testemunha confirmou que @TARGET não estava no castelo, enquanto @TERCEIRO foi visto fugindo com a coroa. 👑"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar a coroa de um reino. @TERCEIRO ajudou na fuga. 👑🏃",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da coroa. @TERCEIRO foi visto saindo do castelo com ela. 👑🏃"
   },
-
-  // 17
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma pintura milionária. @TARGET retirou a pintura da galeria, enquanto @TERCEIRO ajudou a transportá-la. 🎨",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da pintura. A investigação mostrou que @TARGET estava longe da galeria, enquanto @TERCEIRO foi encontrado transportando a obra. 🎨"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma pintura milionária. @TERCEIRO ajudou a trocar a obra. 🖼️💰",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da pintura milionária. @TERCEIRO foi quem fez a troca. 🖼️💰"
   },
-
-  // 18
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por invadir um cofre. As imagens mostraram @TARGET abrindo o cofre, enquanto @TERCEIRO forneceu a combinação. 🔐",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela invasão do cofre. A perícia mostrou que @TARGET não tinha acesso à combinação, enquanto @TERCEIRO utilizou o código para abrir o cofre. 🔐"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por invadir um cofre. @TERCEIRO descobriu a combinação. 🔐💰",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela invasão do cofre. @TERCEIRO conhecia a combinação e roubou tudo. 🔐💰"
   },
-
-  // 19
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo desaparecimento de uma fortuna. As transferências foram feitas por @TARGET, enquanto @TERCEIRO ajudou a esconder o dinheiro. 💰",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo desaparecimento da fortuna. Os registros bancários mostraram que @TARGET não movimentou o dinheiro, enquanto @TERCEIRO realizou as transferências. 💰"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por desaparecer com uma fortuna. @TERCEIRO ajudou a esconder o dinheiro. 💰🕵️",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo desaparecimento da fortuna. @TERCEIRO estava escondendo o dinheiro. 💰🕵️"
   },
-
-  // 20
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pela sabotagem de um trem. @TARGET foi registrado próximo aos controles, enquanto @TERCEIRO ajudou a desativar os sistemas de segurança. 🚂",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela sabotagem do trem. Os registros mostraram que @TARGET estava em outro local, enquanto @TERCEIRO foi identificado próximo aos controles. 🚂"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por sabotar um trem. @TERCEIRO ajudou a planejar o ataque. 🚂💥",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela sabotagem do trem. @TERCEIRO foi quem colocou o plano em prática. 🚂💥"
   },
-
-  // 21
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma espada lendária. @TARGET foi visto retirando a espada, enquanto @TERCEIRO ajudou a escondê-la. ⚔️",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da espada lendária. Uma testemunha confirmou que @TARGET não estava no local, enquanto @TERCEIRO foi encontrado escondendo a arma. ⚔️"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma espada lendária. @TERCEIRO ajudou a atravessar a fortaleza. ⚔️🏰",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da espada lendária. @TERCEIRO foi quem saiu da fortaleza com ela. ⚔️🏰"
   },
-
-  // 22
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pela invasão de uma fortaleza. @TARGET participou do ataque, enquanto @TERCEIRO abriu os portões para facilitar a entrada. 🏰",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela invasão da fortaleza. Os guardas confirmaram que @TARGET não participou do ataque, enquanto @TERCEIRO foi identificado abrindo os portões. 🏰"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por invadir uma fortaleza. @TERCEIRO abriu os portões por dentro. 🏰⚔️",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela invasão da fortaleza. @TERCEIRO abriu os portões e liderou o ataque. 🏰⚔️"
   },
-
-  // 23
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por manipular um campeonato. As mensagens mostraram que @TARGET combinou o resultado com @TERCEIRO. 🏆",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela manipulação do campeonato. As mensagens provaram que @TARGET não participou do esquema, enquanto @TERCEIRO foi identificado combinando os resultados. 🏆"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por manipular o resultado de um campeonato. @TERCEIRO ajudou no esquema. 🏆🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela manipulação do campeonato. @TERCEIRO foi quem fraudou os resultados. 🏆🚨"
   },
-
-  // 24
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de ingressos de um evento. @TARGET foi visto retirando os ingressos, enquanto @TERCEIRO ajudou a revendê-los. 🎟️",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo dos ingressos. Os registros mostraram que @TARGET não teve acesso aos ingressos, enquanto @TERCEIRO foi identificado revendendo o material. 🎟️"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar ingressos de um grande evento. @TERCEIRO ajudou a vender os ingressos. 🎟️💰",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo dos ingressos. @TERCEIRO estava vendendo os bilhetes roubados. 🎟️💰"
   },
-
-  // 25
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por roubar uma coleção de moedas raras. @TARGET foi visto entrando no local, enquanto @TERCEIRO ajudou a esconder as moedas. 🪙",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo das moedas raras. As câmeras mostraram que @TARGET não entrou no local, enquanto @TERCEIRO foi encontrado com a coleção. 🪙"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma coleção de moedas raras. @TERCEIRO ajudou a esconder as moedas. 🪙🔍",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo das moedas raras. @TERCEIRO foi encontrado com a coleção. 🪙🔍"
   },
-
-  // 26
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por roubar um mapa antigo. @TARGET retirou o mapa do arquivo, enquanto @TERCEIRO ajudou a escondê-lo. 🗺️",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo do mapa antigo. Os registros provaram que @TARGET não entrou no arquivo, enquanto @TERCEIRO foi visto retirando o mapa. 🗺️"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar um mapa antigo. @TERCEIRO ajudou a decifrá-lo. 🗺️🕵️",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo do mapa antigo. @TERCEIRO foi quem o levou. 🗺️🕵️"
   },
-
-  // 27
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por sabotar um concurso. @TARGET alterou os resultados, enquanto @TERCEIRO forneceu acesso ao sistema. 🏆",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela sabotagem do concurso. Os registros do sistema mostraram que @TARGET não alterou os resultados, enquanto @TERCEIRO utilizou seu acesso para manipular a disputa. 🏆"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por sabotar um concurso. @TERCEIRO ajudou a manipular as inscrições. 📝🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela sabotagem do concurso. @TERCEIRO alterou as inscrições. 📝🚨"
   },
-
-  // 28
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma coleção de cartas raras. @TARGET levou as cartas, enquanto @TERCEIRO ajudou a escondê-las. 🃏",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo das cartas raras. As câmeras provaram que @TARGET não esteve no local, enquanto @TERCEIRO foi encontrado com a coleção. 🃏"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma coleção de cartas raras. @TERCEIRO ajudou a vender as cartas. 🃏💰",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo das cartas raras. @TERCEIRO apareceu vendendo a coleção. 🃏💰"
   },
-
-  // 29
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por invadir uma biblioteca histórica. @TARGET retirou documentos raros, enquanto @TERCEIRO ajudou a transportá-los. 📚",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela invasão da biblioteca. Os registros mostraram que @TARGET não entrou no prédio, enquanto @TERCEIRO foi visto retirando os documentos. 📚"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por invadir uma biblioteca histórica. @TERCEIRO ajudou a remover os livros raros. 📚🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela invasão da biblioteca. @TERCEIRO foi quem roubou os livros raros. 📚🚨"
   },
-
-  // 30
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma estátua. @TARGET participou da retirada da peça, enquanto @TERCEIRO ajudou no transporte. 🗿",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da estátua. As imagens mostraram que @TARGET estava longe do local, enquanto @TERCEIRO foi identificado transportando a peça. 🗿"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma estátua histórica. @TERCEIRO ajudou no transporte. 🗿🚚",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da estátua. @TERCEIRO foi quem organizou o transporte. 🗿🚚"
   },
-
-  // 31
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por destruir uma obra histórica. As câmeras registraram @TARGET causando o dano, enquanto @TERCEIRO ajudou a esconder as evidências. 🏛️",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela destruição da obra histórica. As imagens provaram que @TARGET não estava presente, enquanto @TERCEIRO foi identificado no local durante o incidente. 🏛️"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por destruir uma obra histórica. @TERCEIRO ajudou a esconder as provas. 🏛️🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela destruição da obra histórica. @TERCEIRO foi identificado como responsável. 🏛️🚨"
   },
-
-  // 32
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por roubar equipamentos de uma escola. @TARGET retirou os equipamentos durante a noite, enquanto @TERCEIRO ajudou a transportá-los. 🏫",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo dos equipamentos da escola. As câmeras mostraram que @TARGET não esteve no prédio, enquanto @TERCEIRO foi visto levando os equipamentos. 🏫"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar equipamentos de uma escola. @TERCEIRO ajudou a carregar tudo. 🏫📦",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo dos equipamentos escolares. @TERCEIRO foi visto levando tudo. 🏫📦"
   },
-
-  // 33
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por invadir um estádio. @TARGET entrou na área restrita, enquanto @TERCEIRO ajudou a abrir os portões. 🏟️",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela invasão do estádio. Os registros mostraram que @TARGET estava na arquibancada, enquanto @TERCEIRO entrou na área restrita. 🏟️"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por invadir um estádio. @TERCEIRO ajudou a entrar sem autorização. 🏟️🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela invasão do estádio. @TERCEIRO foi quem entrou sem autorização. 🏟️🚨"
   },
-
-  // 34
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por roubar equipamentos de uma emissora. @TARGET foi visto retirando os equipamentos, enquanto @TERCEIRO ajudou a escondê-los. 📺",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo dos equipamentos da emissora. As gravações mostraram que @TARGET não estava no prédio, enquanto @TERCEIRO foi visto retirando os equipamentos. 📺"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar equipamentos de uma emissora. @TERCEIRO ajudou a transportar o material. 📺🚚",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo dos equipamentos da emissora. @TERCEIRO foi encontrado com o material. 📺🚚"
   },
-
-  // 35
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por invadir um servidor privado. Os registros digitais mostraram que @TARGET acessou o sistema, enquanto @TERCEIRO forneceu as credenciais. 💻",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela invasão do servidor. Os registros digitais mostraram que @TARGET não acessou o sistema, enquanto @TERCEIRO utilizou as credenciais para entrar. 💻"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por invadir um servidor privado. @TERCEIRO forneceu a senha. 💻🔐",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela invasão do servidor. @TERCEIRO forneceu a senha e entrou no sistema. 💻🔐"
   },
-
-  // 36
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por roubar informações de uma empresa. @TARGET copiou os arquivos, enquanto @TERCEIRO ajudou a retirar os documentos. 📁",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo das informações. A análise dos computadores mostrou que @TARGET não acessou os arquivos, enquanto @TERCEIRO realizou a cópia. 📁"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar informações de uma empresa. @TERCEIRO ajudou a copiar os arquivos. 💻📁",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo das informações. @TERCEIRO copiou os arquivos e levou tudo. 💻📁"
   },
-
-  // 37
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por falsificar uma assinatura. A perícia confirmou que @TARGET produziu a falsificação, enquanto @TERCEIRO apresentou o documento falso. ✍️",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela falsificação da assinatura. A perícia mostrou que a assinatura não foi feita por @TARGET, enquanto @TERCEIRO apresentou o documento falsificado. ✍️"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por falsificar uma assinatura. @TERCEIRO forneceu o documento falsificado. ✍️🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela falsificação da assinatura. @TERCEIRO foi quem falsificou o documento. ✍️🚨"
   },
-
-  // 38
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por roubar uma peça de museu. @TARGET foi registrado retirando a peça, enquanto @TERCEIRO ajudou a escondê-la. 🏺",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da peça do museu. As câmeras provaram que @TARGET não esteve na sala, enquanto @TERCEIRO foi visto retirando a peça. 🏺"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma peça de museu. @TERCEIRO ajudou a retirar a peça. 🏛️💎",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da peça do museu. @TERCEIRO foi quem a retirou. 🏛️💎"
   },
-
-  // 39
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por organizar um golpe financeiro. As mensagens mostraram que @TARGET comandava o esquema, enquanto @TERCEIRO atraía as vítimas. 💰",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo golpe financeiro. As mensagens analisadas mostraram que @TARGET não fazia parte do esquema, enquanto @TERCEIRO estava diretamente envolvido. 💰"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por aplicar um golpe financeiro. @TERCEIRO recebeu parte do dinheiro. 💰🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo golpe financeiro. @TERCEIRO recebeu o dinheiro e organizou a fraude. 💰🚨"
   },
-
-  // 40
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma medalha histórica. @TARGET foi visto retirando a medalha, enquanto @TERCEIRO ajudou na fuga. 🥇",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da medalha histórica. Uma testemunha confirmou que @TARGET não estava no local, enquanto @TERCEIRO foi visto fugindo com a medalha. 🥇"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma medalha histórica. @TERCEIRO ajudou a escondê-la. 🏅🕵️",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da medalha histórica. @TERCEIRO estava escondendo a medalha. 🏅🕵️"
   },
-
-  // 41
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por adulterar documentos de um concurso. @TARGET alterou os arquivos, enquanto @TERCEIRO ajudou a esconder as alterações. 📄",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela adulteração dos documentos. A perícia mostrou que @TARGET não modificou os arquivos, enquanto @TERCEIRO foi identificado como responsável pelas alterações. 📄"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por alterar documentos de um concurso. @TERCEIRO ajudou a falsificar os resultados. 📄🏆",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela alteração dos documentos do concurso. @TERCEIRO falsificou os resultados. 📄🏆"
   },
-
-  // 42
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo desaparecimento de uma obra rara. @TARGET retirou a obra do local, enquanto @TERCEIRO ajudou a escondê-la. 🎨",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo desaparecimento da obra rara. Os registros mostraram que @TARGET não esteve no local, enquanto @TERCEIRO foi encontrado com a obra. 🎨"
+    culpado: "⚖️ @TARGET foi julgado CULPADO pelo desaparecimento de uma obra rara. @TERCEIRO ajudou a escondê-la. 🖼️🔎",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo desaparecimento da obra rara. @TERCEIRO estava com a obra escondida. 🖼️🔎"
   },
-
-  // 43
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por roubar uma coleção de troféus. @TARGET levou os troféus, enquanto @TERCEIRO ajudou a transportá-los. 🏆",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo dos troféus. As câmeras mostraram que @TARGET não entrou no local, enquanto @TERCEIRO foi visto transportando a coleção. 🏆"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma coleção de troféus. @TERCEIRO ajudou no transporte. 🏆🚚",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo dos troféus. @TERCEIRO foi visto transportando a coleção. 🏆🚚"
   },
-
-  // 44
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por invadir uma estação de rádio. @TARGET entrou na área restrita, enquanto @TERCEIRO desligou o sistema de segurança. 📻",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela invasão da estação de rádio. Os registros mostraram que @TARGET não entrou na área restrita, enquanto @TERCEIRO foi registrado no local. 📻"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por invadir uma estação de rádio. @TERCEIRO ajudou a desligar os sistemas. 📻🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela invasão da estação de rádio. @TERCEIRO desligou os sistemas e entrou no local. 📻🚨"
   },
-
-  // 45
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma coleção de relógios. @TARGET retirou os relógios, enquanto @TERCEIRO ajudou a escondê-los. ⌚",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo dos relógios. As imagens provaram que @TARGET não esteve no estabelecimento, enquanto @TERCEIRO foi encontrado com a coleção. ⌚"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma coleção de relógios. @TERCEIRO ajudou a vender as peças. ⌚💰",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo dos relógios. @TERCEIRO foi quem vendeu a coleção roubada. ⌚💰"
   },
-
-  // 46
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por roubar uma fórmula secreta. @TARGET retirou os documentos do laboratório, enquanto @TERCEIRO ajudou a escondê-los. 🧪",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da fórmula. Os registros mostraram que @TARGET não acessou o laboratório, enquanto @TERCEIRO foi identificado retirando os documentos. 🧪"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma fórmula secreta. @TERCEIRO ajudou a copiar os documentos. 🧪🔐",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da fórmula secreta. @TERCEIRO foi quem copiou os documentos. 🧪🔐"
   },
-
-  // 47
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por destruir provas de um caso. @TARGET foi visto retirando os documentos, enquanto @TERCEIRO ajudou a escondê-los. 🗂️",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pela destruição das provas. As câmeras mostraram que @TARGET não teve acesso aos documentos, enquanto @TERCEIRO foi visto escondendo as evidências. 🗂️"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por destruir provas de um crime. @TERCEIRO ajudou a esconder os vestígios. 🚨🕵️",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela destruição das provas. @TERCEIRO foi quem eliminou os vestígios. 🚨🕵️"
   },
-
-  // 48
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO pelo roubo de uma peça arqueológica. @TARGET foi visto retirando a peça, enquanto @TERCEIRO ajudou a transportá-la. 🏺",
-
-    inocente:
-      "⚖️ @TARGET foi considerado INOCENTE pelo roubo da peça arqueológica. Os registros mostraram que @TARGET não estava no sítio arqueológico, enquanto @TERCEIRO foi encontrado transportando a peça. 🏺"
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma peça arqueológica. @TERCEIRO ajudou a retirar a peça do local. 🏺🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da peça arqueológica. @TERCEIRO foi quem a retirou do local. 🏺🚨"
   },
-
-  // 49
   {
-    culpado:
-      "⚖️ @TARGET foi considerado CULPADO por organizar uma fraude em um campeonato. @TARGET m
+    culpado: "⚖️ @TARGET foi julgado CULPADO por fraudar um campeonato. @TERCEIRO ajudou a manipular os resultados. 🏆🚨",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pela fraude no campeonato. @TERCEIRO manipulou os resultados. 🏆🚨"
+  },
+  {
+    culpado: "⚖️ @TARGET foi julgado CULPADO por roubar uma fortuna guardada em um cofre. @TERCEIRO ajudou a abrir o cofre. 🔐💰",
+    inocente: "⚖️ @TARGET foi julgado INOCENTE pelo roubo da fortuna. @TERCEIRO conhecia a combinação e abriu o cofre. 🔐💰"
+  }
+];
+
+export default function handler(req, res) {
+  try {
+    const user = limparNome(req.query.user);
+    const target = limparNome(req.query.target);
+
+    if (!target) {
+      return res.status(200).send(
+        `⚖️ @${user || "Alguém"}, você precisa marcar alguém para ser julgado!`
+      );
+    }
+
+    const userLower = user.toLowerCase();
+    const targetLower = target.toLowerCase();
+
+    const candidatos = [];
+
+    for (let i = 1; i <= 10; i++) {
+      const valor = req.query[`target${i}`];
+
+      if (!valor) {
+        continue;
+      }
+
+      const nome = limparNome(valor);
+
+      if (!nome) {
+        continue;
+      }
+
+      const nomeLower = nome.toLowerCase();
+
+      if (nomeLower === userLower) {
+        continue;
+      }
+
+      if (nomeLower === targetLower) {
+        continue;
+      }
+
+      if (botsIgnorados.includes(nomeLower)) {
+        continue;
+      }
+
+      const jaExiste = candidatos.some(
+        (item) => item.toLowerCase() === nomeLower
+      );
+
+      if (!jaExiste) {
+        candidatos.push(nome);
+      }
+    }
+
+    if (candidatos.length === 0) {
+      return res.status(200).send(
+        `⚖️ Não encontrei outra pessoa válida no chat para participar do julgamento de @${target}.`
+      );
+    }
+
+    const terceiro = escolher(candidatos);
+    const julgamento = escolher(julgamentos);
+
+    const culpado = Math.random() < 0.5;
+
+    let texto;
+
+    if (culpado) {
+      texto = julgamento.culpado;
+    } else {
+      texto = julgamento.inocente;
+    }
+
+    texto = texto
+      .split("@TARGET")
+      .join(`@${target}`)
+      .split("@TERCEIRO")
+      .join(`@${terceiro}`);
+
+    res.setHeader(
+      "Content-Type",
+      "text/plain; charset=utf-8"
+    );
+
+    return res.status(200).send(texto);
+
+  } catch (erro) {
+    console.error("Erro em /api/julgar:", erro);
+
+    return res.status(500).send(
+      "Erro interno no julgamento."
+    );
+  }
+}
