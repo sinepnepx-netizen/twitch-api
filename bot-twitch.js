@@ -1,14 +1,13 @@
 import tmi from 'tmi.js';
 import http from 'http';
 
-// Servidor HTTP para manter o Render ativo
+// Servidor HTTP para o Render se manter ativo
 const port = process.env.PORT || 3000;
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Bot Online!');
 }).listen(port);
 
-// Canais da Twitch
 const canais = process.env.TWITCH_CHANNEL
   ? process.env.TWITCH_CHANNEL.split(',').map(c => c.trim())
   : [];
@@ -24,15 +23,12 @@ const client = new tmi.Client({
 
 client.connect().then(() => console.log(`Bot conectado aos canais: ${canais.join(', ')}`));
 
-// Lista de modelos do Gemini em ordem de preferência/tentativa
+// Lista de modelos suportados pela API v1beta
 const modelosGemini = [
-  'gemini-2.5-flash',
   'gemini-1.5-flash',
-  'gemini-1.5-flash-latest',
   'gemini-1.5-pro'
 ];
 
-// Função que tenta gerar a resposta alternando entre os modelos disponíveis
 async function gerarRespostaComFallback(apiKey, usuario, pergunta) {
   for (const modelo of modelosGemini) {
     try {
@@ -44,10 +40,9 @@ async function gerarRespostaComFallback(apiKey, usuario, pergunta) {
         body: JSON.stringify({
           contents: [
             {
-              role: "user",
               parts: [
                 { 
-                  text: `Você é um assistente bem-humorado, engraçado, humano, zoeiro e direto no chat da Twitch. Responda em português em no máximo 500 caracteres.\n\nPergunta de ${usuario}: ${pergunta}` 
+                  text: `Instrução: Você é um assistente bem-humorado no chat da Twitch. Responda em português em no máximo 200 caracteres.\n\nPergunta de ${usuario}: ${pergunta}` 
                 }
               ]
             }
@@ -58,17 +53,15 @@ async function gerarRespostaComFallback(apiKey, usuario, pergunta) {
       const data = await response.json();
 
       if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
-        console.log(`Resposta gerada com sucesso usando o modelo: ${modelo}`);
+        console.log(`Sucesso com o modelo: ${modelo}`);
         return data.candidates[0].content.parts[0].text.trim();
       } else {
-        console.warn(`Modelo ${modelo} falhou ou não retornou texto. Tentando o próximo...`);
+        console.error(`Erro no modelo ${modelo}:`, JSON.stringify(data));
       }
     } catch (err) {
-      console.error(`Erro ao tentar o modelo ${modelo}:`, err);
+      console.error(`Falha na requisição para ${modelo}:`, err);
     }
   }
-
-  // Se nenhum dos modelos funcionar:
   return null;
 }
 
@@ -88,10 +81,10 @@ client.on('message', async (channel, tags, message, self) => {
       if (respostaIA) {
         client.say(channel, `@${usuario} ${respostaIA}`);
       } else {
-        client.say(channel, `@${usuario} Não consegui gerar uma resposta no momento. Tente novamente em instantes.`);
+        client.say(channel, `@${usuario} Erro ao comunicar com a API do Gemini. Verifique a chave GEMINI_API_KEY.`);
       }
     } catch (error) {
-      console.error('Erro na execução:', error);
+      console.error('Erro geral:', error);
       client.say(channel, `@${usuario} Erro ao processar o comando.`);
     }
   }
