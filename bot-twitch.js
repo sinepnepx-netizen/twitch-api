@@ -94,35 +94,13 @@ function salvarHistorico(
 // CONFIG IA
 // ========================================
 
-const MODELO =
-  null;
+const MODELO = 'openai/gpt-oss-20b';
+ 
 
 // ========================================
 // CHAT
 // ========================================
-const apiKey = process.env.GROQ_API_KEY?.trim() || '';
 
-(async () => {
-  try {
-    const res = await fetch(
-      'https://api.groq.com/openai/v1/models',
-      {
-        headers: {
-          Authorization: `Bearer ${apiKey}`
-        }
-      }
-    );
-
-    const data = await res.json();
-
-    console.log(
-      'MODELOS DISPONÍVEIS:',
-      JSON.stringify(data, null, 2)
-    );
-  } catch (err) {
-    console.error(err);
-  }
-})();
 client.on(
   'message',
   async (
