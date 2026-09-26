@@ -11,6 +11,8 @@ const botsIgnorados = [
   "nightbot",
   "pokemoncommunitygame",
   "livepix"
+  "sery_bot"
+  "twishgamebot"
 ];
 
 function embaralhar(lista) {
