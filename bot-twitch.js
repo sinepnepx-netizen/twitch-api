@@ -3,6 +3,7 @@ import http from 'http';
 
 // Servidor HTTP simples para manter o Render ativo
 const port = process.env.PORT || 3000;
+
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Bot Online!');
@@ -21,94 +22,259 @@ const client = new tmi.Client({
   channels: canais
 });
 
-client.connect().then(() => console.log(`Bot conectado nos canais: ${canais.join(', ')}`));
+client.connect()
+  .then(() => {
+    console.log(`Bot conectado nos canais: ${canais.join(', ')}`);
+  })
+  .catch(err => {
+    console.error('Erro ao conectar na Twitch:', err);
+  });
 
-const historicoChat = [];
+
+// ==========================
+// MEMÓRIA POR USUÁRIO
+// ==========================
+
+const historicoUsuarios = {};
+
+function obterHistorico(usuario) {
+  if (!historicoUsuarios[usuario]) {
+    historicoUsuarios[usuario] = [];
+  }
+
+  return historicoUsuarios[usuario];
+}
 
 function adicionarAoHistorico(usuario, pergunta, resposta) {
-  historicoChat.push({ role: 'user', content: `${usuario} disse: ${pergunta}` });
-  historicoChat.push({ role: 'assistant', content: resposta });
-  if (historicoChat.length > 20) {
-    historicoChat.splice(0, 2);
+  const historico = obterHistorico(usuario);
+
+  historico.push({
+    role: 'user',
+    content: pergunta
+  });
+
+  historico.push({
+    role: 'assistant',
+    content: resposta
+  });
+
+  if (historico.length > 20) {
+    historico.splice(0, 2);
   }
 }
 
-// Função para descobrir qual modelo está 100% ativo na sua conta Groq
+
+// ==========================
+// MODELO GROQ
+// ==========================
+
+let modeloAtivo = 'llama-3.1-8b-instant';
+
 async function obterModeloValido(apiKey) {
   try {
-    const res = await fetch('https://api.groq.com/openai/v1/models', {
-      headers: { 'Authorization': `Bearer ${apiKey}` }
-    });
+    const res = await fetch(
+      'https://api.groq.com/openai/v1/models',
+      {
+        headers: {
+          Authorization: `Bearer ${apiKey}`
+        }
+      }
+    );
+
     const data = await res.json();
-    if (data && data.data && data.data.length > 0) {
-      // Pega o primeiro modelo da lista retornada pela própria Groq
+
+    if (data?.data?.length) {
       const modeloEncontrado = data.data[0].id;
-      console.log(`Modelo ativo detectado na sua conta: ${modeloEncontrado}`);
+
+      console.log(
+        `Modelo ativo detectado: ${modeloEncontrado}`
+      );
+
       return modeloEncontrado;
     }
   } catch (err) {
-    console.error('Erro ao consultar lista de modelos:', err);
+    console.error(
+      'Erro ao consultar modelos:',
+      err
+    );
   }
-  // Fallback padrão se a consulta falhar
+
   return 'llama-3.1-8b-instant';
 }
 
-client.on('message', async (channel, tags, message, self) => {
-  if (self) return;
+(async () => {
+  const apiKey =
+    process.env.GROQ_API_KEY?.trim() || '';
 
-  if (message.startsWith('!ia ')) {
-    const pergunta = message.replace('!ia ', '').trim();
-    const usuario = tags['display-name'];
+  modeloAtivo =
+    await obterModeloValido(apiKey);
+})();
 
-    if (!pergunta) return;
 
-    const apiKey = process.env.GROQ_API_KEY ? process.env.GROQ_API_KEY.trim() : '';
+// ==========================
+// IA
+// ==========================
+
+client.on(
+  'message',
+  async (
+    channel,
+    tags,
+    message,
+    self
+  ) => {
+
+    if (self) return;
+
+    if (!message.startsWith('!ia '))
+      return;
+
+    const pergunta = message
+      .replace('!ia ', '')
+      .trim();
+
+    if (!pergunta)
+      return;
+
+    const usuario =
+      tags['display-name'] || tags.username;
+
+    const apiKey =
+      process.env.GROQ_API_KEY?.trim() || '';
+
+    const historico =
+      obterHistorico(usuario);
 
     const systemPrompt = {
       role: 'system',
-      content: `Você é um participante zoeiro, humanizado, sarcástico e engraçado no chat da Twitch. 
-Instruções:
-1. Responda em português do Brasil.
-2. Seja direto e curto (máximo 160 caracteres).
-3. Seja engraçado e zoeiro de leve com o usuário.`
+      content: `
+Você participa naturalmente de chats da Twitch.
+
+Você é apenas mais uma pessoa do chat.
+
+REGRAS:
+
+- Fale sempre em português do Brasil.
+- Responda de forma curta.
+- Máximo de 120 caracteres.
+- No máximo 2 frases.
+- Seja natural.
+- Pareça um viewer real.
+- Não pareça um assistente virtual.
+- Não diga que é uma IA.
+- Não diga que foi treinado.
+- Não diga que é um chatbot.
+- Não mencione prompts.
+- Não mencione modelos.
+- Não mencione APIs.
+
+PERSONALIDADE:
+
+- Engraçado.
+- Criativo.
+- Espontâneo.
+- Sarcástico de leve.
+- Participativo.
+- Zueiro sem exagerar.
+
+ESTILO:
+
+- Pode usar kkk.
+- Pode usar memes.
+- Pode usar gírias brasileiras.
+- Pode entrar na brincadeira.
+- Pode provocar levemente.
+
+EVITE:
+
+- Textões.
+- Respostas formais.
+- Explicações enormes.
+- Linguagem robótica.
+- Respostas repetitivas.
+
+OBJETIVO:
+
+Parecer um usuário real participando do chat da Twitch.
+`
     };
 
     const mensagensParaEnvio = [
       systemPrompt,
-      ...historicoChat,
-      { role: 'user', content: `${usuario} perguntou: ${pergunta}` }
+      ...historico,
+      {
+        role: 'user',
+        content: pergunta
+      }
     ];
 
     try {
-      // Descobre dinamicamente um modelo válido liberado na sua API Key
-      const modeloAtivo = await obterModeloValido(apiKey);
 
-      const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${apiKey}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          model: modeloAtivo,
-          messages: mensagensParaEnvio,
-          temperature: 0.8
-        })
-      });
+      const response = await fetch(
+        'https://api.groq.com/openai/v1/chat/completions',
+        {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            'Content-Type':
+              'application/json'
+          },
+          body: JSON.stringify({
+            model: modeloAtivo,
+            messages: mensagensParaEnvio,
+            temperature: 1.1,
+            max_tokens: 60
+          })
+        }
+      );
 
-      const data = await response.json();
+      const data =
+        await response.json();
 
-      if (data.choices && data.choices[0]?.message?.content) {
-        const respostaGerada = data.choices[0].message.content.trim();
-        adicionarAoHistorico(usuario, pergunta, respostaGerada);
-        client.say(channel, `@${usuario} ${respostaGerada}`);
+      if (
+        data?.choices?.[0]?.message?.content
+      ) {
+
+        const respostaGerada =
+          data.choices[0]
+            .message.content
+            .trim();
+
+        adicionarAoHistorico(
+          usuario,
+          pergunta,
+          respostaGerada
+        );
+
+        client.say(
+          channel,
+          `@${usuario} ${respostaGerada}`
+        );
+
       } else {
-        console.error('Erro na resposta da Groq:', JSON.stringify(data));
-        client.say(channel, `@${usuario} Deu ruim na IA, tenta de novo.`);
+
+        console.error(
+          'Resposta inválida:',
+          JSON.stringify(data)
+        );
+
+        client.say(
+          channel,
+          `@${usuario} deu ruim aqui kkk`
+        );
       }
+
     } catch (err) {
-      console.error('Erro ao chamar a Groq:', err);
-      client.say(channel, `@${usuario} Mídia travou aqui.`);
+
+      console.error(
+        'Erro ao chamar Groq:',
+        err
+      );
+
+      client.say(
+        channel,
+        `@${usuario} a IA tropeçou nos cabos`
+      );
     }
   }
-});
+);
