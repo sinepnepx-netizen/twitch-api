@@ -1,0 +1,206 @@
+[
+  {
+    "culpado": "⚖️ Após analisar as provas, o tribunal declara @ {julgado} CULPADO pelo roubo de 47 coxinhas. @{envolvido} foi identificado como cúmplice e ajudou a esconder as evidências. 🚨",
+    "inocente": "⚖️ Após analisar as provas, o tribunal declara @{julgado} INOCENTE do roubo de 47 coxinhas. @{envolvido} foi considerado a verdadeira vítima do caso. 🧑‍⚖️"
+  },
+  {
+    "culpado": "🚨 @{julgado} foi considerado CULPADO por invadir uma padaria às 3 da manhã e levar todo o estoque de pão de queijo. @{envolvido} estava esperando do lado de fora como cúmplice. 🥖",
+    "inocente": "⚖️ @{julgado} foi considerado INOCENTE da invasão à padaria. @{envolvido} confirmou que ele nem estava no local quando tudo aconteceu. 🥖"
+  },
+  {
+    "culpado": "🕵️ @{julgado} foi condenado por sequestrar o último pedaço de pizza da mesa. @{envolvido} tentou impedir o crime, mas acabou envolvido na investigação. 🍕",
+    "inocente": "🕵️ @{julgado} foi declarado INOCENTE do sequestro da pizza. @{envolvido} confirmou que a pizza simplesmente desapareceu antes de @{julgado} chegar. 🍕"
+  },
+  {
+    "culpado": "💰 @{julgado} foi considerado CULPADO por desviar 12 milhões de reais em dinheiro imaginário. @{envolvido} teria ajudado a esconder a fortuna. 💸",
+    "inocente": "💰 @{julgado} foi considerado INOCENTE do desvio milionário. @{envolvido} admitiu que nem existia dinheiro para ser desviado. 😂"
+  },
+  {
+    "culpado": "🚗 @{julgado} foi condenado por roubar um carro invisível. @{envolvido} foi encontrado no banco do passageiro e acabou envolvido no crime. 🚨",
+    "inocente": "🚗 @{julgado} foi declarado INOCENTE do roubo do carro invisível. @{envolvido} confirmou que o veículo já tinha desaparecido antes do julgamento. 😂"
+  },
+  {
+    "culpado": "🍔 @{julgado} foi considerado CULPADO por comer o lanche de outra pessoa sem pedir. @{envolvido} foi a vítima que encontrou apenas a embalagem vazia. 😭",
+    "inocente": "🍔 @{julgado} foi considerado INOCENTE de comer o lanche alheio. @{envolvido} confessou que comeu tudo antes e tentou colocar a culpa em @{julgado}. 😂"
+  },
+  {
+    "culpado": "🎮 @{julgado} foi condenado por sabotar uma partida online de propósito. @{envolvido} testemunhou o momento exato em que o crime aconteceu. 💀",
+    "inocente": "🎮 @{julgado} foi declarado INOCENTE de sabotar a partida. @{envolvido} admitiu que foi ele quem apertou o botão errado. 😂",
+  },
+  {
+    "culpado": "💻 @{julgado} foi considerado CULPADO por desligar o computador de @{envolvido} no pior momento possível. O tribunal classificou o crime como extremamente suspeito. 💀",
+    "inocente": "💻 @{julgado} foi declarado INOCENTE pelo desligamento misterioso do computador de @{envolvido}. As provas apontam para uma tomada mal encaixada. 😂"
+  },
+  {
+    "culpado": "🧀 @{julgado} foi condenado por roubar o queijo da geladeira comunitária. @{envolvido} viu tudo pelas câmeras de segurança. 🚨",
+    "inocente": "🧀 @{julgado} foi considerado INOCENTE do roubo do queijo. @{envolvido} revelou que foi ele quem comeu o queijo escondido. 😂"
+  },
+  {
+    "culpado": "👑 @{julgado} foi acusado de tentar assumir o controle absoluto do chat. @{envolvido} foi identificado como seu primeiro aliado. ⚔️",
+    "inocente": "👑 @{julgado} foi considerado INOCENTE da tentativa de dominar o chat. @{envolvido} confirmou que o plano nunca chegou a existir. 😂"
+  },
+  {
+    "culpado": "🚔 @{julgado} foi considerado CULPADO por fugir de uma abordagem policial imaginária usando uma bicicleta imaginária. @{envolvido} foi a testemunha principal. 🚲",
+    "inocente": "🚔 @{julgado} foi declarado INOCENTE da fuga. @{envolvido} confirmou que a bicicleta imaginária nunca foi encontrada. 😂"
+  },
+  {
+    "culpado": "💎 @{julgado} foi condenado por roubar um diamante de uma coleção extremamente suspeita. @{envolvido} ajudou a esconder a joia. 💎",
+    "inocente": "💎 @{julgado} foi declarado INOCENTE do roubo do diamante. @{envolvido} confessou que a joia era falsa. 😂"
+  },
+  {
+    "culpado": "🐔 @{julgado} foi condenado por sequestrar uma galinha e exigir três pizzas como resgate. @{envolvido} foi encontrado negociando o pagamento. 🍕",
+    "inocente": "🐔 @{julgado} foi considerado INOCENTE do sequestro da galinha. @{envolvido} confirmou que a galinha simplesmente fugiu por vontade própria. 😂"
+  },
+  {
+    "culpado": "📱 @{julgado} foi considerado CULPADO por esconder o celular de @{envolvido} e fingir que não sabia onde estava. 📱",
+    "inocente": "📱 @{julgado} foi considerado INOCENTE pelo desaparecimento do celular de @{envolvido}. O aparelho estava no bolso do próprio dono. 😂"
+  },
+  {
+    "culpado": "🧙 @{julgado} foi condenado por lançar uma maldição contra @{envolvido} durante uma partida. O tribunal encontrou evidências mágicas. ✨",
+    "inocente": "🧙 @{julgado} foi declarado INOCENTE da acusação de magia negra. @{envolvido} confessou que inventou a história para chamar atenção. 😂"
+  },
+  {
+    "culpado": "🍫 @{julgado} foi condenado por desaparecer com todo o chocolate da casa. @{envolvido} foi a última pessoa a testemunhar o crime. 🍫",
+    "inocente": "🍫 @{julgado} foi considerado INOCENTE do desaparecimento do chocolate. @{envolvido} foi encontrado com a embalagem vazia. 😂"
+  },
+  {
+    "culpado": "🛒 @{julgado} foi acusado de roubar um carrinho de supermercado e transformá-lo em veículo de fuga. @{envolvido} foi cúmplice da operação. 🚨",
+    "inocente": "🛒 @{julgado} foi declarado INOCENTE pelo roubo do carrinho. @{envolvido} admitiu que levou o carrinho sem autorização. 😂"
+  },
+  {
+    "culpado": "💀 @{julgado} foi condenado por ameaçar @{envolvido} com uma colher durante uma discussão sobre comida. 🥄",
+    "inocente": "💀 @{julgado} foi considerado INOCENTE da acusação de ameaça com colher. @{envolvido} confundiu uma colher com uma arma. 😂"
+  },
+  {
+    "culpado": "🏦 @{julgado} foi considerado CULPADO por assaltar um banco usando apenas uma banana como arma. @{envolvido} dirigiu o veículo de fuga. 🍌",
+    "inocente": "🏦 @{julgado} foi considerado INOCENTE do assalto ao banco. @{envolvido} revelou que a banana era dele e nunca houve assalto algum. 🍌"
+  },
+  {
+    "culpado": "🎩 @{julgado} foi condenado por roubar o chapéu de @{envolvido} e usar a peça durante uma fuga. 🎩",
+    "inocente": "🎩 @{julgado} foi declarado INOCENTE pelo roubo do chapéu. @{envolvido} simplesmente esqueceu onde colocou o próprio chapéu. 😂"
+  },
+  {
+    "culpado": "🍕 @{julgado} foi condenado por pedir uma pizza, comer metade e deixar a outra metade escondida para @{envolvido} nunca encontrar. 🍕",
+    "inocente": "🍕 @{julgado} foi considerado INOCENTE pelo desaparecimento da pizza. @{envolvido} confessou que comeu tudo sozinho. 😂"
+  },
+  {
+    "culpado": "💰 @{julgado} foi acusado de criar um esquema ilegal de venda de figurinhas raras. @{envolvido} comprou a primeira figurinha. 🚨",
+    "inocente": "💰 @{julgado} foi declarado INOCENTE do esquema das figurinhas. @{envolvido} confessou que inventou todo o mercado clandestino. 😂"
+  },
+  {
+    "culpado": "🎤 @{julgado} foi condenado por sequestrar o microfone de @{envolvido} e cantar durante três horas seguidas. 🎤",
+    "inocente": "🎤 @{julgado} foi considerado INOCENTE pelo desaparecimento do microfone. @{envolvido} estava cantando com ele o tempo todo. 😂"
+  },
+  {
+    "culpado": "🧦 @{julgado} foi considerado CULPADO por roubar todas as meias de @{envolvido}. Nenhum par completo foi encontrado. 🧦",
+    "inocente": "🧦 @{julgado} foi declarado INOCENTE pelo desaparecimento das meias. @{envolvido} descobriu que estava usando todas elas. 😂"
+  },
+  {
+    "culpado": "🧠 @{julgado} foi acusado de roubar a última gota de inteligência de @{envolvido}. O tribunal considerou as provas devastadoras. 💀",
+    "inocente": "🧠 @{julgado} foi declarado INOCENTE de roubar a inteligência de @{envolvido}. A investigação concluiu que ela já tinha desaparecido antes. 💀"
+  },
+  {
+    "culpado": "🐟 @{julgado} foi condenado por roubar um peixe de estimação e tentar escondê-lo dentro de uma mochila. @{envolvido} denunciou o crime. 🐟",
+    "inocente": "🐟 @{julgado} foi considerado INOCENTE pelo desaparecimento do peixe. @{envolvido} confessou que esqueceu o peixe em outro aquário. 😂"
+  },
+  {
+    "culpado": "🔥 @{julgado} foi acusado de incendiar uma churrasqueira porque não gostou da carne. @{envolvido} foi testemunha do desastre. 🔥",
+    "inocente": "🔥 @{julgado} foi declarado INOCENTE pelo incêndio da churrasqueira. @{envolvido} esqueceu a carne no fogo por três horas. 😂"
+  },
+  {
+    "culpado": "🚨 @{julgado} foi condenado por organizar uma fuga em massa de galinhas. @{envolvido} forneceu as chaves do galinheiro. 🐔",
+    "inocente": "🚨 @{julgado} foi considerado INOCENTE pela fuga das galinhas. @{envolvido} deixou o portão aberto. 🐔"
+  },
+  {
+    "culpado": "🕶️ @{julgado} foi considerado CULPADO por se infiltrar em uma festa usando uma identidade falsa. @{envolvido} forneceu o disfarce. 🕵️",
+    "inocente": "🕶️ @{julgado} foi declarado INOCENTE pela infiltração. @{envolvido} admitiu que confundiu @{julgado} com outra pessoa. 😂"
+  },
+  {
+    "culpado": "💻 @{julgado} foi condenado por invadir a conta de @{envolvido} para trocar a foto de perfil por uma batata. 🥔",
+    "inocente": "💻 @{julgado} foi declarado INOCENTE da invasão da conta. @{envolvido} colocou a foto da batata sozinho. 🥔"
+  },
+  {
+    "culpado": "🏴‍☠️ @{julgado} foi considerado CULPADO por roubar um tesouro pirata e dividir o mapa com @{envolvido}. 🏴‍☠️",
+    "inocente": "🏴‍☠️ @{julgado} foi declarado INOCENTE pelo roubo do tesouro. @{envolvido} confessou que inventou o mapa. 😂"
+  },
+  {
+    "culpado": "🚂 @{julgado} foi condenado por parar um trem imaginário para ajudar @{envolvido} a fugir da cidade. 🚂",
+    "inocente": "🚂 @{julgado} foi considerado INOCENTE por parar o trem. @{envolvido} admitiu que nem havia trem naquele horário. 😂"
+  },
+  {
+    "culpado": "🧨 @{julgado} foi acusado de explodir uma caixa de confete durante uma festa. @{envolvido} forneceu os confetes. 🎉",
+    "inocente": "🎉 @{julgado} foi declarado INOCENTE pela explosão de confete. @{envolvido} confirmou que a explosão aconteceu sozinha. 😂"
+  },
+  {
+    "culpado": "🐈 @{julgado} foi condenado por sequestrar o gato de @{envolvido} para exigir pagamento em sachês. 🐱",
+    "inocente": "🐈 @{julgado} foi considerado INOCENTE pelo suposto sequestro do gato. @{envolvido} descobriu que o gato estava dormindo em outro quarto. 😂"
+  },
+  {
+    "culpado": "🪙 @{julgado} foi acusado de falsificar moedas usando tampinhas de garrafa. @{envolvido} era responsável pela distribuição. 🪙",
+    "inocente": "🪙 @{julgado} foi declarado INOCENTE pela falsificação de moedas. @{envolvido} admitiu que eram apenas tampinhas. 😂"
+  },
+  {
+    "culpado": "🏰 @{julgado} foi condenado por invadir um castelo e roubar a coroa do rei. @{envolvido} ajudou na fuga. 👑",
+    "inocente": "🏰 @{julgado} foi declarado INOCENTE pelo roubo da coroa. @{envolvido} confessou que colocou a coroa em outro lugar. 👑"
+  },
+  {
+    "culpado": "🥤 @{julgado} foi considerado CULPADO por beber o refrigerante de @{envolvido} sem autorização. O copo foi encontrado vazio. 🥤",
+    "inocente": "🥤 @{julgado} foi considerado INOCENTE pelo desaparecimento do refrigerante. @{envolvido} bebeu tudo antes de perceber. 😂"
+  },
+  {
+    "culpado": "🎮 @{julgado} foi condenado por roubar a conta de jogo de @{envolvido} e gastar todas as moedas virtuais. 💀",
+    "inocente": "🎮 @{julgado} foi declarado INOCENTE pelo roubo da conta. @{envolvido} esqueceu a própria senha e culpou a primeira pessoa que apareceu. 😂"
+  },
+  {
+    "culpado": "📦 @{julgado} foi condenado por abrir uma encomenda de @{envolvido} antes da hora e esconder o conteúdo. 📦",
+    "inocente": "📦 @{julgado} foi declarado INOCENTE por abrir a encomenda. @{envolvido} descobriu que ela ainda estava lacrada. 😂"
+  },
+  {
+    "culpado": "🧁 @{julgado} foi considerado CULPADO por roubar todos os cupcakes de uma festa. @{envolvido} foi visto ajudando a carregar as caixas. 🧁",
+    "inocente": "🧁 @{julgado} foi considerado INOCENTE pelo roubo dos cupcakes. @{envolvido} admitiu que levou todos para casa. 😂"
+  },
+  {
+    "culpado": "📚 @{julgado} foi condenado por esconder o livro favorito de @{envolvido} para nunca mais ser encontrado. 📚",
+    "inocente": "📚 @{julgado} foi declarado INOCENTE pelo desaparecimento do livro. @{envolvido} descobriu que tinha deixado o livro na geladeira. 😂"
+  },
+  {
+    "culpado": "🕵️ @{julgado} foi considerado CULPADO por criar uma identidade secreta para vigiar @{envolvido}. A investigação encontrou várias pistas. 🕶️",
+    "inocente": "🕵️ @{julgado} foi declarado INOCENTE de espionagem. @{envolvido} descobriu que estava seguindo a pessoa errada. 😂"
+  },
+  {
+    "culpado": "🎰 @{julgado} foi condenado por organizar um cassino clandestino usando apenas tampinhas de garrafa. @{envolvido} era o responsável pelas apostas. 🎰",
+    "inocente": "🎰 @{julgado} foi considerado INOCENTE pelo cassino clandestino. @{envolvido} revelou que estavam apenas jogando par ou ímpar. 😂"
+  },
+  {
+    "culpado": "🧹 @{julgado} foi condenado por contratar @{envolvido} para limpar todas as provas de um crime que nunca foi explicado. 🕵️",
+    "inocente": "🧹 @{julgado} foi declarado INOCENTE pela contratação de @{envolvido}. @{envolvido} estava limpando a casa por vontade própria. 😂"
+  },
+  {
+    "culpado": "🥷 @{julgado} foi considerado CULPADO por entrar escondido no quarto de @{envolvido} para roubar um pacote de biscoitos. 🍪",
+    "inocente": "🥷 @{julgado} foi considerado INOCENTE pela invasão. @{envolvido} confirmou que deixou a porta aberta para qualquer pessoa entrar. 😂"
+  },
+  {
+    "culpado": "💣 @{julgado} foi condenado por plantar uma bomba de glitter na mochila de @{envolvido}. O ataque deixou o chat inteiro brilhando. ✨",
+    "inocente": "✨ @{julgado} foi declarado INOCENTE pelo ataque de glitter. @{envolvido} revelou que colocou o glitter na própria mochila. 😂"
+  },
+  {
+    "culpado": "🧛 @{julgado} foi acusado de morder @{envolvido} durante a madrugada. O tribunal encontrou duas marcas suspeitas. 🧛",
+    "inocente": "🧛 @{julgado} foi considerado INOCENTE da acusação de vampirismo. @{envolvido} revelou que as marcas eram de uma caneta. 😂"
+  },
+  {
+    "culpado": "👻 @{julgado} foi condenado por invocar um fantasma para assustar @{envolvido}. A entidade desapareceu antes de prestar depoimento. 👻",
+    "inocente": "👻 @{julgado} foi declarado INOCENTE pela assombração. @{envolvido} admitiu que estava usando um lençol na cabeça. 😂"
+  },
+  {
+    "culpado": "⚔️ @{julgado} foi considerado CULPADO por desafiar @{envolvido} para um duelo e fugir antes do primeiro golpe. 🏃",
+    "inocente": "⚔️ @{julgado} foi declarado INOCENTE por abandonar o duelo. @{envolvido} chegou ao local duas horas atrasado. 😂"
+  },
+  {
+    "culpado": "🧪 @{julgado} foi condenado por criar uma poção misteriosa e fazer @{envolvido} beber sem avisar o que havia dentro. 🧪",
+    "inocente": "🧪 @{julgado} foi considerado INOCENTE pelo caso da poção. @{envolvido} bebeu tudo sozinho achando que era refrigerante. 😂"
+  },
+  {
+    "culpado": "🚨 @{julgado} foi condenado por falsificar uma autorização para entrar na área VIP junto com @{envolvido}. 🎟️",
+    "inocente": "🚨 @{julgado} foi declarado INOCENTE pela entrada ilegal na área VIP. @{envolvido} tinha os ingressos verdadeiros o tempo todo. 😂"
+  }
+]
