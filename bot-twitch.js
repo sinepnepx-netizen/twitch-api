@@ -1,7 +1,7 @@
 import tmi from 'tmi.js';
 import http from 'http';
 
-// Servidor HTTP simples para manter o Render ativo
+// Servidor HTTP para manter o Render ativo
 const port = process.env.PORT || 3000;
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
@@ -37,7 +37,6 @@ function adicionarAoHistorico(usuario, pergunta, resposta) {
     content: resposta
   });
 
-  // Mantém apenas os últimos 10 pares de trocas (20 mensagens no total)
   if (historicoChat.length > 20) {
     historicoChat.splice(0, 2);
   }
@@ -53,7 +52,6 @@ client.on('message', async (channel, tags, message, self) => {
     if (!pergunta) return;
 
     try {
-      // Monta o prompt do sistema com a personalidade
       const systemPrompt = {
         role: 'system',
         content: `Você é um participante zoeiro, humanizado, sarcástico e engraçado no chat da Twitch. 
@@ -64,7 +62,6 @@ Instruções de comportamento:
 4. Você tem memória das conversas anteriores no chat. Use isso para zoar, dar continuidade ou citar o que outros usuários disseram se for relevante.`
       };
 
-      // Junta o sistema + histórico das últimas conversas + nova pergunta
       const mensagensParaEnvio = [
         systemPrompt,
         ...historicoChat,
@@ -81,9 +78,9 @@ Instruções de comportamento:
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          model: 'llama-3.1-8b-instant',
+          model: 'llama-3.3-70b-versatile',
           messages: mensagensParaEnvio,
-          temperature: 0.8 // Aumenta levemente a criatividade e zoeira
+          temperature: 0.8
         })
       });
 
@@ -92,7 +89,6 @@ Instruções de comportamento:
       if (data.choices && data.choices[0]?.message?.content) {
         const respostaIA = data.choices[0].message.content.trim();
         
-        // Salva na memória do bot
         adicionarAoHistorico(usuario, pergunta, respostaIA);
 
         client.say(channel, `@${usuario} ${respostaIA}`);
