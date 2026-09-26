@@ -3,16 +3,21 @@ import { GoogleGenAI } from '@google/genai';
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
+// Converte a string "iambekinha,soubolinho" em um array de canais ['iambekinha', 'soubolinho']
+const canais = process.env.TWITCH_CHANNEL 
+  ? process.env.TWITCH_CHANNEL.split(',').map(c => c.trim())
+  : [];
+
 const client = new tmi.Client({
   options: { debug: false },
   identity: {
     username: process.env.TWITCH_BOT_USERNAME,
     password: process.env.TWITCH_OAUTH_TOKEN
   },
-  channels: [process.env.TWITCH_CHANNEL]
+  channels: canais
 });
 
-client.connect().then(() => console.log('Bot conectado à Twitch!'));
+client.connect().then(() => console.log(`Bot conectado aos canais: ${canais.join(', ')}`));
 
 client.on('message', async (channel, tags, message, self) => {
   if (self) return;
