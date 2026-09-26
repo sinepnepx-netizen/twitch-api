@@ -10,7 +10,9 @@ const botsIgnorados = [
   "streamelements",
   "nightbot",
   "pokemoncommunitygame",
-  "livepix"
+  "livepix",
+  "twishgamebot",
+  "sery_bot"
 ];
 
 function embaralhar(lista) {
