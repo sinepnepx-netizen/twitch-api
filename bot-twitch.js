@@ -1,16 +1,16 @@
 import tmi from 'tmi.js';
-import { GoogleGenAI } from '@google/genai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 import http from 'http';
 
-// Servidor HTTP simples para o Render se manter ativo
 const port = process.env.PORT || 3000;
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Bot ativo');
+  res.end('Bot Online');
 }).listen(port);
 
-// Inicialização da nova biblioteca oficial do Gemini
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+// Usando o modelo v1beta estável para não dar erro 404
+const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
 const canais = process.env.TWITCH_CHANNEL
   ? process.env.TWITCH_CHANNEL.split(',').map(c => c.trim())
@@ -25,7 +25,7 @@ const client = new tmi.Client({
   channels: canais
 });
 
-client.connect().then(() => console.log(`Bot conectado: ${canais.join(', ')}`));
+client.connect().then(() => console.log('Bot conectado'));
 
 client.on('message', async (channel, tags, message, self) => {
   if (self) return;
@@ -37,19 +37,12 @@ client.on('message', async (channel, tags, message, self) => {
     if (!pergunta) return;
 
     try {
-      const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash',
-        contents: pergunta,
-        config: {
-          systemInstruction: 'Você é um assistente bem-humorado no chat da Twitch. Responda em português, de forma sucinta e direta em no máximo 200 caracteres.',
-        }
-      });
-
-      const respostaIA = response.text;
-      client.say(channel, `@${usuario} ${respostaIA}`);
+      const prompt = `Você é um assistente no chat da Twitch. Responda em português de forma sucinta em no máximo 200 caracteres.\n\nPergunta de ${usuario}: ${pergunta}`;
+      const result = await model.generateContent(prompt);
+      client.say(channel, `@${usuario} ${result.response.text()}`);
     } catch (error) {
-      console.error('Erro Gemini:', error);
-      client.say(channel, `@${usuario} Erro ao gerar resposta.`);
+      console.error(error);
+      client.say(channel, `@${usuario} Erro ao responder.`);
     }
   }
 });
