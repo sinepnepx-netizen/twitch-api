@@ -1,7 +1,7 @@
 import tmi from 'tmi.js';
 import http from 'http';
 
-// Servidor HTTP para manter o Render ativo no plano gratuito
+// Servidor HTTP simples para manter o Render ativo
 const port = process.env.PORT || 3000;
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
@@ -24,51 +24,23 @@ const client = new tmi.Client({
 
 client.connect().then(() => console.log(`Bot conectado aos canais: ${canais.join(', ')}`));
 
-// Lista de modelos atualizados com fallback automático
-const modelosGemini = [
-  'gemini-2.5-flash',
-  'gemini-2.0-flash',
-  'gemini-1.5-flash'
-];
+// Array para guardar até 10 mensagens anteriores no histórico do chat
+const historicoChat = [];
 
-async function gerarRespostaComFallback(apiKey, usuario, pergunta) {
-  for (const modelo of modelosGemini) {
-    try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`;
+function adicionarAoHistorico(usuario, pergunta, resposta) {
+  historicoChat.push({
+    role: 'user',
+    content: `${usuario} disse: ${pergunta}`
+  });
+  historicoChat.push({
+    role: 'assistant',
+    content: resposta
+  });
 
-      const response = await fetch(url, {
-        method: 'POST',
-        headers: { 
-          'Content-Type': 'application/json',
-          'x-goog-api-key': apiKey.trim()
-        },
-        body: JSON.stringify({
-          contents: [
-            {
-              role: "user",
-              parts: [
-                { 
-                  text: `Você é um assistente engraçado e bem-humorado no chat da Twitch. Responda em português em no máximo 180 caracteres.\n\nPergunta de ${usuario}: ${pergunta}` 
-                }
-              ]
-            }
-          ]
-        })
-      });
-
-      const data = await response.json();
-
-      if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
-        console.log(`Sucesso ao responder com o modelo: ${modelo}`);
-        return data.candidates[0].content.parts[0].text.trim();
-      } else {
-        console.warn(`Modelo ${modelo} não retornou texto. Detalhe:`, JSON.stringify(data));
-      }
-    } catch (err) {
-      console.error(`Erro de conexão com o modelo ${modelo}:`, err);
-    }
+  // Mantém apenas os últimos 10 pares de trocas (20 mensagens no total)
+  if (historicoChat.length > 20) {
+    historicoChat.splice(0, 2);
   }
-  return null;
 }
 
 client.on('message', async (channel, tags, message, self) => {
@@ -81,17 +53,56 @@ client.on('message', async (channel, tags, message, self) => {
     if (!pergunta) return;
 
     try {
-      const apiKey = process.env.GEMINI_API_KEY;
-      const respostaIA = await gerarRespostaComFallback(apiKey, usuario, pergunta);
+      // Monta o prompt do sistema com a personalidade
+      const systemPrompt = {
+        role: 'system',
+        content: `Você é um participante zoeiro, humanizado, sarcástico e engraçado no chat da Twitch. 
+Instruções de comportamento:
+1. Responda em português.
+2. Seja direto e sem enrolação. Curto e certeiro (máximo 350 caracteres). Só se alongue levemente se for estritamente necessário.
+3. Se sacanear o usuário de forma bem-humorada, faça isso. Use gírias leves de chat da Twitch quando fizer sentido.
+4. Você tem memória das conversas anteriores no chat. Use isso para zoar, dar continuidade ou citar o que outros usuários disseram se for relevante.`
+      };
 
-      if (respostaIA) {
+      // Junta o sistema + histórico das últimas conversas + nova pergunta
+      const mensagensParaEnvio = [
+        systemPrompt,
+        ...historicoChat,
+        {
+          role: 'user',
+          content: `${usuario} perguntou: ${pergunta}`
+        }
+      ];
+
+      const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          model: 'llama-3.1-8b-instant',
+          messages: mensagensParaEnvio,
+          temperature: 0.8 // Aumenta levemente a criatividade e zoeira
+        })
+      });
+
+      const data = await response.json();
+
+      if (data.choices && data.choices[0]?.message?.content) {
+        const respostaIA = data.choices[0].message.content.trim();
+        
+        // Salva na memória do bot
+        adicionarAoHistorico(usuario, pergunta, respostaIA);
+
         client.say(channel, `@${usuario} ${respostaIA}`);
       } else {
-        client.say(channel, `@${usuario} Não consegui gerar uma resposta no momento. Tente novamente em instantes.`);
+        console.error('Erro no retorno:', data);
+        client.say(channel, `@${usuario} Foi mal, viajei aqui e não ouvi.`);
       }
     } catch (error) {
-      console.error('Erro na execução do comando:', error);
-      client.say(channel, `@${usuario} Erro ao processar o comando.`);
+      console.error('Erro na requisição:', error);
+      client.say(channel, `@${usuario} Deu um teto preto aqui, tenta de novo.`);
     }
   }
 });
