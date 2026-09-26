@@ -11,9 +11,9 @@ http.createServer((req, res) => {
   console.log(`Servidor de status a rodar na porta ${port}`);
 });
 
-// Configuração da IA Gemini (modelo atualizado)
+// Configuração da IA Gemini
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
-const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
 // Lista de canais da Twitch
 const canais = process.env.TWITCH_CHANNEL
