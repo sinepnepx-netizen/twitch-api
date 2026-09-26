@@ -1,52 +1,79 @@
 import tmi from 'tmi.js';
 import http from 'http';
 
-// Servidor HTTP simples para manter o Render ativo
+// ========================================
+// SERVIDOR HTTP PARA O RENDER
+// ========================================
+
 const port = process.env.PORT || 3000;
 
 http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.writeHead(200, {
+    'Content-Type': 'text/plain'
+  });
+
   res.end('Bot Online!');
 }).listen(port);
 
+// ========================================
+// TWITCH
+// ========================================
+
 const canais = process.env.TWITCH_CHANNEL
-  ? process.env.TWITCH_CHANNEL.split(',').map(c => c.trim())
+  ? process.env.TWITCH_CHANNEL
+      .split(',')
+      .map(c => c.trim())
   : [];
 
 const client = new tmi.Client({
-  options: { debug: false },
+  options: {
+    debug: false
+  },
+
   identity: {
     username: process.env.TWITCH_BOT_USERNAME,
     password: process.env.TWITCH_OAUTH_TOKEN
   },
+
   channels: canais
 });
 
 client.connect()
   .then(() => {
-    console.log(`Bot conectado nos canais: ${canais.join(', ')}`);
+    console.log(
+      `Bot conectado nos canais: ${canais.join(', ')}`
+    );
   })
   .catch(err => {
-    console.error('Erro ao conectar na Twitch:', err);
+    console.error(
+      'Erro ao conectar na Twitch:',
+      err
+    );
   });
 
-
-// ==========================
+// ========================================
 // MEMÓRIA POR USUÁRIO
-// ==========================
+// ========================================
 
-const historicoUsuarios = {};
+const historicos = {};
 
 function obterHistorico(usuario) {
-  if (!historicoUsuarios[usuario]) {
-    historicoUsuarios[usuario] = [];
+
+  if (!historicos[usuario]) {
+    historicos[usuario] = [];
   }
 
-  return historicoUsuarios[usuario];
+  return historicos[usuario];
 }
 
-function adicionarAoHistorico(usuario, pergunta, resposta) {
-  const historico = obterHistorico(usuario);
+function salvarHistorico(
+  usuario,
+  pergunta,
+  resposta
+) {
+
+  const historico =
+    obterHistorico(usuario);
 
   historico.push({
     role: 'user',
@@ -63,57 +90,16 @@ function adicionarAoHistorico(usuario, pergunta, resposta) {
   }
 }
 
+// ========================================
+// CONFIG IA
+// ========================================
 
-// ==========================
-// MODELO GROQ
-// ==========================
+const MODELO =
+  'llama-3.1-8b-instant';
 
-let modeloAtivo = 'llama-3.1-8b-instant';
-
-async function obterModeloValido(apiKey) {
-  try {
-    const res = await fetch(
-      'https://api.groq.com/openai/v1/models',
-      {
-        headers: {
-          Authorization: `Bearer ${apiKey}`
-        }
-      }
-    );
-
-    const data = await res.json();
-
-    if (data?.data?.length) {
-      const modeloEncontrado = data.data[0].id;
-
-      console.log(
-        `Modelo ativo detectado: ${modeloEncontrado}`
-      );
-
-      return modeloEncontrado;
-    }
-  } catch (err) {
-    console.error(
-      'Erro ao consultar modelos:',
-      err
-    );
-  }
-
-  return 'llama-3.1-8b-instant';
-}
-
-(async () => {
-  const apiKey =
-    process.env.GROQ_API_KEY?.trim() || '';
-
-  modeloAtivo =
-    await obterModeloValido(apiKey);
-})();
-
-
-// ==========================
-// IA
-// ==========================
+// ========================================
+// CHAT
+// ========================================
 
 client.on(
   'message',
@@ -137,10 +123,12 @@ client.on(
       return;
 
     const usuario =
-      tags['display-name'] || tags.username;
+      tags['display-name']
+      || tags.username;
 
     const apiKey =
-      process.env.GROQ_API_KEY?.trim() || '';
+      process.env.GROQ_API_KEY?.trim()
+      || '';
 
     const historico =
       obterHistorico(usuario);
@@ -150,32 +138,31 @@ client.on(
       content: `
 Você participa naturalmente de chats da Twitch.
 
-Você é apenas mais uma pessoa do chat.
+Você é apenas uma pessoa comum do chat.
 
 REGRAS:
 
-- Fale sempre em português do Brasil.
-- Responda de forma curta.
-- Máximo de 120 caracteres.
-- No máximo 2 frases.
+- Sempre responda em português do Brasil.
+- Máximo de 360 caracteres.
+- Seja direto.
 - Seja natural.
+- Seja espontâneo.
 - Pareça um viewer real.
-- Não pareça um assistente virtual.
-- Não diga que é uma IA.
-- Não diga que foi treinado.
-- Não diga que é um chatbot.
-- Não mencione prompts.
-- Não mencione modelos.
-- Não mencione APIs.
+- Nunca diga que é uma IA.
+- Nunca diga que é um chatbot.
+- Nunca diga que foi treinado.
+- Nunca fale sobre prompts.
+- Nunca fale sobre modelos.
+- Nunca fale sobre APIs.
 
 PERSONALIDADE:
 
 - Engraçado.
 - Criativo.
-- Espontâneo.
 - Sarcástico de leve.
+- Zueiro.
+- Descontraído.
 - Participativo.
-- Zueiro sem exagerar.
 
 ESTILO:
 
@@ -188,14 +175,34 @@ ESTILO:
 EVITE:
 
 - Textões.
-- Respostas formais.
+- Formalidade.
+- Linguagem corporativa.
+- Respostas robóticas.
 - Explicações enormes.
-- Linguagem robótica.
-- Respostas repetitivas.
+
+EXEMPLOS:
+
+Pergunta: oi
+Resposta: salve kkkkk
+
+Pergunta: boa noite
+Resposta: boa, chegou pro caos
+
+Pergunta: to sem sorte
+Resposta: RNG abriu processo contra você
+
+Pergunta: quem ganha?
+Resposta: o que tiver menos azar hoje
+
+Pergunta: vale a pena?
+Resposta: depois não coloca meu nome no boletim kkk
+
+Pergunta: perdi tudo
+Resposta: speedrun de sofrimento concluída
 
 OBJETIVO:
 
-Parecer um usuário real participando do chat da Twitch.
+Parecer uma pessoa real participando do chat da Twitch.
 `
     };
 
@@ -210,64 +217,68 @@ Parecer um usuário real participando do chat da Twitch.
 
     try {
 
-      const response = await fetch(
-        'https://api.groq.com/openai/v1/chat/completions',
-        {
-          method: 'POST',
-          headers: {
-            Authorization: `Bearer ${apiKey}`,
-            'Content-Type':
-              'application/json'
-          },
-          body: JSON.stringify({
-            model: modeloAtivo,
-            messages: mensagensParaEnvio,
-            temperature: 1.1,
-            max_tokens: 60
-          })
-        }
-      );
+      const response =
+        await fetch(
+          'https://api.groq.com/openai/v1/chat/completions',
+          {
+            method: 'POST',
+
+            headers: {
+              Authorization:
+                `Bearer ${apiKey}`,
+
+              'Content-Type':
+                'application/json'
+            },
+
+            body: JSON.stringify({
+              model: MODELO,
+              messages:
+                mensagensParaEnvio,
+
+              temperature: 1.1,
+
+              max_tokens: 60
+            })
+          }
+        );
 
       const data =
         await response.json();
 
-      if (
-        data?.choices?.[0]?.message?.content
-      ) {
+      const resposta =
+        data?.choices?.[0]
+          ?.message?.content
+          ?.trim();
 
-        const respostaGerada =
-          data.choices[0]
-            .message.content
-            .trim();
-
-        adicionarAoHistorico(
-          usuario,
-          pergunta,
-          respostaGerada
-        );
-
-        client.say(
-          channel,
-          `@${usuario} ${respostaGerada}`
-        );
-
-      } else {
+      if (!resposta) {
 
         console.error(
           'Resposta inválida:',
           JSON.stringify(data)
         );
 
-        client.say(
+        return client.say(
           channel,
           `@${usuario} deu ruim aqui kkk`
         );
       }
 
+      salvarHistorico(
+        usuario,
+        pergunta,
+        resposta
+      );
+
+      client.say(
+        channel,
+        `@${usuario} ${resposta}`
+      );
+
     } catch (err) {
 
       console.error(
-        'Erro ao chamar Groq:',
+        'Erro Groq:',
         err
       );
 
