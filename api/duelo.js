@@ -64,19 +64,55 @@ A cada ciclo:
 - escolhe 30 diferentes
 - usa cada uma apenas uma vez
 - quando acabam, cria outro ciclo
+
+A fila v2 evita situações antigas
+que ficaram salvas no Redis.
 */
 
 async function escolherDuelo(redis, quantidade) {
 
-  const filaKey = "duelo:fila";
+  const filaKey = "duelo:fila:v2";
 
-  let indice = await redis.lPop(filaKey);
+  /*
+  ==========================================
+  PROCURA UMA SITUAÇÃO VÁLIDA NA FILA
+  ==========================================
+  */
 
-  if (indice !== null) {
-    return Number(indice);
+  while (true) {
+
+    const indice = await redis.lPop(
+      filaKey
+    );
+
+    if (indice === null) {
+      break;
+    }
+
+    const numero = Number(indice);
+
+    /*
+    Ignora qualquer índice antigo
+    ou inválido.
+    */
+
+    if (
+      Number.isInteger(numero) &&
+      numero >= 0 &&
+      numero < quantidade
+    ) {
+      return numero;
+    }
   }
 
-  const lockKey = "duelo:criando-ciclo";
+  /*
+  ==========================================
+  CRIA NOVO CICLO
+  ==========================================
+  */
+
+  const lockKey =
+    "duelo:criando-ciclo:v2";
 
   const lock = await redis.set(
     lockKey,
@@ -91,37 +127,99 @@ async function escolherDuelo(redis, quantidade) {
 
     try {
 
-      indice = await redis.lPop(filaKey);
+      /*
+      Verifica novamente se outra requisição
+      criou a fila enquanto aguardávamos.
+      */
 
-      if (indice !== null) {
-        return Number(indice);
+      while (true) {
+
+        const indice =
+          await redis.lPop(
+            filaKey
+          );
+
+        if (indice === null) {
+          break;
+        }
+
+        const numero = Number(indice);
+
+        if (
+          Number.isInteger(numero) &&
+          numero >= 0 &&
+          numero < quantidade
+        ) {
+          return numero;
+        }
       }
+
+      /*
+      Cria uma lista com todas as
+      situações atualmente existentes.
+      */
 
       const todos = Array.from(
         { length: quantidade },
         (_, i) => i
       );
 
-      const novoCiclo = embaralhar(todos)
-        .slice(
-          0,
-          Math.min(30, quantidade)
-        );
+      /*
+      Escolhe até 30 situações diferentes.
+      */
+
+      const novoCiclo =
+        embaralhar(todos)
+          .slice(
+            0,
+            Math.min(
+              30,
+              quantidade
+            )
+          );
 
       await redis.rPush(
         filaKey,
         novoCiclo.map(String)
       );
 
-      indice = await redis.lPop(filaKey);
+      /*
+      Pega a primeira situação do novo ciclo.
+      */
 
-      return Number(indice);
+      const primeiroIndice =
+        await redis.lPop(
+          filaKey
+        );
+
+      const numero =
+        Number(primeiroIndice);
+
+      if (
+        Number.isInteger(numero) &&
+        numero >= 0 &&
+        numero < quantidade
+      ) {
+        return numero;
+      }
+
+      return escolherDuelo(
+        redis,
+        quantidade
+      );
 
     } finally {
 
-      await redis.del(lockKey);
+      await redis.del(
+        lockKey
+      );
     }
   }
+
+  /*
+  Outra requisição está criando
+  o ciclo. Aguarda um pouco.
+  */
 
   await new Promise((resolve) =>
     setTimeout(resolve, 100)
@@ -183,10 +281,10 @@ export default async function handler(req, res) {
     }
 
     /*
-    Cada desafio agora possui sua própria chave.
+    Cada desafio possui sua própria chave.
 
-    Isso permite que várias pessoas desafiem
-    várias pessoas ao mesmo tempo.
+    Isso permite vários desafios
+    simultâneos.
     */
 
     const idDesafio =
@@ -215,7 +313,8 @@ export default async function handler(req, res) {
     );
 
     /*
-    Lista de desafios pendentes daquela pessoa.
+    Lista de desafios pendentes
+    daquela pessoa.
     */
 
     const listaKey =
@@ -261,8 +360,8 @@ export default async function handler(req, res) {
       );
 
     /*
-    Remove da lista os desafios que
-    já expiraram.
+    Remove mentalmente os desafios
+    que já expiraram.
     */
 
     const validos = [];
@@ -270,7 +369,9 @@ export default async function handler(req, res) {
     for (const chave of desafios) {
 
       const existe =
-        await redis.exists(chave);
+        await redis.exists(
+          chave
+        );
 
       if (existe) {
         validos.push(chave);
@@ -279,7 +380,9 @@ export default async function handler(req, res) {
 
     if (validos.length === 0) {
 
-      await redis.del(listaKey);
+      await redis.del(
+        listaKey
+      );
 
       return res
         .status(200)
@@ -322,7 +425,9 @@ export default async function handler(req, res) {
     }
 
     const duelo =
-      JSON.parse(dueloSalvo);
+      JSON.parse(
+        dueloSalvo
+      );
 
     /*
     Remove somente o desafio aceito.
@@ -353,6 +458,7 @@ export default async function handler(req, res) {
       );
 
     if (!fs.existsSync(arquivo)) {
+
       return res
         .status(500)
         .send(
@@ -372,6 +478,7 @@ export default async function handler(req, res) {
       !Array.isArray(dados) ||
       dados.length === 0
     ) {
+
       return res
         .status(500)
         .send(
@@ -390,6 +497,24 @@ export default async function handler(req, res) {
         redis,
         dados.length
       );
+
+    /*
+    Proteção extra contra índice inválido.
+    */
+
+    if (
+      !Number.isInteger(indice) ||
+      indice < 0 ||
+      indice >= dados.length ||
+      !dados[indice]
+    ) {
+
+      return res
+        .status(500)
+        .send(
+          "Não foi possível escolher uma situação válida para o duelo. Tente novamente."
+        );
+    }
 
     const situacao =
       dados[indice];
