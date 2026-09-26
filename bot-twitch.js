@@ -2,16 +2,16 @@ import tmi from 'tmi.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import http from 'http';
 
-// Servidor HTTP simples para o Render ficar satisfeito
+// Servidor HTTP para o Render manter o serviço ativo
 const port = process.env.PORT || 3000;
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Bot da Twitch rodando perfeitamente!');
 }).listen(port, () => {
-  console.log(`Servidor de status ouvindo na porta ${port}`);
+  console.log(`Servidor de status a rodar na porta ${port}`);
 });
 
-// Configuração da IA Gemini (usando o modelo atualizado gemini-2.5-flash)
+// Configuração da IA Gemini (modelo atualizado)
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
 const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
