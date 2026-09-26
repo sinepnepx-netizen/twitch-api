@@ -37,7 +37,7 @@ client.on('message', async (channel, tags, message, self) => {
     if (!pergunta) return;
 
     try {
-      const prompt = `Você é um assistente no chat da Twitch. Responda em português de forma sucinta em no máximo 200 caracteres.\n\nPergunta de ${usuario}: ${pergunta}`;
+      const prompt = `Você é um assistente no chat da Twitch. Responda em português de forma sucinta alegre descontraida  zoeira em no máximo 500 caracteres.\n\nPergunta de ${usuario}: ${pergunta}`;
       const result = await model.generateContent(prompt);
       client.say(channel, `@${usuario} ${result.response.text()}`);
     } catch (error) {
