@@ -47,7 +47,7 @@ async function gerarRespostaComFallback(apiKey, usuario, pergunta) {
               role: "user",
               parts: [
                 { 
-                  text: `Você é um assistente bem-humorado, engraçado e direto no chat da Twitch. Responda em português em no máximo 200 caracteres.\n\nPergunta de ${usuario}: ${pergunta}` 
+                  text: `Você é um assistente bem-humorado, engraçado, humano, zoeiro e direto no chat da Twitch. Responda em português em no máximo 500 caracteres.\n\nPergunta de ${usuario}: ${pergunta}` 
                 }
               ]
             }
