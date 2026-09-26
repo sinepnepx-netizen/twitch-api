@@ -1,161 +1,152 @@
 [
   {
-    "texto": "⚔️ {user} e {target} se enfrentam diante do castelo. {vencedor} vence porque percebe uma abertura na defesa de {perdedor} e acerta o golpe decisivo. 🏰"
+    "texto": "⚔️ O céu se parte ao meio quando {user} e {target} cruzam suas armas. Após um choque capaz de abalar montanhas, {vencedor} derrota {perdedor}. 🌩️"
   },
   {
-    "texto": "🗡️ O duelo começa no salão do castelo. {vencedor} vence porque consegue desarmar {perdedor} com um movimento rápido e inesperado. ⚔️"
+    "texto": "🐉 Um dragão ancestral desperta durante o combate. Enquanto {perdedor} recua diante da criatura, {vencedor} avança e garante a vitória. 🔥"
   },
   {
-    "texto": "🏹 {user} e {target} duelam em uma floresta sombria. {vencedor} vence porque usa as árvores para surpreender {perdedor} pelo lado. 🌲"
+    "texto": "👑 Diante dos reis dos sete reinos, o duelo começa. Após uma batalha digna das lendas, {vencedor} triunfa sobre {perdedor}. ⚔️"
   },
   {
-    "texto": "🛡️ Os dois cavaleiros partem para o ataque. {vencedor} vence porque bloqueia o golpe de {perdedor} e contra-ataca imediatamente. ⚔️"
+    "texto": "🌋 A arena está cercada por lava. Entre explosões e rochas derretidas, {vencedor} derruba {perdedor}. 🔥"
   },
   {
-    "texto": "🔥 O duelo acontece diante de uma grande fogueira. {vencedor} vence porque usa a luz e a sombra para confundir {perdedor}. 🔥"
+    "texto": "⚡ Relâmpagos atingem o campo de batalha sem parar. No clarão de um deles, {vencedor} executa o golpe final em {perdedor}. ⚔️"
   },
   {
-    "texto": "🏰 {user} e {target} duelam no topo das muralhas. {vencedor} vence porque força {perdedor} para uma posição sem saída. ⚔️"
+    "texto": "🗡️ As lâminas colidem centenas de vezes. Quando a poeira baixa, apenas {vencedor} permanece de pé diante de {perdedor}. 🏆"
   },
   {
-    "texto": "🧙‍♂️ Os dois magos iniciam um duelo de feitiços. {vencedor} vence porque consegue prever o próximo feitiço de {perdedor}. ✨"
+    "texto": "🌌 Um portal dimensional se abre atrás dos combatentes. Mesmo diante do caos cósmico, {vencedor} supera {perdedor}. ✨"
   },
   {
-    "texto": "⚡ Um raio cai próximo aos dois durante o duelo. {vencedor} aproveita a distração e ataca {perdedor} antes que ele consiga reagir. ⚡"
+    "texto": "🏰 As muralhas tremem enquanto o duelo acontece. O confronto termina quando {vencedor} lança {perdedor} ao chão. ⚔️"
   },
   {
-    "texto": "🗡️ O duelo acontece em um corredor estreito. {vencedor} vence porque não deixa {perdedor} espaço para movimentação. 🏰"
+    "texto": "💀 Espíritos antigos observam o combate em silêncio. Eles testemunham {vencedor} derrotar {perdedor} em uma batalha memorável. 👻"
   },
   {
-    "texto": "🏹 Os dois se enfrentam em um antigo campo de batalha. {vencedor} vence porque desvia do primeiro ataque e encontra o ponto fraco de {perdedor}. 💀"
+    "texto": "🔥 O ar fica tão quente que as espadas começam a brilhar. Ainda assim, {vencedor} consegue superar {perdedor}. ⚔️"
   },
   {
-    "texto": "🐉 Um dragão sobrevoa o campo enquanto os dois duelam. {vencedor} vence porque mantém a concentração enquanto {perdedor} se distrai. 🐉"
+    "texto": "🐺 Uma alcateia cerca a arena enquanto os dois duelam. Sem se intimidar, {vencedor} derrota {perdedor}. 🌕"
   },
   {
-    "texto": "🌧️ O duelo acontece durante uma tempestade. {vencedor} percebe que o chão está escorregadio e usa isso para derrubar {perdedor}. ⚔️"
+    "texto": "⚔️ Os golpes são tão rápidos que ninguém consegue acompanhá-los. No fim do espetáculo, {vencedor} vence {perdedor}. 💥"
   },
   {
-    "texto": "👑 {user} e {target} duelam pela coroa do reino. {vencedor} vence porque luta de maneira mais estratégica e faz {perdedor} cometer um erro. 👑"
+    "texto": "🧙‍♂️ Runas mágicas surgem ao redor da arena. A energia explode quando {vencedor} supera {perdedor}. ✨"
   },
   {
-    "texto": "🗡️ O duelo parece equilibrado até {vencedor} perceber o padrão dos golpes de {perdedor}. Depois disso, nenhum ataque consegue acertá-lo. ⚔️"
+    "texto": "🌊 Ondas gigantes atingem a costa durante o combate. Mesmo lutando contra a fúria do mar, {vencedor} derrota {perdedor}. 🌊"
   },
   {
-    "texto": "🏹 Os dois duelam sobre uma ponte de pedra. {vencedor} espera {perdedor} atacar primeiro e usa o próprio impulso dele contra ele. 🌉"
+    "texto": "🏔️ O duelo acontece no topo da montanha mais alta do reino. O eco da vitória de {vencedor} ressoa pelos vales após derrotar {perdedor}. ❄️"
   },
   {
-    "texto": "🔥 {user} e {target} entram em um salão em chamas para decidir o duelo. {vencedor} vence porque mantém a calma enquanto {perdedor} entra em pânico. 🔥"
+    "texto": "👹 Um demônio colossal surge para assistir ao combate. Impressionado, ele vê {vencedor} derrotar {perdedor}. 🔥"
   },
   {
-    "texto": "⚔️ Os dois cavaleiros começam um duelo de espadas. {vencedor} vence porque sua defesa é perfeita e {perdedor} acaba ficando sem energia. 🛡️"
+    "texto": "⚡ O choque das armas cria uma onda de energia que atravessa a arena. Quando tudo termina, {vencedor} derrotou {perdedor}. 💥"
   },
   {
-    "texto": "🏰 O duelo acontece no pátio de uma fortaleza. {vencedor} usa uma finta para fazer {perdedor} atacar no momento errado. ⚔️"
+    "texto": "🛡️ O confronto dura horas. Exaustos, os dois lançam seus últimos ataques, mas apenas {vencedor} consegue atingir {perdedor}. ⚔️"
   },
   {
-    "texto": "🧙 Uma feiticeira coloca os dois em um duelo mágico. {vencedor} vence porque guarda seu feitiço mais poderoso para o momento decisivo. ✨"
+    "texto": "🌑 A lua desaparece atrás das nuvens e a escuridão domina o campo. Das sombras surge a vitória de {vencedor} sobre {perdedor}. 🌙"
   },
   {
-    "texto": "🛡️ {user} e {target} duelam usando espadas e escudos. {vencedor} vence porque quebra o escudo de {perdedor} antes do golpe final. ⚔️"
+    "texto": "🔥 Um vulcão entra em erupção ao fundo enquanto os guerreiros lutam. Entre cinzas e fogo, {vencedor} derrota {perdedor}. 🌋"
   },
   {
-    "texto": "🌑 O duelo acontece à noite, com pouca luz. {vencedor} vence porque consegue ouvir os passos de {perdedor} e atacar antes de ser visto. 🌑"
+    "texto": "🐉 Dois dragões batalham nos céus acima da arena. O espetáculo termina com {vencedor} vencendo {perdedor}. ⚔️"
   },
   {
-    "texto": "🏹 Os dois duelam em uma torre. {vencedor} vence porque encontra uma passagem lateral e surpreende {perdedor}. 🏰"
+    "texto": "👑 A coroa lendária do império está em jogo. Após um duelo histórico, {vencedor} conquista a glória e derrota {perdedor}. 🏆"
   },
   {
-    "texto": "👑 O rei observa o duelo entre {user} e {target}. {vencedor} vence porque consegue desarmar {perdedor} sem precisar acertar um golpe. 👑"
+    "texto": "🌪️ Um tornado atravessa o campo de batalha. Aproveitando o caos, {vencedor} consegue derrotar {perdedor}. ⚔️"
   },
   {
-    "texto": "🗡️ {user} e {target} duelam em uma arena medieval. {vencedor} vence porque é mais rápido e ataca antes que {perdedor} consiga reagir. 🏟️"
+    "texto": "💎 Um artefato lendário desperta durante o confronto. Seu brilho ilumina a vitória de {vencedor} sobre {perdedor}. ✨"
   },
   {
-    "texto": "🐺 Um lobo aparece ao redor da arena durante o duelo. {vencedor} usa a distração para assustar {perdedor} e consegue a abertura para vencer. 🐺"
+    "texto": "⚔️ Cada golpe faz a terra tremer. Após um combate brutal, {vencedor} derrota {perdedor} diante de todos. 🌍"
   },
   {
-    "texto": "🏰 Os dois duelam em uma sala cheia de armaduras. {vencedor} usa uma delas como distração e pega {perdedor} desprevenido. ⚔️"
+    "texto": "🦅 Uma águia gigante sobrevoa os combatentes enquanto eles lutam. Seu grito ecoa no instante em que {vencedor} derrota {perdedor}. ⚔️"
   },
   {
-    "texto": "🧙‍♂️ {user} e {target} travam um duelo de magia. {vencedor} vence porque consegue refletir o feitiço lançado por {perdedor}. ✨"
+    "texto": "🌌 As estrelas parecem desaparecer quando os dois liberam todo seu poder. No fim, {vencedor} supera {perdedor}. ✨"
   },
   {
-    "texto": "⚔️ O duelo começa com os dois atacando ao mesmo tempo. {vencedor} consegue aparar o golpe de {perdedor} e contra-atacar primeiro. 🛡️"
+    "texto": "🏛️ Os deuses observam do alto enquanto o duelo acontece. Após uma batalha lendária, {vencedor} derrota {perdedor}. ⚡"
   },
   {
-    "texto": "🏹 Os dois se enfrentam em um campo aberto. {vencedor} vence porque percebe que {perdedor} está cansando e espera o momento certo para atacar. ⚔️"
+    "texto": "🔥 A arena inteira está em chamas. Mesmo cercado pelo fogo, {vencedor} encontra forças para derrotar {perdedor}. ⚔️"
   },
   {
-    "texto": "🔥 Um incêndio começa durante o duelo. {vencedor} usa a fumaça para desaparecer da visão de {perdedor} e atacar de surpresa. 🔥"
+    "texto": "🐲 O rugido de uma criatura ancestral ecoa pelo reino. Nem isso impede {vencedor} de derrotar {perdedor}. ⚔️"
   },
   {
-    "texto": "👑 {user} e {target} disputam o título de maior guerreiro do reino. {vencedor} vence porque consegue desarmar {perdedor} no último segundo. ⚔️"
+    "texto": "⚔️ O combate é tão intenso que o chão se quebra sob os guerreiros. Ainda assim, {vencedor} derrota {perdedor}. 💥"
   },
   {
-    "texto": "🗡️ O duelo acontece em uma masmorra escura. {vencedor} vence porque encontra uma brecha na armadura de {perdedor}. 💀"
+    "texto": "🌠 Um meteoro cruza o céu durante o confronto. Sob sua luz, {vencedor} conquista a vitória contra {perdedor}. ☄️"
   },
   {
-    "texto": "⚔️ Os dois cavaleiros duelam sob a chuva. {vencedor} vence porque mantém o equilíbrio enquanto {perdedor} escorrega durante um ataque. 🌧️"
+    "texto": "👻 Fantasmas de antigos campeões cercam a arena. Eles testemunham {vencedor} derrotar {perdedor}. 💀"
   },
   {
-    "texto": "🏹 {user} e {target} se enfrentam em uma floresta encantada. {vencedor} vence porque usa o terreno para limitar os movimentos de {perdedor}. 🌲✨"
+    "texto": "🧙‍♂️ Feitiços proibidos são liberados durante a batalha. Quando a energia se dissipa, {vencedor} triunfa sobre {perdedor}. ✨"
   },
   {
-    "texto": "🧙 Uma batalha mágica começa entre os dois. {vencedor} vence porque consegue quebrar a concentração de {perdedor} antes que ele termine o feitiço. ✨"
+    "texto": "🏹 Flechas mágicas cruzam os céus como estrelas cadentes. Em meio ao caos, {vencedor} derrota {perdedor}. ⚔️"
   },
   {
-    "texto": "🛡️ {user} e {target} duelam diante de centenas de soldados. {vencedor} vence porque resiste aos ataques de {perdedor} até encontrar uma abertura. ⚔️"
+    "texto": "⚡ Um trovão ensurdecedor acompanha o golpe final. O impacto confirma a vitória de {vencedor} sobre {perdedor}. 🌩️"
   },
   {
-    "texto": "🏰 O duelo acontece em uma ponte levadiça. {vencedor} vence porque usa a corrente da ponte para desequilibrar {perdedor}. ⚔️"
+    "texto": "🛡️ Os escudos se despedaçam, as espadas se dobram e a batalha continua. No final, {vencedor} derrota {perdedor}. ⚔️"
   },
   {
-    "texto": "🐉 Um dragão começa a destruir o castelo enquanto os dois duelam. {vencedor} continua focado enquanto {perdedor} olha para trás. 🐉"
+    "texto": "🌑 Uma eclipse cobre o céu durante o duelo. Sob a escuridão total, {vencedor} derrota {perdedor}. 🌙"
   },
   {
-    "texto": "⚔️ O duelo parece completamente equilibrado. {vencedor} vence porque muda sua estratégia no último momento e pega {perdedor} desprevenido. 🗡️"
+    "texto": "🔥 O próprio chão explode sob os combatentes. Entre fogo e fumaça, {vencedor} derrota {perdedor}. 💥"
   },
   {
-    "texto": "🗡️ {user} e {target} duelam em um salão cheio de pilares. {vencedor} usa um pilar para bloquear o ataque de {perdedor} e contra-atacar. 🏰"
+    "texto": "🐉 O espírito de um dragão ancestral envolve a arena. Sua energia acompanha {vencedor} rumo à vitória contra {perdedor}. ⚔️"
   },
   {
-    "texto": "🏹 Os dois se enfrentam em uma arena coberta de areia. {vencedor} vence porque levanta areia durante o ataque e deixa {perdedor} sem enxergar. 💨"
+    "texto": "⚔️ Os dois liberam seu poder máximo ao mesmo tempo. A colisão é devastadora, mas apenas {vencedor} derrota {perdedor}. 💫"
   },
   {
-    "texto": "⚔️ O duelo começa ao nascer do sol. {vencedor} usa o brilho refletido na espada de {perdedor} para criar uma distração e atacar. ☀️"
+    "texto": "👑 O destino do reino é decidido neste combate. Quando tudo termina, {vencedor} derrota {perdedor} e entra para a história. 📜"
   },
   {
-    "texto": "🧙‍♂️ {user} e {target} duelam dentro de uma torre mágica. {vencedor} vence porque consegue cancelar o feitiço mais poderoso de {perdedor}. ✨"
+    "texto": "🌪️ Raios, vento e fogo se misturam em uma tempestade mágica. No centro dela, {vencedor} derrota {perdedor}. ⚡"
   },
   {
-    "texto": "🔥 O chão da arena começa a pegar fogo. {vencedor} conduz {perdedor} para uma área sem saída antes que as chamas se aproximem. 🔥"
+    "texto": "💀 As portas do submundo se abrem atrás da arena. Nem os mortos conseguem desviar o olhar da vitória de {vencedor} sobre {perdedor}. 👻"
   },
   {
-    "texto": "🏰 Dois guerreiros se encontram no corredor de um castelo abandonado. {vencedor} escuta {perdedor} se aproximando e prepara uma emboscada. 👻"
+    "texto": "🏰 O castelo inteiro estremece com o impacto dos golpes. Após uma batalha colossal, {vencedor} derrota {perdedor}. ⚔️"
   },
   {
-    "texto": "🛡️ {user} e {target} começam um duelo usando armas pesadas. {vencedor} vence porque espera {perdedor} cansar depois de vários ataques. ⚔️"
+    "texto": "🦁 O rugido de uma besta lendária ecoa pelo campo. Inspirado pela fúria da batalha, {vencedor} derrota {perdedor}. 🔥"
   },
   {
-    "texto": "🗡️ O duelo acontece em uma ponte sobre um rio. {vencedor} consegue quebrar a guarda de {perdedor} e derrubá-lo na água. 🌊"
+    "texto": "🌌 O tecido da realidade se rompe durante o confronto. Mesmo diante do impossível, {vencedor} derrota {perdedor}. ✨"
   },
   {
-    "texto": "🏹 Os dois duelam em um castelo durante uma invasão. {vencedor} usa o caos da batalha para surpreender {perdedor}. 🏰"
+    "texto": "⚡ Uma explosão de energia pode ser vista a quilômetros de distância. Quando ela desaparece, {vencedor} derrotou {perdedor}. 💥"
   },
   {
-    "texto": "⚔️ {user} e {target} se enfrentam diante de um antigo rei. {vencedor} vence porque consegue antecipar cada movimento de {perdedor}. 👑"
+    "texto": "🐲 O sangue de dragões corre pelas veias dos combatentes. Após um confronto lendário, {vencedor} derrota {perdedor}. 🔥"
   },
   {
-    "texto": "🧙 Uma maldição impede os dois de recuar. {vencedor} vence porque descobre primeiro como a magia funciona e usa isso contra {perdedor}. 🪄"
-  },
-  {
-    "texto": "🌙 O duelo acontece sob uma lua vermelha. {vencedor} vence porque consegue lutar no escuro melhor do que {perdedor}. 🌙⚔️"
-  },
-  {
-    "texto": "🏰 Os dois duelam em uma escadaria enorme. {vencedor} vence porque usa a altura a seu favor e coloca {perdedor} em desvantagem. ⚔️"
-  },
-  {
-    "texto": "👑 O duelo final pelo trono começa. {vencedor} vence porque permanece calmo enquanto {perdedor} luta tomado pela raiva e comete um erro. 👑⚔️"
+    "texto": "🏆 Bardos cantarão sobre esta batalha por gerações. O motivo é simples: {vencedor} derrotou {perdedor} em um duelo inesquecível. 🎶"
   }
 ]
