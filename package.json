@@ -4,8 +4,6 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "redis": "^6.2.1",
-    "@google/generative-ai": "^0.21.0",
     "tmi.js": "^1.8.5"
   }
 }
