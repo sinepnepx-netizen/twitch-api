@@ -639,3 +639,90 @@
   },
   {
     "id": "cassia_segundo_sol",
+    "titulo": "Segundo Sol",
+    "artista": "Cássia Eller",
+    "refrao": "Quando o segundo sol chegar",
+    "dicas": [
+      "É uma das músicas mais conhecidas da cantora.",
+      "Cássia Eller ficou marcada por sua voz e interpretação no rock brasileiro."
+    ],
+    "categorias": ["rock", "brasil", "anos90"]
+  },
+  {
+    "id": "titas_epitafio",
+    "titulo": "Epitáfio",
+    "artista": "Titãs",
+    "refrao": "Devia ter amado mais",
+    "dicas": [
+      "A música faz uma reflexão sobre arrependimentos.",
+      "É uma das canções mais populares dos Titãs."
+    ],
+    "categorias": ["rock", "poprock", "brasil", "anos2000"]
+  },
+  {
+    "id": "paralamas_meu_erro",
+    "titulo": "Meu Erro",
+    "artista": "Os Paralamas do Sucesso",
+    "refrao": "Eu quis dizer, você não quis escutar",
+    "dicas": [
+      "É um dos maiores clássicos do rock brasileiro.",
+      "A banda é formada por Herbert Vianna, Bi Ribeiro e João Barone."
+    ],
+    "categorias": ["rock", "poprock", "brasil", "anos80"]
+  },
+  {
+    "id": "nx_zero_razoes",
+    "titulo": "Razões e Emoções",
+    "artista": "NX Zero",
+    "refrao": "Entre razões e emoções a saída é fazer valer a pena",
+    "dicas": [
+      "É um dos maiores sucessos do NX Zero.",
+      "A música ficou muito popular na cena emo brasileira."
+    ],
+    "categorias": ["rock", "emo", "brasil", "anos2000"]
+  },
+  {
+    "id": "nx_zero_cedo",
+    "titulo": "Cedo ou Tarde",
+    "artista": "NX Zero",
+    "refrao": "Cedo ou tarde a gente vai se encontrar",
+    "dicas": [
+      "A música ficou conhecida por seu tema emocional.",
+      "É uma das baladas mais conhecidas do NX Zero."
+    ],
+    "categorias": ["rock", "emo", "brasil", "anos2000"]
+  },
+  {
+    "id": "fresno_desde_quando",
+    "titulo": "Desde Quando Você Se Foi",
+    "artista": "Fresno",
+    "refrao": "Desde quando você se foi",
+    "dicas": [
+      "É uma música muito conhecida da fase inicial da banda.",
+      "A Fresno é uma das bandas associadas ao emo brasileiro."
+    ],
+    "categorias": ["rock", "emo", "brasil", "anos2000"]
+  },
+  {
+    "id": "raimundos_mulher",
+    "titulo": "Mulher de Fases",
+    "artista": "Raimundos",
+    "refrao": "Meu namoro é na boa",
+    "dicas": [
+      "É um dos maiores sucessos dos Raimundos.",
+      "A banda é conhecida por misturar punk rock e humor."
+    ],
+    "categorias": ["rock", "punk", "brasil", "anos90"]
+  },
+  {
+    "id": "mamonas_pelados",
+    "titulo": "Pelados em Santos",
+    "artista": "Mamonas Assassinas",
+    "refrao": "Minha Brasília amarela",
+    "dicas": [
+      "A música é marcada pelo humor característico da banda.",
+      "O título faz referência a uma cidade do litoral paulista."
+    ],
+    "categorias": ["rock", "brasil", "anos90"]
+  }
+]
