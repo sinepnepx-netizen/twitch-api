@@ -1,2624 +1,641 @@
 [
   {
-    "id": 1,
+    "id": "mj_billie_jean",
+    "titulo": "Billie Jean",
     "artista": "Michael Jackson",
-    "musica": "Billie Jean",
-    "categorias": [
-      "internacional",
-      "pop",
-      "classicos"
+    "refrao": "Billie Jean is not my lover",
+    "dicas": [
+      "Um dos maiores sucessos do álbum Thriller.",
+      "O cantor ficou famoso pelo moonwalk."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits de Michael Jackson, com uma linha de baixo imediatamente reconhecível.",
-    "respostas": [
-      "Billie Jean"
-    ]
+    "categorias": ["pop", "internacional", "anos80"]
   },
   {
-    "id": 2,
+    "id": "mj_thriller",
+    "titulo": "Thriller",
     "artista": "Michael Jackson",
-    "musica": "Beat It",
-    "categorias": [
-      "internacional",
-      "pop",
-      "rock",
-      "classicos"
+    "refrao": "Cause this is thriller, thriller night",
+    "dicas": [
+      "A música é associada a um dos videoclipes mais famosos da história.",
+      "O videoclipe tem uma famosa transformação em lobisomem."
     ],
-    "dificuldade": "facil",
-    "dica": "Michael Jackson mistura pop e rock em um dos clipes mais famosos dos anos 80.",
-    "respostas": [
-      "Beat It"
-    ]
+    "categorias": ["pop", "internacional", "anos80"]
   },
   {
-    "id": 3,
+    "id": "mj_beat_it",
+    "titulo": "Beat It",
     "artista": "Michael Jackson",
-    "musica": "Thriller",
-    "categorias": [
-      "internacional",
-      "pop",
-      "classicos"
+    "refrao": "Just beat it, beat it",
+    "dicas": [
+      "É um dos maiores sucessos solo do cantor.",
+      "O clipe tem uma famosa cena envolvendo gangues."
     ],
-    "dificuldade": "facil",
-    "dica": "A música dá nome ao álbum e ao lendário videoclipe com temática de terror.",
-    "respostas": [
-      "Thriller"
-    ]
+    "categorias": ["pop", "rock", "internacional", "anos80"]
   },
   {
-    "id": 4,
+    "id": "mj_smooth_criminal",
+    "titulo": "Smooth Criminal",
     "artista": "Michael Jackson",
-    "musica": "Smooth Criminal",
-    "categorias": [
-      "internacional",
-      "pop",
-      "classicos"
+    "refrao": "Annie, are you okay?",
+    "dicas": [
+      "A música pertence ao álbum Bad.",
+      "O cantor ficou famoso por uma inclinação impossível no palco."
     ],
-    "dificuldade": "medio",
-    "dica": "Famosa pelo clipe cinematográfico e pelo icônico movimento de inclinação.",
-    "respostas": [
-      "Smooth Criminal"
-    ]
+    "categorias": ["pop", "internacional", "anos80"]
   },
   {
-    "id": 5,
-    "artista": "Madonna",
-    "musica": "Like a Prayer",
-    "categorias": [
-      "internacional",
-      "pop",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos de Madonna, lançado no fim dos anos 80.",
-    "respostas": [
-      "Like a Prayer"
-    ]
-  },
-  {
-    "id": 6,
-    "artista": "Madonna",
-    "musica": "Material Girl",
-    "categorias": [
-      "internacional",
-      "pop",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores símbolos da fase pop clássica de Madonna.",
-    "respostas": [
-      "Material Girl"
-    ]
-  },
-  {
-    "id": 7,
-    "artista": "Britney Spears",
-    "musica": "...Baby One More Time",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "O grande hit de estreia que transformou Britney em fenômeno pop adolescente.",
-    "respostas": [
-      "...Baby One More Time"
-    ]
-  },
-  {
-    "id": 8,
-    "artista": "Britney Spears",
-    "musica": "Toxic",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos hits mais reconhecidos da carreira de Britney, com produção eletrônica marcante.",
-    "respostas": [
-      "Toxic"
-    ]
-  },
-  {
-    "id": 9,
-    "artista": "Rihanna",
-    "musica": "Umbrella",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit de Rihanna associado ao álbum Good Girl Gone Bad.",
-    "respostas": [
-      "Umbrella"
-    ]
-  },
-  {
-    "id": 10,
-    "artista": "Rihanna",
-    "musica": "Diamonds",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das baladas pop mais conhecidas da carreira de Rihanna.",
-    "respostas": [
-      "Diamonds"
-    ]
-  },
-  {
-    "id": 11,
-    "artista": "Rihanna",
-    "musica": "We Found Love",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Rihanna se junta a Calvin Harris em um enorme hit dançante.",
-    "respostas": [
-      "We Found Love"
-    ]
-  },
-  {
-    "id": 12,
-    "artista": "Beyoncé",
-    "musica": "Halo",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das baladas mais famosas da carreira solo de Beyoncé.",
-    "respostas": [
-      "Halo"
-    ]
-  },
-  {
-    "id": 13,
-    "artista": "Beyoncé",
-    "musica": "Crazy in Love",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits da estreia solo de Beyoncé, com participação de Jay-Z.",
-    "respostas": [
-      "Crazy in Love"
-    ]
-  },
-  {
-    "id": 14,
-    "artista": "Lady Gaga",
-    "musica": "Poker Face",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits do álbum de estreia de Lady Gaga.",
-    "respostas": [
-      "Poker Face"
-    ]
-  },
-  {
-    "id": 15,
-    "artista": "Lady Gaga",
-    "musica": "Bad Romance",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit conhecido pelo refrão e pelo videoclipe visualmente extravagante.",
-    "respostas": [
-      "Bad Romance"
-    ]
-  },
-  {
-    "id": 16,
-    "artista": "Lady Gaga",
-    "musica": "Just Dance",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos primeiros grandes sucessos que apresentou Lady Gaga ao mundo.",
-    "respostas": [
-      "Just Dance"
-    ]
-  },
-  {
-    "id": 17,
-    "artista": "Ariana Grande",
-    "musica": "thank u, next",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit que virou fenômeno cultural e deu nome a um álbum de Ariana Grande.",
-    "respostas": [
-      "thank u, next"
-    ]
-  },
-  {
-    "id": 18,
-    "artista": "Ariana Grande",
-    "musica": "7 rings",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits de Ariana, inspirado em uma experiência de compras com amigas.",
-    "respostas": [
-      "7 rings"
-    ]
-  },
-  {
-    "id": 19,
-    "artista": "Taylor Swift",
-    "musica": "Love Story",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Taylor Swift transforma uma história de amor inspirada em Shakespeare em hit.",
-    "respostas": [
-      "Love Story"
-    ]
-  },
-  {
-    "id": 20,
-    "artista": "Taylor Swift",
-    "musica": "Blank Space",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits da era 1989 de Taylor Swift.",
-    "respostas": [
-      "Blank Space"
-    ]
-  },
-  {
-    "id": 21,
-    "artista": "Katy Perry",
-    "musica": "Firework",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hinos pop de Katy Perry, com temática de autoconfiança.",
-    "respostas": [
-      "Firework"
-    ]
-  },
-  {
-    "id": 22,
-    "artista": "Katy Perry",
-    "musica": "Teenage Dream",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "medio",
-    "dica": "Faixa-título de uma das eras pop mais bem-sucedidas de Katy Perry.",
-    "respostas": [
-      "Teenage Dream"
-    ]
-  },
-  {
-    "id": 23,
-    "artista": "Bruno Mars",
-    "musica": "Just the Way You Are",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos primeiros grandes sucessos solo de Bruno Mars.",
-    "respostas": [
-      "Just the Way You Are"
-    ]
-  },
-  {
-    "id": 24,
-    "artista": "Bruno Mars",
-    "musica": "Locked Out of Heaven",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit de Bruno Mars com forte influência de rock e new wave.",
-    "respostas": [
-      "Locked Out of Heaven"
-    ]
-  },
-  {
-    "id": 25,
-    "artista": "The Weeknd",
-    "musica": "Blinding Lights",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2020"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos globais da música pop no início dos anos 2020.",
-    "respostas": [
-      "Blinding Lights"
-    ]
-  },
-  {
-    "id": 26,
-    "artista": "The Weeknd",
-    "musica": "Save Your Tears",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2020"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit do álbum After Hours que ganhou enorme alcance mundial.",
-    "respostas": [
-      "Save Your Tears"
-    ]
-  },
-  {
-    "id": 27,
-    "artista": "Dua Lipa",
-    "musica": "Levitating",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2020"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos grandes hits dançantes da era Future Nostalgia.",
-    "respostas": [
-      "Levitating"
-    ]
-  },
-  {
-    "id": 28,
-    "artista": "Dua Lipa",
-    "musica": "Don't Start Now",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2020"
-    ],
-    "dificuldade": "facil",
-    "dica": "Grande sucesso disco-pop que marcou a fase Future Nostalgia.",
-    "respostas": [
-      "Don't Start Now"
-    ]
-  },
-  {
-    "id": 29,
-    "artista": "Adele",
-    "musica": "Rolling in the Deep",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos vocais da carreira de Adele.",
-    "respostas": [
-      "Rolling in the Deep"
-    ]
-  },
-  {
-    "id": 30,
-    "artista": "Adele",
-    "musica": "Someone Like You",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Balada de Adele que se tornou um de seus maiores sucessos.",
-    "respostas": [
-      "Someone Like You"
-    ]
-  },
-  {
-    "id": 31,
-    "artista": "Ed Sheeran",
-    "musica": "Shape of You",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos globais de Ed Sheeran.",
-    "respostas": [
-      "Shape of You"
-    ]
-  },
-  {
-    "id": 32,
-    "artista": "Ed Sheeran",
-    "musica": "Perfect",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Balada romântica extremamente popular de Ed Sheeran.",
-    "respostas": [
-      "Perfect"
-    ]
-  },
-  {
-    "id": 33,
-    "artista": "The Black Eyed Peas",
-    "musica": "I Gotta Feeling",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits de festa do grupo americano.",
-    "respostas": [
-      "I Gotta Feeling"
-    ]
-  },
-  {
-    "id": 34,
-    "artista": "The Black Eyed Peas",
-    "musica": "Boom Boom Pow",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2000"
-    ],
-    "dificuldade": "medio",
-    "dica": "Hit eletrônico que marcou a fase futurista do grupo.",
-    "respostas": [
-      "Boom Boom Pow"
-    ]
-  },
-  {
-    "id": 35,
-    "artista": "Avicii",
-    "musica": "Wake Me Up",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Mistura folk e música eletrônica em um dos maiores hits de Avicii.",
-    "respostas": [
-      "Wake Me Up"
-    ]
-  },
-  {
-    "id": 36,
-    "artista": "Calvin Harris",
-    "musica": "Summer",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit eletrônico associado ao clima de verão e ao DJ Calvin Harris.",
-    "respostas": [
-      "Summer"
-    ]
-  },
-  {
-    "id": 37,
+    "id": "lp_numb",
+    "titulo": "Numb",
     "artista": "Linkin Park",
-    "musica": "In the End",
-    "categorias": [
-      "internacional",
-      "rock",
-      "nu_metal",
-      "anos2000"
+    "refrao": "I've become so numb",
+    "dicas": [
+      "Uma das músicas mais conhecidas da banda nos anos 2000.",
+      "O vocalista principal era Chester Bennington."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits do Linkin Park e uma das músicas mais reconhecíveis do nu metal.",
-    "respostas": [
-      "In the End"
-    ]
+    "categorias": ["rock", "alternative", "internacional", "anos2000"]
   },
   {
-    "id": 38,
+    "id": "lp_in_the_end",
+    "titulo": "In the End",
     "artista": "Linkin Park",
-    "musica": "Numb",
-    "categorias": [
-      "internacional",
-      "rock",
-      "nu_metal",
-      "anos2000"
+    "refrao": "In the end, it doesn't even matter",
+    "dicas": [
+      "É um dos maiores sucessos do primeiro álbum da banda.",
+      "A música mistura rock com elementos de hip hop."
     ],
-    "dificuldade": "facil",
-    "dica": "Hit do álbum Meteora que se tornou um dos maiores clássicos da banda.",
-    "respostas": [
-      "Numb"
-    ]
+    "categorias": ["rock", "alternative", "internacional", "anos2000"]
   },
   {
-    "id": 39,
+    "id": "lp_crawling",
+    "titulo": "Crawling",
     "artista": "Linkin Park",
-    "musica": "What I've Done",
-    "categorias": [
-      "internacional",
-      "rock",
-      "nu_metal",
-      "anos2000",
-      "filmes_series"
+    "refrao": "Crawling in my skin",
+    "dicas": [
+      "A música pertence ao álbum Hybrid Theory.",
+      "O vocalista Chester Bennington canta sobre uma sensação de conflito interno."
     ],
-    "dificuldade": "facil",
-    "dica": "Faixa do Minutes to Midnight que ficou associada a um grande filme de ação.",
-    "respostas": [
-      "What I've Done"
-    ]
+    "categorias": ["rock", "alternative", "internacional", "anos2000"]
   },
   {
-    "id": 40,
+    "id": "lp_what_ive_done",
+    "titulo": "What I've Done",
     "artista": "Linkin Park",
-    "musica": "Faint",
-    "categorias": [
-      "internacional",
-      "rock",
-      "nu_metal",
-      "anos2000"
+    "refrao": "What I've done, I'll face myself",
+    "dicas": [
+      "A música aparece em um famoso filme de robôs gigantes.",
+      "Faz parte do álbum Minutes to Midnight."
     ],
-    "dificuldade": "facil",
-    "dica": "Uma das faixas mais enérgicas e conhecidas do Meteora.",
-    "respostas": [
-      "Faint"
-    ]
+    "categorias": ["rock", "alternative", "internacional", "anos2000"]
   },
   {
-    "id": 41,
-    "artista": "Avril Lavigne",
-    "musica": "Complicated",
-    "categorias": [
-      "internacional",
-      "pop_punk",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "O grande hit de estreia de Avril Lavigne.",
-    "respostas": [
-      "Complicated"
-    ]
-  },
-  {
-    "id": 42,
-    "artista": "Avril Lavigne",
-    "musica": "Sk8er Boi",
-    "categorias": [
-      "internacional",
-      "pop_punk",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores clássicos pop-punk de Avril.",
-    "respostas": [
-      "Sk8er Boi"
-    ]
-  },
-  {
-    "id": 43,
-    "artista": "Avril Lavigne",
-    "musica": "Girlfriend",
-    "categorias": [
-      "internacional",
-      "pop_punk",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit pop-punk extremamente conhecido da fase The Best Damn Thing.",
-    "respostas": [
-      "Girlfriend"
-    ]
-  },
-  {
-    "id": 44,
-    "artista": "Avril Lavigne",
-    "musica": "My Happy Ending",
-    "categorias": [
-      "internacional",
-      "pop_punk",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos da era Under My Skin.",
-    "respostas": [
-      "My Happy Ending"
-    ]
-  },
-  {
-    "id": 45,
+    "id": "paramore_misery_business",
+    "titulo": "Misery Business",
     "artista": "Paramore",
-    "musica": "Misery Business",
-    "categorias": [
-      "internacional",
-      "rock",
-      "emo",
-      "pop_punk",
-      "anos2000"
+    "refrao": "Once a whore, you're nothing more",
+    "dicas": [
+      "Foi um dos maiores sucessos do Paramore.",
+      "A banda ganhou enorme popularidade na cena emo e pop punk."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hinos do Paramore e do pop-punk dos anos 2000.",
-    "respostas": [
-      "Misery Business"
-    ]
+    "categorias": ["rock", "emo", "punk", "internacional", "anos2000"]
   },
   {
-    "id": 46,
+    "id": "paramore_still_into_you",
+    "titulo": "Still Into You",
     "artista": "Paramore",
-    "musica": "Decode",
-    "categorias": [
-      "internacional",
-      "rock",
-      "emo",
-      "filmes_series",
-      "anos2000"
+    "refrao": "I should be over all the butterflies",
+    "dicas": [
+      "É uma música mais pop da banda.",
+      "O videoclipe tem uma estética muito colorida."
     ],
-    "dificuldade": "facil",
-    "dica": "Música do Paramore ligada à trilha de uma famosa franquia de vampiros.",
-    "respostas": [
-      "Decode"
-    ]
+    "categorias": ["poprock", "alternative", "internacional", "anos2010"]
   },
   {
-    "id": 47,
+    "id": "paramore_decode",
+    "titulo": "Decode",
     "artista": "Paramore",
-    "musica": "Still Into You",
-    "categorias": [
-      "internacional",
-      "rock",
-      "pop_punk",
-      "anos2010"
+    "refrao": "How can I decide what's right?",
+    "dicas": [
+      "A música fez parte da trilha sonora de uma famosa franquia adolescente.",
+      "Hayley Williams é a vocalista da banda."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos do álbum Paramore.",
-    "respostas": [
-      "Still Into You"
-    ]
+    "categorias": ["rock", "emo", "alternative", "internacional", "anos2000"]
   },
   {
-    "id": 48,
+    "id": "avril_complicated",
+    "titulo": "Complicated",
+    "artista": "Avril Lavigne",
+    "refrao": "Why'd you have to go and make things",
+    "dicas": [
+      "Foi um dos maiores hits de estreia da cantora.",
+      "O primeiro álbum da cantora se chama Let Go."
+    ],
+    "categorias": ["poprock", "punk", "internacional", "anos2000"]
+  },
+  {
+    "id": "avril_sk8er_boi",
+    "titulo": "Sk8er Boi",
+    "artista": "Avril Lavigne",
+    "refrao": "He was a boy, she was a girl",
+    "dicas": [
+      "A música conta uma história envolvendo dois adolescentes.",
+      "O título usa uma grafia estilizada com número."
+    ],
+    "categorias": ["poprock", "punk", "internacional", "anos2000"]
+  },
+  {
+    "id": "avril_my_happy_ending",
+    "titulo": "My Happy Ending",
+    "artista": "Avril Lavigne",
+    "refrao": "So much for my happy ending",
+    "dicas": [
+      "A música fala sobre o fim de um relacionamento.",
+      "É um dos maiores sucessos da cantora nos anos 2000."
+    ],
+    "categorias": ["poprock", "rock", "internacional", "anos2000"]
+  },
+  {
+    "id": "evanescence_bring_me",
+    "titulo": "Bring Me to Life",
     "artista": "Evanescence",
-    "musica": "Bring Me to Life",
-    "categorias": [
-      "internacional",
-      "rock",
-      "metal",
-      "anos2000",
-      "filmes_series"
+    "refrao": "Wake me up inside",
+    "dicas": [
+      "Foi o maior sucesso do primeiro álbum da banda.",
+      "Amy Lee é a vocalista."
     ],
-    "dificuldade": "facil",
-    "dica": "Grande hit do Evanescence que ganhou enorme destaque em uma trilha de cinema.",
-    "respostas": [
-      "Bring Me to Life"
-    ]
+    "categorias": ["rock", "alternative", "metal", "internacional", "anos2000"]
   },
   {
-    "id": 49,
+    "id": "evanescence_my_immortal",
+    "titulo": "My Immortal",
     "artista": "Evanescence",
-    "musica": "My Immortal",
-    "categorias": [
-      "internacional",
-      "rock",
-      "anos2000"
+    "refrao": "These wounds won't seem to heal",
+    "dicas": [
+      "É uma das baladas mais conhecidas da banda.",
+      "A música ficou famosa pelo piano e pela voz de Amy Lee."
     ],
-    "dificuldade": "facil",
-    "dica": "Balada extremamente conhecida do álbum Fallen.",
-    "respostas": [
-      "My Immortal"
-    ]
+    "categorias": ["rock", "alternative", "internacional", "anos2000"]
   },
   {
-    "id": 50,
-    "artista": "My Chemical Romance",
-    "musica": "Welcome to the Black Parade",
-    "categorias": [
-      "internacional",
-      "rock",
-      "emo",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hinos do emo dos anos 2000.",
-    "respostas": [
-      "Welcome to the Black Parade"
-    ]
-  },
-  {
-    "id": 51,
-    "artista": "My Chemical Romance",
-    "musica": "Helena",
-    "categorias": [
-      "internacional",
-      "rock",
-      "emo",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Faixa marcante do álbum Three Cheers for Sweet Revenge.",
-    "respostas": [
-      "Helena"
-    ]
-  },
-  {
-    "id": 52,
-    "artista": "My Chemical Romance",
-    "musica": "Teenagers",
-    "categorias": [
-      "internacional",
-      "rock",
-      "emo",
-      "anos2000"
-    ],
-    "dificuldade": "medio",
-    "dica": "Hit do The Black Parade com crítica ao comportamento adolescente.",
-    "respostas": [
-      "Teenagers"
-    ]
-  },
-  {
-    "id": 53,
+    "id": "green_day_boulevard",
+    "titulo": "Boulevard of Broken Dreams",
     "artista": "Green Day",
-    "musica": "Boulevard of Broken Dreams",
-    "categorias": [
-      "internacional",
-      "rock",
-      "punk",
-      "anos2000"
+    "refrao": "I walk a lonely road",
+    "dicas": [
+      "Uma das músicas mais famosas do álbum American Idiot.",
+      "A banda é uma das referências do pop punk."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos do álbum American Idiot.",
-    "respostas": [
-      "Boulevard of Broken Dreams"
-    ]
+    "categorias": ["rock", "punk", "internacional", "anos2000"]
   },
   {
-    "id": 54,
+    "id": "green_day_21_guns",
+    "titulo": "21 Guns",
     "artista": "Green Day",
-    "musica": "American Idiot",
-    "categorias": [
-      "internacional",
-      "rock",
-      "punk",
-      "anos2000"
+    "refrao": "One, 21 guns",
+    "dicas": [
+      "A música faz parte de um álbum conceitual.",
+      "A banda ficou conhecida por grandes sucessos de punk rock."
     ],
-    "dificuldade": "facil",
-    "dica": "Faixa-título de um dos álbuns mais famosos do Green Day.",
-    "respostas": [
-      "American Idiot"
-    ]
+    "categorias": ["rock", "punk", "internacional", "anos2000"]
   },
   {
-    "id": 55,
-    "artista": "Green Day",
-    "musica": "21 Guns",
-    "categorias": [
-      "internacional",
-      "rock",
-      "anos2000"
+    "id": "mcr_black_parade",
+    "titulo": "Welcome to the Black Parade",
+    "artista": "My Chemical Romance",
+    "refrao": "We carry on, we carry on",
+    "dicas": [
+      "É uma das músicas mais importantes da cena emo.",
+      "Faz parte do álbum The Black Parade."
     ],
-    "dificuldade": "facil",
-    "dica": "Uma das baladas mais conhecidas do Green Day.",
-    "respostas": [
-      "21 Guns"
-    ]
+    "categorias": ["rock", "emo", "alternative", "internacional", "anos2000"]
   },
   {
-    "id": 56,
+    "id": "mcr_teenagers",
+    "titulo": "Teenagers",
+    "artista": "My Chemical Romance",
+    "refrao": "They're gonna clean up your looks",
+    "dicas": [
+      "O título fala diretamente sobre adolescentes.",
+      "A música faz parte do álbum The Black Parade."
+    ],
+    "categorias": ["rock", "emo", "alternative", "internacional", "anos2000"]
+  },
+  {
+    "id": "soad_chop_suey",
+    "titulo": "Chop Suey!",
     "artista": "System of a Down",
-    "musica": "Chop Suey!",
-    "categorias": [
-      "internacional",
-      "metal",
-      "nu_metal",
-      "anos2000"
+    "refrao": "Wake up, grab a brush and put a little makeup",
+    "dicas": [
+      "É uma das músicas mais conhecidas da banda.",
+      "A banda mistura metal com elementos pouco convencionais."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos riffs e refrões mais reconhecíveis do System of a Down.",
-    "respostas": [
-      "Chop Suey!"
-    ]
+    "categorias": ["metal", "rock", "alternative", "internacional", "anos2000"]
   },
   {
-    "id": 57,
+    "id": "soad_toxicity",
+    "titulo": "Toxicity",
     "artista": "System of a Down",
-    "musica": "Toxicity",
-    "categorias": [
-      "internacional",
-      "metal",
-      "nu_metal",
-      "anos2000"
+    "refrao": "Somewhere between the sacred silence",
+    "dicas": [
+      "É a faixa-título de um dos álbuns mais famosos da banda.",
+      "A banda tem origem armênia-americana."
     ],
-    "dificuldade": "medio",
-    "dica": "Faixa-título do álbum mais conhecido da banda.",
-    "respostas": [
-      "Toxicity"
-    ]
+    "categorias": ["metal", "rock", "alternative", "internacional", "anos2000"]
   },
   {
-    "id": 58,
+    "id": "metallica_enter_sandman",
+    "titulo": "Enter Sandman",
     "artista": "Metallica",
-    "musica": "Enter Sandman",
-    "categorias": [
-      "internacional",
-      "metal",
-      "rock",
-      "classicos"
+    "refrao": "Exit light, enter night",
+    "dicas": [
+      "É um dos maiores sucessos do Metallica.",
+      "A música pertence ao Black Album."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos riffs mais famosos da história do heavy metal.",
-    "respostas": [
-      "Enter Sandman"
-    ]
+    "categorias": ["metal", "rock", "internacional", "anos90"]
   },
   {
-    "id": 59,
+    "id": "metallica_nothing_else",
+    "titulo": "Nothing Else Matters",
     "artista": "Metallica",
-    "musica": "Nothing Else Matters",
-    "categorias": [
-      "internacional",
-      "metal",
-      "rock",
-      "classicos"
+    "refrao": "Nothing else matters",
+    "dicas": [
+      "É uma das baladas mais famosas da banda.",
+      "O Metallica é uma das bandas mais importantes do heavy metal."
     ],
-    "dificuldade": "facil",
-    "dica": "Balada de Metallica que ultrapassou o público tradicional do metal.",
-    "respostas": [
-      "Nothing Else Matters"
-    ]
+    "categorias": ["metal", "rock", "internacional", "anos90"]
   },
   {
-    "id": 60,
-    "artista": "Metallica",
-    "musica": "Master of Puppets",
-    "categorias": [
-      "internacional",
-      "metal",
-      "classicos"
-    ],
-    "dificuldade": "medio",
-    "dica": "Faixa-título de um dos álbuns mais importantes do metal.",
-    "respostas": [
-      "Master of Puppets"
-    ]
-  },
-  {
-    "id": 61,
+    "id": "a7x_nightmare",
+    "titulo": "Nightmare",
     "artista": "Avenged Sevenfold",
-    "musica": "A Little Piece of Heaven",
-    "categorias": [
-      "internacional",
-      "metal",
-      "anos2000"
+    "refrao": "Nightmare, now your nightmare comes to life",
+    "dicas": [
+      "É a faixa-título de um dos álbuns mais conhecidos da banda.",
+      "A banda é conhecida pela mistura de heavy metal e metalcore."
     ],
-    "dificuldade": "facil",
-    "dica": "Uma das músicas mais peculiares e populares do Avenged Sevenfold.",
-    "respostas": [
-      "A Little Piece of Heaven"
-    ]
+    "categorias": ["metal", "rock", "internacional", "anos2010"]
   },
   {
-    "id": 62,
+    "id": "a7x_hail_king",
+    "titulo": "Hail to the King",
     "artista": "Avenged Sevenfold",
-    "musica": "Nightmare",
-    "categorias": [
-      "internacional",
-      "metal",
-      "anos2010"
+    "refrao": "Hail to the king",
+    "dicas": [
+      "É uma música de um álbum com o mesmo nome.",
+      "A banda é conhecida pelas guitarras e solos marcantes."
     ],
-    "dificuldade": "facil",
-    "dica": "Faixa-título de um dos álbuns mais conhecidos da banda.",
-    "respostas": [
-      "Nightmare"
-    ]
+    "categorias": ["metal", "rock", "internacional", "anos2010"]
   },
   {
-    "id": 63,
-    "artista": "Avenged Sevenfold",
-    "musica": "Hail to the King",
-    "categorias": [
-      "internacional",
-      "metal",
-      "anos2010"
+    "id": "rihanna_umbrella",
+    "titulo": "Umbrella",
+    "artista": "Rihanna",
+    "refrao": "You can stand under my umbrella",
+    "dicas": [
+      "É um dos maiores hits da cantora.",
+      "O videoclipe ficou famoso pela cena com água e dança."
     ],
-    "dificuldade": "facil",
-    "dica": "Hit de metal com forte influência do heavy metal clássico.",
-    "respostas": [
-      "Hail to the King"
-    ]
+    "categorias": ["pop", "internacional", "anos2000"]
   },
   {
-    "id": 64,
-    "artista": "Foo Fighters",
-    "musica": "Everlong",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
+    "id": "rihanna_diamonds",
+    "titulo": "Diamonds",
+    "artista": "Rihanna",
+    "refrao": "Shine bright like a diamond",
+    "dicas": [
+      "A música usa uma pedra preciosa como imagem central.",
+      "Foi um dos maiores sucessos da cantora nos anos 2010."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores clássicos do Foo Fighters.",
-    "respostas": [
-      "Everlong"
-    ]
+    "categorias": ["pop", "internacional", "anos2010"]
   },
   {
-    "id": 65,
-    "artista": "Foo Fighters",
-    "musica": "The Pretender",
-    "categorias": [
-      "internacional",
-      "rock",
-      "anos2000"
+    "id": "lady_gaga_poker_face",
+    "titulo": "Poker Face",
+    "artista": "Lady Gaga",
+    "refrao": "Can't read my, can't read my poker face",
+    "dicas": [
+      "O título faz referência a uma expressão usada em jogos de cartas.",
+      "Foi um dos primeiros grandes hits internacionais da cantora."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos do Echoes, Silence, Patience & Grace.",
-    "respostas": [
-      "The Pretender"
-    ]
+    "categorias": ["pop", "internacional", "anos2000"]
   },
   {
-    "id": 66,
+    "id": "lady_gaga_bad_romance",
+    "titulo": "Bad Romance",
+    "artista": "Lady Gaga",
+    "refrao": "I want your bad romance",
+    "dicas": [
+      "O videoclipe começa com a cantora em um ambiente branco.",
+      "A música pertence ao álbum The Fame Monster."
+    ],
+    "categorias": ["pop", "internacional", "anos2000"]
+  },
+  {
+    "id": "ariana_7_rings",
+    "titulo": "7 rings",
+    "artista": "Ariana Grande",
+    "refrao": "I see it, I like it, I want it",
+    "dicas": [
+      "O título possui um número.",
+      "A música fala bastante sobre luxo e dinheiro."
+    ],
+    "categorias": ["pop", "internacional", "anos2010"]
+  },
+  {
+    "id": "ariana_thank_u_next",
+    "titulo": "thank u, next",
+    "artista": "Ariana Grande",
+    "refrao": "Thank you, next",
+    "dicas": [
+      "A cantora menciona antigos relacionamentos na música.",
+      "O título virou uma expressão muito popular."
+    ],
+    "categorias": ["pop", "internacional", "anos2010"]
+  },
+  {
+    "id": "bruno_locked",
+    "titulo": "Locked Out of Heaven",
+    "artista": "Bruno Mars",
+    "refrao": "Your sex takes me to paradise",
+    "dicas": [
+      "A música tem forte influência de rock e funk dos anos 80.",
+      "Bruno Mars é conhecido por performances dançantes."
+    ],
+    "categorias": ["pop", "poprock", "internacional", "anos2010"]
+  },
+  {
+    "id": "bruno_just_way",
+    "titulo": "Just the Way You Are",
+    "artista": "Bruno Mars",
+    "refrao": "Just the way you are",
+    "dicas": [
+      "É uma declaração romântica.",
+      "Foi um dos primeiros grandes sucessos solo do cantor."
+    ],
+    "categorias": ["pop", "internacional", "anos2010"]
+  },
+  {
+    "id": "weeknd_blinding_lights",
+    "titulo": "Blinding Lights",
+    "artista": "The Weeknd",
+    "refrao": "I said, ooh, I'm blinded by the lights",
+    "dicas": [
+      "A produção tem forte influência de synthwave.",
+      "O videoclipe faz parte da estética criada para o álbum After Hours."
+    ],
+    "categorias": ["pop", "internacional", "anos2020"]
+  },
+  {
+    "id": "weeknd_save_tears",
+    "titulo": "Save Your Tears",
+    "artista": "The Weeknd",
+    "refrao": "Save your tears for another day",
+    "dicas": [
+      "A música faz parte do álbum After Hours.",
+      "O artista aparece com uma aparência bastante diferente no videoclipe."
+    ],
+    "categorias": ["pop", "internacional", "anos2020"]
+  },
+  {
+    "id": "britney_toxic",
+    "titulo": "Toxic",
+    "artista": "Britney Spears",
+    "refrao": "With a taste of your poison paradise",
+    "dicas": [
+      "É um dos maiores sucessos da cantora.",
+      "O videoclipe apresenta Britney como uma agente em diferentes disfarces."
+    ],
+    "categorias": ["pop", "internacional", "anos2000"]
+  },
+  {
+    "id": "katy_firework",
+    "titulo": "Firework",
+    "artista": "Katy Perry",
+    "refrao": "Baby, you're a firework",
+    "dicas": [
+      "A música usa fogos de artifício como metáfora.",
+      "É uma das músicas mais conhecidas da cantora."
+    ],
+    "categorias": ["pop", "internacional", "anos2010"]
+  },
+  {
+    "id": "taylor_love_story",
+    "titulo": "Love Story",
+    "artista": "Taylor Swift",
+    "refrao": "It's a love story, baby, just say yes",
+    "dicas": [
+      "A música faz referência a uma famosa história de amor.",
+      "Foi lançada durante a fase country-pop da cantora."
+    ],
+    "categorias": ["pop", "internacional", "anos2000"]
+  },
+  {
+    "id": "taylor_blank_space",
+    "titulo": "Blank Space",
+    "artista": "Taylor Swift",
+    "refrao": "Got a long list of ex-lovers",
+    "dicas": [
+      "O videoclipe mostra um relacionamento em uma mansão.",
+      "A música brinca com a imagem pública da cantora."
+    ],
+    "categorias": ["pop", "internacional", "anos2010"]
+  },
+  {
+    "id": "beyonce_halo",
+    "titulo": "Halo",
+    "artista": "Beyoncé",
+    "refrao": "Everywhere I'm looking now",
+    "dicas": [
+      "O título remete a uma imagem celestial.",
+      "É uma das baladas mais conhecidas da cantora."
+    ],
+    "categorias": ["pop", "internacional", "anos2000"]
+  },
+  {
+    "id": "queen_boh",
+    "titulo": "Bohemian Rhapsody",
+    "artista": "Queen",
+    "refrao": "Is this the real life?",
+    "dicas": [
+      "A música possui várias partes e estilos diferentes.",
+      "A banda britânica tem Freddie Mercury como vocalista."
+    ],
+    "categorias": ["rock", "internacional", "anos70"]
+  },
+  {
+    "id": "nirvana_smells",
+    "titulo": "Smells Like Teen Spirit",
     "artista": "Nirvana",
-    "musica": "Smells Like Teen Spirit",
-    "categorias": [
-      "internacional",
-      "rock",
-      "grunge",
-      "classicos"
+    "refrao": "With the lights out, it's less dangerous",
+    "dicas": [
+      "É um dos maiores símbolos do grunge.",
+      "Kurt Cobain era o vocalista e guitarrista."
     ],
-    "dificuldade": "facil",
-    "dica": "O maior símbolo musical do grunge de Seattle.",
-    "respostas": [
-      "Smells Like Teen Spirit"
-    ]
+    "categorias": ["rock", "alternative", "internacional", "anos90"]
   },
   {
-    "id": 67,
-    "artista": "Nirvana",
-    "musica": "Come as You Are",
-    "categorias": [
-      "internacional",
-      "rock",
-      "grunge",
-      "classicos"
+    "id": "foo_everlong",
+    "titulo": "Everlong",
+    "artista": "Foo Fighters",
+    "refrao": "If everything could ever feel this real forever",
+    "dicas": [
+      "A banda foi formada por um ex-integrante do Nirvana.",
+      "É uma das músicas mais famosas do Foo Fighters."
     ],
-    "dificuldade": "facil",
-    "dica": "Outro grande clássico do álbum Nevermind.",
-    "respostas": [
-      "Come as You Are"
-    ]
+    "categorias": ["rock", "alternative", "internacional", "anos90"]
   },
   {
-    "id": 68,
-    "artista": "Guns N' Roses",
-    "musica": "Sweet Child o' Mine",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos riffs de guitarra mais reconhecidos do rock.",
-    "respostas": [
-      "Sweet Child o' Mine"
-    ]
-  },
-  {
-    "id": 69,
-    "artista": "Guns N' Roses",
-    "musica": "November Rain",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Balada épica conhecida pelo videoclipe cinematográfico.",
-    "respostas": [
-      "November Rain"
-    ]
-  },
-  {
-    "id": 70,
-    "artista": "Guns N' Roses",
-    "musica": "Paradise City",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos grandes hinos de estádio do Guns N' Roses.",
-    "respostas": [
-      "Paradise City"
-    ]
-  },
-  {
-    "id": 71,
-    "artista": "Bon Jovi",
-    "musica": "Livin' on a Prayer",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hinos de arena rock dos anos 80.",
-    "respostas": [
-      "Livin' on a Prayer"
-    ]
-  },
-  {
-    "id": 72,
-    "artista": "Bon Jovi",
-    "musica": "It's My Life",
-    "categorias": [
-      "internacional",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit que apresentou Bon Jovi a uma nova geração nos anos 2000.",
-    "respostas": [
-      "It's My Life"
-    ]
-  },
-  {
-    "id": 73,
-    "artista": "Queen",
-    "musica": "Bohemian Rhapsody",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos",
-      "filmes_series"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das músicas mais famosas e incomuns da história do rock.",
-    "respostas": [
-      "Bohemian Rhapsody"
-    ]
-  },
-  {
-    "id": 74,
-    "artista": "Queen",
-    "musica": "We Will Rock You",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Clássico de estádio conhecido pelo ritmo de palmas e batidas.",
-    "respostas": [
-      "We Will Rock You"
-    ]
-  },
-  {
-    "id": 75,
-    "artista": "Queen",
-    "musica": "Don't Stop Me Now",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores clássicos festivos do Queen.",
-    "respostas": [
-      "Don't Stop Me Now"
-    ]
-  },
-  {
-    "id": 76,
-    "artista": "AC/DC",
-    "musica": "Back in Black",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Faixa-título de um dos álbuns de rock mais conhecidos de todos os tempos.",
-    "respostas": [
-      "Back in Black"
-    ]
-  },
-  {
-    "id": 77,
-    "artista": "AC/DC",
-    "musica": "Highway to Hell",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hinos do hard rock.",
-    "respostas": [
-      "Highway to Hell"
-    ]
-  },
-  {
-    "id": 78,
-    "artista": "The Beatles",
-    "musica": "Hey Jude",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das canções mais populares da história dos Beatles.",
-    "respostas": [
-      "Hey Jude"
-    ]
-  },
-  {
-    "id": 79,
-    "artista": "The Beatles",
-    "musica": "Come Together",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Faixa de abertura de Abbey Road.",
-    "respostas": [
-      "Come Together"
-    ]
-  },
-  {
-    "id": 80,
-    "artista": "The Cranberries",
-    "musica": "Zombie",
-    "categorias": [
-      "internacional",
-      "rock",
-      "alternative",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit alternativo inspirado no conflito na Irlanda do Norte.",
-    "respostas": [
-      "Zombie"
-    ]
-  },
-  {
-    "id": 81,
-    "artista": "Red Hot Chili Peppers",
-    "musica": "Californication",
-    "categorias": [
-      "internacional",
-      "rock",
-      "alternative",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Faixa-título de um dos álbuns mais populares da banda.",
-    "respostas": [
-      "Californication"
-    ]
-  },
-  {
-    "id": 82,
-    "artista": "Red Hot Chili Peppers",
-    "musica": "Under the Bridge",
-    "categorias": [
-      "internacional",
-      "rock",
-      "alternative",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos emocionais do Red Hot Chili Peppers.",
-    "respostas": [
-      "Under the Bridge"
-    ]
-  },
-  {
-    "id": 83,
-    "artista": "The Killers",
-    "musica": "Mr. Brightside",
-    "categorias": [
-      "internacional",
-      "rock",
-      "alternative",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores clássicos do indie rock dos anos 2000.",
-    "respostas": [
-      "Mr. Brightside"
-    ]
-  },
-  {
-    "id": 84,
-    "artista": "Arctic Monkeys",
-    "musica": "Do I Wanna Know?",
-    "categorias": [
-      "internacional",
-      "rock",
-      "alternative",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos riffs mais reconhecíveis do Arctic Monkeys.",
-    "respostas": [
-      "Do I Wanna Know?"
-    ]
-  },
-  {
-    "id": 85,
-    "artista": "Radiohead",
-    "musica": "Creep",
-    "categorias": [
-      "internacional",
-      "rock",
-      "alternative",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos primeiros e maiores sucessos populares do Radiohead.",
-    "respostas": [
-      "Creep"
-    ]
-  },
-  {
-    "id": 86,
-    "artista": "The White Stripes",
-    "musica": "Seven Nation Army",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Riff usado em estádios do mundo inteiro.",
-    "respostas": [
-      "Seven Nation Army"
-    ]
-  },
-  {
-    "id": 87,
-    "artista": "Muse",
-    "musica": "Uprising",
-    "categorias": [
-      "internacional",
-      "rock",
-      "alternative",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit do Muse com temática de revolta e ficção científica.",
-    "respostas": [
-      "Uprising"
-    ]
-  },
-  {
-    "id": 88,
-    "artista": "Maroon 5",
-    "musica": "This Love",
-    "categorias": [
-      "internacional",
-      "pop_rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos primeiros grandes hits do Maroon 5.",
-    "respostas": [
-      "This Love"
-    ]
-  },
-  {
-    "id": 89,
-    "artista": "Maroon 5",
-    "musica": "Sugar",
-    "categorias": [
-      "internacional",
-      "pop",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit conhecido pelo videoclipe com casamentos reais.",
-    "respostas": [
-      "Sugar"
-    ]
-  },
-  {
-    "id": 90,
-    "artista": "OneRepublic",
-    "musica": "Counting Stars",
-    "categorias": [
-      "internacional",
-      "pop_rock",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos do OneRepublic.",
-    "respostas": [
-      "Counting Stars"
-    ]
-  },
-  {
-    "id": 91,
-    "artista": "Imagine Dragons",
-    "musica": "Radioactive",
-    "categorias": [
-      "internacional",
-      "rock",
-      "alternative",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit alternativo que ajudou a popularizar o Imagine Dragons.",
-    "respostas": [
-      "Radioactive"
-    ]
-  },
-  {
-    "id": 92,
-    "artista": "Imagine Dragons",
-    "musica": "Believer",
-    "categorias": [
-      "internacional",
-      "rock",
-      "alternative",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits do Imagine Dragons.",
-    "respostas": [
-      "Believer"
-    ]
-  },
-  {
-    "id": 93,
-    "artista": "Twenty One Pilots",
-    "musica": "Stressed Out",
-    "categorias": [
-      "internacional",
-      "alternative",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit que colocou o duo no topo das paradas.",
-    "respostas": [
-      "Stressed Out"
-    ]
-  },
-  {
-    "id": 94,
-    "artista": "Twenty One Pilots",
-    "musica": "Heathens",
-    "categorias": [
-      "internacional",
-      "alternative",
-      "filmes_series",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Música do duo associada à trilha de um filme de supervilões.",
-    "respostas": [
-      "Heathens"
-    ]
-  },
-  {
-    "id": 95,
-    "artista": "Fall Out Boy",
-    "musica": "Sugar, We're Goin Down",
-    "categorias": [
-      "internacional",
-      "rock",
-      "emo",
-      "pop_punk",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores clássicos do pop-punk dos anos 2000.",
-    "respostas": [
-      "Sugar, We're Goin Down"
-    ]
-  },
-  {
-    "id": 96,
-    "artista": "Panic! at the Disco",
-    "musica": "I Write Sins Not Tragedies",
-    "categorias": [
-      "internacional",
-      "rock",
-      "emo",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hinos do emo/pop-rock dos anos 2000.",
-    "respostas": [
-      "I Write Sins Not Tragedies"
-    ]
-  },
-  {
-    "id": 97,
-    "artista": "Blink-182",
-    "musica": "All the Small Things",
-    "categorias": [
-      "internacional",
-      "rock",
-      "pop_punk",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores clássicos do pop-punk.",
-    "respostas": [
-      "All the Small Things"
-    ]
-  },
-  {
-    "id": 98,
-    "artista": "Blink-182",
-    "musica": "What's My Age Again?",
-    "categorias": [
-      "internacional",
-      "rock",
-      "pop_punk",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit do Enema of the State com humor adolescente.",
-    "respostas": [
-      "What's My Age Again?"
-    ]
-  },
-  {
-    "id": 99,
-    "artista": "Sum 41",
-    "musica": "In Too Deep",
-    "categorias": [
-      "internacional",
-      "rock",
-      "pop_punk",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits do Sum 41.",
-    "respostas": [
-      "In Too Deep"
-    ]
-  },
-  {
-    "id": 100,
-    "artista": "Simple Plan",
-    "musica": "Welcome to My Life",
-    "categorias": [
-      "internacional",
-      "rock",
-      "pop_punk",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos grandes sucessos do pop-punk dos anos 2000.",
-    "respostas": [
-      "Welcome to My Life"
-    ]
-  },
-  {
-    "id": 101,
-    "artista": "Slipknot",
-    "musica": "Duality",
-    "categorias": [
-      "internacional",
-      "metal",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos do Slipknot.",
-    "respostas": [
-      "Duality"
-    ]
-  },
-  {
-    "id": 102,
-    "artista": "Slipknot",
-    "musica": "Psychosocial",
-    "categorias": [
-      "internacional",
-      "metal",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit de metal extremamente reconhecido pelo público da banda.",
-    "respostas": [
-      "Psychosocial"
-    ]
-  },
-  {
-    "id": 103,
-    "artista": "Iron Maiden",
-    "musica": "The Trooper",
-    "categorias": [
-      "internacional",
-      "metal",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hinos do heavy metal britânico.",
-    "respostas": [
-      "The Trooper"
-    ]
-  },
-  {
-    "id": 104,
-    "artista": "Black Sabbath",
-    "musica": "Paranoid",
-    "categorias": [
-      "internacional",
-      "metal",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Faixa que ajudou a definir o heavy metal.",
-    "respostas": [
-      "Paranoid"
-    ]
-  },
-  {
-    "id": 105,
-    "artista": "Ozzy Osbourne",
-    "musica": "Crazy Train",
-    "categorias": [
-      "internacional",
-      "metal",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos riffs mais conhecidos da carreira solo de Ozzy.",
-    "respostas": [
-      "Crazy Train"
-    ]
-  },
-  {
-    "id": 106,
+    "id": "oasis_wonderwall",
+    "titulo": "Wonderwall",
     "artista": "Oasis",
-    "musica": "Wonderwall",
-    "categorias": [
-      "internacional",
-      "rock",
-      "britpop",
-      "anos1990"
+    "refrao": "You're gonna be the one that saves me",
+    "dicas": [
+      "É uma das músicas mais conhecidas do britpop.",
+      "Liam e Noel Gallagher fizeram parte da banda."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits do britpop.",
-    "respostas": [
-      "Wonderwall"
-    ]
+    "categorias": ["rock", "alternative", "internacional", "anos90"]
   },
   {
-    "id": 107,
-    "artista": "Oasis",
-    "musica": "Don't Look Back in Anger",
-    "categorias": [
-      "internacional",
-      "rock",
-      "britpop",
-      "anos1990"
+    "id": "bon_jovi_livin",
+    "titulo": "Livin' on a Prayer",
+    "artista": "Bon Jovi",
+    "refrao": "We're halfway there, livin' on a prayer",
+    "dicas": [
+      "É um dos maiores hinos do rock dos anos 80.",
+      "O vocalista da banda é Jon Bon Jovi."
     ],
-    "dificuldade": "facil",
-    "dica": "Grande hino do Oasis que virou clássico de estádios.",
-    "respostas": [
-      "Don't Look Back in Anger"
-    ]
+    "categorias": ["rock", "internacional", "anos80"]
   },
   {
-    "id": 108,
-    "artista": "Blur",
-    "musica": "Song 2",
-    "categorias": [
-      "internacional",
-      "rock",
-      "britpop",
-      "anos1990"
+    "id": "journey_dont_stop",
+    "titulo": "Don't Stop Believin'",
+    "artista": "Journey",
+    "refrao": "Don't stop believin'",
+    "dicas": [
+      "Virou um dos maiores hinos de estádio e karaokê.",
+      "A banda é norte-americana."
     ],
-    "dificuldade": "facil",
-    "dica": "Hit curtíssimo e explosivo do Blur.",
-    "respostas": [
-      "Song 2"
-    ]
+    "categorias": ["rock", "internacional", "anos80"]
   },
   {
-    "id": 109,
-    "artista": "U2",
-    "musica": "With or Without You",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das baladas mais famosas do U2.",
-    "respostas": [
-      "With or Without You"
-    ]
-  },
-  {
-    "id": 110,
-    "artista": "a-ha",
-    "musica": "Take on Me",
-    "categorias": [
-      "internacional",
-      "pop",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Famosa pelo videoclipe com animação e estética de quadrinhos.",
-    "respostas": [
-      "Take on Me"
-    ]
-  },
-  {
-    "id": 111,
-    "artista": "Toto",
-    "musica": "Africa",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos clássicos mais reconhecíveis do pop-rock dos anos 80.",
-    "respostas": [
-      "Africa"
-    ]
-  },
-  {
-    "id": 112,
-    "artista": "Europe",
-    "musica": "The Final Countdown",
-    "categorias": [
-      "internacional",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos riffs de teclado mais famosos do rock.",
-    "respostas": [
-      "The Final Countdown"
-    ]
-  },
-  {
-    "id": 113,
+    "id": "legiao_tempo",
+    "titulo": "Tempo Perdido",
     "artista": "Legião Urbana",
-    "musica": "Tempo Perdido",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
+    "refrao": "Somos tão jovens",
+    "dicas": [
+      "É um dos maiores clássicos do rock brasileiro.",
+      "Renato Russo era o vocalista da banda."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores clássicos do rock brasileiro.",
-    "respostas": [
-      "Tempo Perdido"
-    ]
+    "categorias": ["rock", "brasil", "anos80"]
   },
   {
-    "id": 114,
+    "id": "legiao_pais",
+    "titulo": "Pais e Filhos",
     "artista": "Legião Urbana",
-    "musica": "Pais e Filhos",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
+    "refrao": "É preciso amar as pessoas",
+    "dicas": [
+      "A música fala sobre relações familiares.",
+      "É uma das canções mais conhecidas da Legião Urbana."
     ],
-    "dificuldade": "facil",
-    "dica": "Uma das músicas mais conhecidas da Legião Urbana.",
-    "respostas": [
-      "Pais e Filhos"
-    ]
+    "categorias": ["rock", "brasil", "anos80"]
   },
   {
-    "id": 115,
-    "artista": "Legião Urbana",
-    "musica": "Que País É Este",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Clássico de protesto que atravessou gerações.",
-    "respostas": [
-      "Que País É Este"
-    ]
-  },
-  {
-    "id": 116,
-    "artista": "Legião Urbana",
-    "musica": "Eduardo e Mônica",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das histórias musicais mais conhecidas da Legião Urbana.",
-    "respostas": [
-      "Eduardo e Mônica"
-    ]
-  },
-  {
-    "id": 117,
+    "id": "cbjr_so_loucos",
+    "titulo": "Só os Loucos Sabem",
     "artista": "Charlie Brown Jr.",
-    "musica": "Proibida Pra Mim",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos2000"
+    "refrao": "Agora eu sei exatamente o que fazer",
+    "dicas": [
+      "É uma das músicas mais conhecidas da banda.",
+      "Chorão era o vocalista do grupo."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos da fase inicial do Charlie Brown Jr.",
-    "respostas": [
-      "Proibida Pra Mim"
-    ]
+    "categorias": ["rock", "poprock", "brasil", "anos2000"]
   },
   {
-    "id": 118,
+    "id": "cbjr_zoi",
+    "titulo": "Zóio de Lula",
     "artista": "Charlie Brown Jr.",
-    "musica": "Só os Loucos Sabem",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos2000"
+    "refrao": "Eu vejo na televisão",
+    "dicas": [
+      "É um clássico do rock brasileiro dos anos 90.",
+      "A banda surgiu em Santos."
     ],
-    "dificuldade": "facil",
-    "dica": "Uma das músicas mais populares da banda entre o público brasileiro.",
-    "respostas": [
-      "Só os Loucos Sabem"
-    ]
+    "categorias": ["rock", "poprock", "brasil", "anos90"]
   },
   {
-    "id": 119,
-    "artista": "Charlie Brown Jr.",
-    "musica": "Zóio de Lula",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit clássico do Charlie Brown Jr. com forte identidade da banda.",
-    "respostas": [
-      "Zóio de Lula"
-    ]
-  },
-  {
-    "id": 120,
-    "artista": "Charlie Brown Jr.",
-    "musica": "Céu Azul",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos2010"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos grandes hits da fase final da banda.",
-    "respostas": [
-      "Céu Azul"
-    ]
-  },
-  {
-    "id": 121,
+    "id": "pitty_equalize",
+    "titulo": "Equalize",
     "artista": "Pitty",
-    "musica": "Equalize",
-    "categorias": [
-      "brasil",
-      "rock",
-      "alternative",
-      "anos2000"
+    "refrao": "Eu quero te fazer uma canção",
+    "dicas": [
+      "É uma das músicas mais populares da cantora.",
+      "Pitty é uma das principais representantes do rock brasileiro dos anos 2000."
     ],
-    "dificuldade": "facil",
-    "dica": "Uma das músicas mais conhecidas da carreira solo de Pitty.",
-    "respostas": [
-      "Equalize"
-    ]
+    "categorias": ["rock", "alternative", "brasil", "anos2000"]
   },
   {
-    "id": 122,
+    "id": "pitty_admiravel",
+    "titulo": "Admirável Chip Novo",
     "artista": "Pitty",
-    "musica": "Admirável Chip Novo",
-    "categorias": [
-      "brasil",
-      "rock",
-      "alternative",
-      "anos2000"
+    "refrao": "Pane no sistema, alguém me desconfigurou",
+    "dicas": [
+      "O título faz referência a uma famosa obra literária.",
+      "A música critica a ideia de pessoas seguindo padrões impostos."
     ],
-    "dificuldade": "facil",
-    "dica": "Faixa-título do álbum de estreia de Pitty.",
-    "respostas": [
-      "Admirável Chip Novo"
-    ]
+    "categorias": ["rock", "alternative", "brasil", "anos2000"]
   },
   {
-    "id": 123,
-    "artista": "Pitty",
-    "musica": "Me Adora",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Grande hit de Pitty lançado no fim dos anos 2000.",
-    "respostas": [
-      "Me Adora"
-    ]
-  },
-  {
-    "id": 124,
-    "artista": "Pitty",
-    "musica": "Na Sua Estante",
-    "categorias": [
-      "brasil",
-      "rock",
-      "alternative",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos de Pitty na fase mais popular.",
-    "respostas": [
-      "Na Sua Estante"
-    ]
-  },
-  {
-    "id": 125,
+    "id": "cp22_um_minuto",
+    "titulo": "Um Minuto Para o Fim do Mundo",
     "artista": "CPM 22",
-    "musica": "Um Minuto Para o Fim do Mundo",
-    "categorias": [
-      "brasil",
-      "rock",
-      "pop_punk",
-      "anos2000"
+    "refrao": "Um minuto para o fim do mundo",
+    "dicas": [
+      "É um dos maiores sucessos do CPM 22.",
+      "A banda foi muito popular na cena emo e pop punk brasileira."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hinos do rock nacional dos anos 2000.",
-    "respostas": [
-      "Um Minuto Para o Fim do Mundo"
-    ]
+    "categorias": ["rock", "emo", "punk", "brasil", "anos2000"]
   },
   {
-    "id": 126,
-    "artista": "CPM 22",
-    "musica": "Dias Atrás",
-    "categorias": [
-      "brasil",
-      "rock",
-      "pop_punk",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos sucessos mais reconhecidos do CPM 22.",
-    "respostas": [
-      "Dias Atrás"
-    ]
-  },
-  {
-    "id": 127,
-    "artista": "CPM 22",
-    "musica": "Não Sei Viver Sem Ter Você",
-    "categorias": [
-      "brasil",
-      "rock",
-      "pop_punk",
-      "anos2000"
-    ],
-    "dificuldade": "medio",
-    "dica": "Outro grande sucesso do CPM 22.",
-    "respostas": [
-      "Não Sei Viver Sem Ter Você"
-    ]
-  },
-  {
-    "id": 128,
-    "artista": "NX Zero",
-    "musica": "Razões e Emoções",
-    "categorias": [
-      "brasil",
-      "rock",
-      "emo",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits do rock brasileiro dos anos 2000.",
-    "respostas": [
-      "Razões e Emoções"
-    ]
-  },
-  {
-    "id": 129,
-    "artista": "NX Zero",
-    "musica": "Cedo ou Tarde",
-    "categorias": [
-      "brasil",
-      "rock",
-      "emo",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Balada muito conhecida da fase de maior sucesso do NX Zero.",
-    "respostas": [
-      "Cedo ou Tarde"
-    ]
-  },
-  {
-    "id": 130,
-    "artista": "Fresno",
-    "musica": "Desde Quando Você Se Foi",
-    "categorias": [
-      "brasil",
-      "rock",
-      "emo",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos da fase popular do Fresno.",
-    "respostas": [
-      "Desde Quando Você Se Foi"
-    ]
-  },
-  {
-    "id": 131,
-    "artista": "Fresno",
-    "musica": "Alguém Que Te Faz Sorrir",
-    "categorias": [
-      "brasil",
-      "rock",
-      "emo",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Outro grande hit do Fresno nos anos 2000.",
-    "respostas": [
-      "Alguém Que Te Faz Sorrir"
-    ]
-  },
-  {
-    "id": 132,
+    "id": "capital_primeiros",
+    "titulo": "Primeiros Erros",
     "artista": "Capital Inicial",
-    "musica": "Primeiros Erros",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
+    "refrao": "Se um dia eu pudesse ver",
+    "dicas": [
+      "É um dos maiores clássicos do rock brasileiro.",
+      "Dinho Ouro Preto é o vocalista do Capital Inicial."
     ],
-    "dificuldade": "facil",
-    "dica": "Uma das versões mais conhecidas do rock brasileiro.",
-    "respostas": [
-      "Primeiros Erros"
-    ]
+    "categorias": ["rock", "poprock", "brasil", "anos80"]
   },
   {
-    "id": 133,
-    "artista": "Capital Inicial",
-    "musica": "Natasha",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits do Capital Inicial.",
-    "respostas": [
-      "Natasha"
-    ]
-  },
-  {
-    "id": 134,
-    "artista": "Capital Inicial",
-    "musica": "À Sua Maneira",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das músicas mais populares do Capital Inicial.",
-    "respostas": [
-      "À Sua Maneira"
-    ]
-  },
-  {
-    "id": 135,
+    "id": "skank_vou_deixar",
+    "titulo": "Vou Deixar",
     "artista": "Skank",
-    "musica": "Vou Deixar",
-    "categorias": [
-      "brasil",
-      "rock",
-      "pop_rock",
-      "anos2000"
+    "refrao": "Vou deixar a vida me levar",
+    "dicas": [
+      "É um dos grandes sucessos do rock brasileiro.",
+      "A banda ficou conhecida por misturar rock com outros estilos."
     ],
-    "dificuldade": "facil",
-    "dica": "Grande sucesso pop-rock do Skank.",
-    "respostas": [
-      "Vou Deixar"
-    ]
+    "categorias": ["rock", "poprock", "brasil", "anos2000"]
   },
   {
-    "id": 136,
-    "artista": "Skank",
-    "musica": "Garota Nacional",
-    "categorias": [
-      "brasil",
-      "rock",
-      "pop_rock",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits do rock brasileiro dos anos 90.",
-    "respostas": [
-      "Garota Nacional"
-    ]
-  },
-  {
-    "id": 137,
-    "artista": "Skank",
-    "musica": "Sutilmente",
-    "categorias": [
-      "brasil",
-      "rock",
-      "pop_rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos da fase madura do Skank.",
-    "respostas": [
-      "Sutilmente"
-    ]
-  },
-  {
-    "id": 138,
+    "id": "o_rappa_minha_alma",
+    "titulo": "Minha Alma",
     "artista": "O Rappa",
-    "musica": "Minha Alma",
-    "categorias": [
-      "brasil",
-      "rock",
-      "alternative",
-      "anos2000"
+    "refrao": "A minha alma tá armada",
+    "dicas": [
+      "É uma das músicas mais conhecidas da banda.",
+      "O Rappa ficou conhecido por misturar rock e reggae."
     ],
-    "dificuldade": "facil",
-    "dica": "Uma das músicas mais conhecidas de O Rappa.",
-    "respostas": [
-      "Minha Alma"
-    ]
+    "categorias": ["rock", "alternative", "brasil", "anos90"]
   },
   {
-    "id": 139,
-    "artista": "O Rappa",
-    "musica": "Pescador de Ilusões",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos clássicos mais reconhecidos de O Rappa.",
-    "respostas": [
-      "Pescador de Ilusões"
-    ]
-  },
-  {
-    "id": 140,
-    "artista": "O Rappa",
-    "musica": "Anjos",
-    "categorias": [
-      "brasil",
-      "rock",
-      "alternative",
-      "anos2000"
-    ],
-    "dificuldade": "medio",
-    "dica": "Uma das músicas populares de O Rappa.",
-    "respostas": [
-      "Anjos"
-    ]
-  },
-  {
-    "id": 141,
+    "id": "jota_quest_facil",
+    "titulo": "Fácil",
     "artista": "Jota Quest",
-    "musica": "Fácil",
-    "categorias": [
-      "brasil",
-      "pop_rock",
-      "anos2000"
+    "refrao": "Fácil, extremamente fácil",
+    "dicas": [
+      "É um dos maiores sucessos do pop rock brasileiro.",
+      "A banda veio de Belo Horizonte."
     ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos pop-rock do Jota Quest.",
-    "respostas": [
-      "Fácil"
-    ]
+    "categorias": ["poprock", "rock", "brasil", "anos2000"]
   },
   {
-    "id": 142,
-    "artista": "Jota Quest",
-    "musica": "Dias Melhores",
-    "categorias": [
-      "brasil",
-      "pop_rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit otimista muito associado ao Jota Quest.",
-    "respostas": [
-      "Dias Melhores"
-    ]
-  },
-  {
-    "id": 143,
-    "artista": "Titãs",
-    "musica": "Epitáfio",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das músicas mais conhecidas da fase mais popular dos Titãs.",
-    "respostas": [
-      "Epitáfio"
-    ]
-  },
-  {
-    "id": 144,
-    "artista": "Titãs",
-    "musica": "Enquanto Houver Sol",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit dos Titãs que ganhou grande presença nas rádios.",
-    "respostas": [
-      "Enquanto Houver Sol"
-    ]
-  },
-  {
-    "id": 145,
-    "artista": "Os Paralamas do Sucesso",
-    "musica": "Meu Erro",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos dos Paralamas.",
-    "respostas": [
-      "Meu Erro"
-    ]
-  },
-  {
-    "id": 146,
-    "artista": "Os Paralamas do Sucesso",
-    "musica": "Lanterna dos Afogados",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Balada clássica e muito conhecida dos Paralamas.",
-    "respostas": [
-      "Lanterna dos Afogados"
-    ]
-  },
-  {
-    "id": 147,
-    "artista": "Os Paralamas do Sucesso",
-    "musica": "Aonde Quer Que Eu Vá",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das baladas mais conhecidas dos Paralamas.",
-    "respostas": [
-      "Aonde Quer Que Eu Vá"
-    ]
-  },
-  {
-    "id": 148,
-    "artista": "Raimundos",
-    "musica": "Mulher de Fases",
-    "categorias": [
-      "brasil",
-      "rock",
-      "punk",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits do Raimundos.",
-    "respostas": [
-      "Mulher de Fases"
-    ]
-  },
-  {
-    "id": 149,
-    "artista": "Mamonas Assassinas",
-    "musica": "Pelados em Santos",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos e símbolos da banda.",
-    "respostas": [
-      "Pelados em Santos"
-    ]
-  },
-  {
-    "id": 150,
-    "artista": "Mamonas Assassinas",
-    "musica": "Vira-Vira",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das músicas mais reconhecidas do repertório dos Mamonas.",
-    "respostas": [
-      "Vira-Vira"
-    ]
-  },
-  {
-    "id": 151,
-    "artista": "Cássia Eller",
-    "musica": "Malandragem",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das interpretações mais famosas de Cássia Eller.",
-    "respostas": [
-      "Malandragem"
-    ]
-  },
-  {
-    "id": 152,
-    "artista": "Cássia Eller",
-    "musica": "Segundo Sol",
-    "categorias": [
-      "brasil",
-      "rock",
-      "pop_rock",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos grandes sucessos associados à voz de Cássia Eller.",
-    "respostas": [
-      "Segundo Sol"
-    ]
-  },
-  {
-    "id": 153,
-    "artista": "Engenheiros do Hawaii",
-    "musica": "Infinita Highway",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores clássicos do rock brasileiro.",
-    "respostas": [
-      "Infinita Highway"
-    ]
-  },
-  {
-    "id": 154,
-    "artista": "Engenheiros do Hawaii",
-    "musica": "O Papa É Pop",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "medio",
-    "dica": "Hit de uma das bandas mais marcantes do rock brasileiro.",
-    "respostas": [
-      "O Papa É Pop"
-    ]
-  },
-  {
-    "id": 155,
-    "artista": "Barão Vermelho",
-    "musica": "Bete Balanço",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Clássico do rock brasileiro também conhecido pelo filme homônimo.",
-    "respostas": [
-      "Bete Balanço"
-    ]
-  },
-  {
-    "id": 156,
-    "artista": "Barão Vermelho",
-    "musica": "Pro Dia Nascer Feliz",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores clássicos do Barão Vermelho.",
-    "respostas": [
-      "Pro Dia Nascer Feliz"
-    ]
-  },
-  {
-    "id": 157,
-    "artista": "Barão Vermelho",
-    "musica": "Por Você",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Balada muito conhecida do Barão Vermelho.",
-    "respostas": [
-      "Por Você"
-    ]
-  },
-  {
-    "id": 158,
-    "artista": "Cazuza",
-    "musica": "Exagerado",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos da carreira solo de Cazuza.",
-    "respostas": [
-      "Exagerado"
-    ]
-  },
-  {
-    "id": 159,
-    "artista": "Cazuza",
-    "musica": "Codinome Beija-Flor",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "medio",
-    "dica": "Uma das baladas mais conhecidas da carreira de Cazuza.",
-    "respostas": [
-      "Codinome Beija-Flor"
-    ]
-  },
-  {
-    "id": 160,
-    "artista": "Cazuza",
-    "musica": "O Tempo Não Para",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores símbolos da carreira de Cazuza.",
-    "respostas": [
-      "O Tempo Não Para"
-    ]
-  },
-  {
-    "id": 161,
-    "artista": "Lulu Santos",
-    "musica": "Tempos Modernos",
-    "categorias": [
-      "brasil",
-      "pop_rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Clássico pop-rock brasileiro que virou assinatura de Lulu Santos.",
-    "respostas": [
-      "Tempos Modernos"
-    ]
-  },
-  {
-    "id": 162,
-    "artista": "Lulu Santos",
-    "musica": "Apenas Mais Uma de Amor",
-    "categorias": [
-      "brasil",
-      "pop_rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Uma das baladas mais conhecidas de Lulu Santos.",
-    "respostas": [
-      "Apenas Mais Uma de Amor"
-    ]
-  },
-  {
-    "id": 163,
-    "artista": "Rita Lee",
-    "musica": "Mania de Você",
-    "categorias": [
-      "brasil",
-      "rock",
-      "pop_rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos da carreira de Rita Lee.",
-    "respostas": [
-      "Mania de Você"
-    ]
-  },
-  {
-    "id": 164,
-    "artista": "Rita Lee",
-    "musica": "Ovelha Negra",
-    "categorias": [
-      "brasil",
-      "rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Clássico absoluto do rock brasileiro.",
-    "respostas": [
-      "Ovelha Negra"
-    ]
-  },
-  {
-    "id": 165,
-    "artista": "Rita Lee",
-    "musica": "Lança Perfume",
-    "categorias": [
-      "brasil",
-      "rock",
-      "pop_rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Grande hit da carreira solo de Rita Lee.",
-    "respostas": [
-      "Lança Perfume"
-    ]
-  },
-  {
-    "id": 166,
-    "artista": "Kid Abelha",
-    "musica": "Como Eu Quero",
-    "categorias": [
-      "brasil",
-      "pop_rock",
-      "classicos"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores sucessos do Kid Abelha.",
-    "respostas": [
-      "Como Eu Quero"
-    ]
-  },
-  {
-    "id": 167,
-    "artista": "Los Hermanos",
-    "musica": "Anna Júlia",
-    "categorias": [
-      "brasil",
-      "rock",
-      "pop_rock",
-      "anos1990"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos maiores hits do rock brasileiro do fim dos anos 90.",
-    "respostas": [
-      "Anna Júlia"
-    ]
-  },
-  {
-    "id": 168,
-    "artista": "Detonautas",
-    "musica": "Outro Lugar",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Um dos grandes sucessos do rock brasileiro dos anos 2000.",
-    "respostas": [
-      "Outro Lugar"
-    ]
-  },
-  {
-    "id": 169,
-    "artista": "Detonautas",
-    "musica": "Quando o Sol Se For",
-    "categorias": [
-      "brasil",
-      "rock",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Hit muito conhecido do Detonautas.",
-    "respostas": [
-      "Quando o Sol Se For"
-    ]
-  },
-  {
-    "id": 170,
-    "artista": "Tihuana",
-    "musica": "Tropa de Elite",
-    "categorias": [
-      "brasil",
-      "rock",
-      "filmes_series",
-      "anos2000"
-    ],
-    "dificuldade": "facil",
-    "dica": "Música fortemente associada ao filme brasileiro de mesmo nome.",
-    "respostas": [
-      "Tropa de Elite"
-    ]
-  }
-]
+    "id": "cassia_segundo_sol",
