@@ -55,11 +55,15 @@ jobs:
 
           echo "Enviando \$pescar..."
 
-          RESULT=$(curl -s -X POST \
+          curl -s -X POST \
             "https://api.twitch.tv/helix/chat/messages" \
             -H "Authorization: Bearer $ACCESS_TOKEN" \
             -H "Client-Id: $TWITCH_CLIENT_ID" \
             -H "Content-Type: application/json" \
-            -d "{\"broadcaster_id\":\"$BROADCASTER_ID\",\"sender_id\":\"$SENDER_ID\",\"message\":\"\\$pescar\"}")
-
-          echo "$RESULT"
+            --data-binary @- <<EOF
+          {
+            "broadcaster_id": "$BROADCASTER_ID",
+            "sender_id": "$SENDER_ID",
+            "message": "\$pescar"
+          }
+          EOF
