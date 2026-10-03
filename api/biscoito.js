@@ -37,7 +37,7 @@ async function getRedis() {
 
 function limparNome(nome) {
   return String(nome || "")
-    .replace(/^@/, "")
+    .replace(/^@+/, "")
     .trim();
 }
 
@@ -74,8 +74,6 @@ async function pegarFrase(redis, quantidade) {
 
   if (lock === "OK") {
     try {
-      // Outra requisição pode ter criado a fila
-      // enquanto esta esperava pelo lock.
       indice = await redis.lPop(FILA_KEY);
 
       if (indice !== null) {
@@ -102,12 +100,14 @@ async function pegarFrase(redis, quantidade) {
     }
   }
 
-  // Espera um pouco e tenta novamente.
   await new Promise((resolve) =>
     setTimeout(resolve, 100)
   );
 
-  return pegarFrase(redis, quantidade);
+  return pegarFrase(
+    redis,
+    quantidade
+  );
 }
 
 export default async function handler(req, res) {
@@ -156,15 +156,39 @@ export default async function handler(req, res) {
     }
 
     const user = limparNome(
-      req.query.user || req.query.sender
+      req.query.user ||
+      req.query.sender
     );
 
     const nome = user
       ? `@${user}`
       : "Você";
 
-    const resposta = String(frase)
-      .replaceAll("{user}", nome);
+    /*
+     * Remove qualquer referência ao usuário
+     * que esteja dentro da frase.
+     *
+     * Aceita:
+     * {user}
+     * @{user}
+     *
+     * Assim o usuário aparece somente
+     * no começo da mensagem.
+     */
+
+    let resposta = String(frase)
+      .replace(/@?\{user\}/gi, "")
+      .trim();
+
+    /*
+     * Evita espaços ou pontuação estranha
+     * deixados pela remoção do {user}.
+     */
+
+    resposta = resposta
+      .replace(/\s{2,}/g, " ")
+      .replace(/\s+([,.!?])/g, "$1")
+      .trim();
 
     return res
       .status(200)
@@ -173,7 +197,7 @@ export default async function handler(req, res) {
         "text/plain; charset=utf-8"
       )
       .send(
-        `🍪 ${nome}, seu biscoito da sorte diz: ${resposta}`
+        `🍪 ${nome}, ${resposta}`
       );
 
   } catch (erro) {
