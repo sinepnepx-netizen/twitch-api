@@ -164,31 +164,41 @@ export default async function handler(req, res) {
       ? `@${user}`
       : "Você";
 
-    /*
-     * Remove qualquer referência ao usuário
-     * que esteja dentro da frase.
-     *
-     * Aceita:
-     * {user}
-     * @{user}
-     *
-     * Assim o usuário aparece somente
-     * no começo da mensagem.
-     */
+    let resposta = String(frase);
 
-    let resposta = String(frase)
-      .replace(/@?\{user\}/gi, "")
-      .trim();
+    // Remove {user} ou @{user}
+    resposta = resposta.replace(
+      /@?\{user\}/gi,
+      ""
+    );
 
-    /*
-     * Evita espaços ou pontuação estranha
-     * deixados pela remoção do {user}.
-     */
+    // Remove espaços no começo
+    resposta = resposta.trim();
 
-    resposta = resposta
-      .replace(/\s{2,}/g, " ")
-      .replace(/\s+([,.!?])/g, "$1")
-      .trim();
+    // Remove vírgulas/pontuação deixadas pelo {user}
+    resposta = resposta.replace(
+      /^[,\s]+/,
+      ""
+    );
+
+    // Remove espaços antes de pontuação
+    resposta = resposta.replace(
+      /\s+([,.!?;:])/g,
+      "$1"
+    );
+
+    // Remove espaços duplicados
+    resposta = resposta.replace(
+      /\s{2,}/g,
+      " "
+    );
+
+    resposta = resposta.trim();
+
+    // Monta a mensagem sem colocar vírgula automaticamente
+    const mensagem = user
+      ? `🍪 ${nome} ${resposta}`
+      : `🍪 ${resposta}`;
 
     return res
       .status(200)
@@ -196,9 +206,7 @@ export default async function handler(req, res) {
         "Content-Type",
         "text/plain; charset=utf-8"
       )
-      .send(
-        `🍪 ${nome}, ${resposta}`
-      );
+      .send(mensagem);
 
   } catch (erro) {
     console.error(
