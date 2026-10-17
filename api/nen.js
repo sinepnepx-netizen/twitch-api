@@ -386,12 +386,15 @@ async function ranking(redis) {
     lote = [];
 
     const resultados = await Promise.all(
-      chaves.map(async chave => {
+      chaves.map(async (chave) => {
         const bruto = await redis.get(chave);
         if (!bruto) return null;
 
         try {
-          return prepararPerfil(JSON.parse(bruto), chave.slice("nen:perfil:".length));
+          return prepararPerfil(
+            JSON.parse(bruto),
+            chave.slice("nen:perfil:".length)
+          );
         } catch {
           return null;
         }
@@ -403,12 +406,23 @@ async function ranking(redis) {
     }
   }
 
-  for await (const chave of redis.scanIterator({
+  for await (const loteChaves of redis.scanIterator({
     MATCH: "nen:perfil:*",
     COUNT: 100
   })) {
-    lote.push(chave);
-    if (lote.length >= 50) await processarLote();
+    const chaves = Array.isArray(loteChaves)
+      ? loteChaves
+      : [loteChaves];
+
+    lote.push(...chaves);
+
+    while (lote.length >= 50) {
+      const atual = lote.splice(0, 50);
+      const temporario = lote;
+      lote = atual;
+      await processarLote();
+      lote = temporario;
+    }
   }
 
   await processarLote();
@@ -425,7 +439,7 @@ async function ranking(redis) {
 
   const top = perfis.slice(0, 5).map((perfil, indice) => {
     const estagio = obterEstagio(perfil.nivel);
-    return `${indice + 1}. ${nomeExibicao(perfil.usuario)} — Nv. ${perfil.nivel} (${estagio.nome}), ${perfil.xpTotal} XP`;
+    return `${indice + 1}. @${perfil.usuario} — Nv. ${perfil.nivel} (${estagio.nome}), ${perfil.xpTotal} XP`;
   });
 
   return `🏆 RANKING DOS CAÇADORES DE NEN: ${top.join(" | ")}`;
